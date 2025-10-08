@@ -2,29 +2,32 @@
 
 ### SOLUTION
 
-long long OrdinaryPairs(vector<int>& arr, int X) {
+int MaximumGCD(vector<int> & arr){
     int n = arr.size();
-
-    long long result = 0;
-    map<long long, long long> freq;
+    vector<int> prefix(n + 1, 0), suffix(n + 2, 0);
 
     for(int i = 0; i < n; ++i){
-        int add = (X - arr[i] % X) % X;
-
-        if((1LL * add * arr[i]) % X == 0){
-            result += freq[add];
-        }
-
-        freq[arr[i] % X]++;
+        prefix[i + 1] = gcd(prefix[i], arr[i]);
     }
 
-    return result;
+    for(int i = n - 1; i >= 0; --i){
+        suffix[i + 1] = gcd(suffix[i + 2], arr[i]);
+    }
+
+    int res = 1;
+
+    for(int i = 1; i <= n; ++i){
+        res = max(res, gcd(prefix[i - 1], suffix[i + 1]));
+    }
+
+    return res;
 }
+
 
 ### METADATA
 
 **TimeLimit**
-1000
+2000
 
 **MemoryLimit**
 256
@@ -33,29 +36,39 @@ long long OrdinaryPairs(vector<int>& arr, int X) {
 
 ### SOLUTION
 
-public static long OrdinaryPairs(int[] arr, int X) {
-    int n = arr.length;
-    long result = 0;
-    Map<Integer, Long> freq = new HashMap<>();
+public class Solution {
+    public static int MaximumGCD(int[] arr) {
+        int n = arr.length;
+        int[] prefix = new int[n + 1];
+        int[] suffix = new int[n + 2];
 
-    for(int i = 0; i < n; i++){
-        int add = (X - arr[i] % X) % X;
-
-        if((1L * add * arr[i]) % X == 0){
-            result += freq.getOrDefault(add, 0L);
+        for (int i = 0; i < n; i++) {
+            prefix[i + 1] = gcd(prefix[i], arr[i]);
         }
 
-        freq.put(arr[i] % X, freq.getOrDefault(arr[i] % X, 0L) + 1);
+        for (int i = n - 1; i >= 0; i--) {
+            suffix[i + 1] = gcd(suffix[i + 2], arr[i]);
+        }
+
+        int res = 1;
+        for (int i = 1; i <= n; i++) {
+            res = Math.max(res, gcd(prefix[i - 1], suffix[i + 1]));
+        }
+
+        return res;
     }
 
-    return result;
+    private static int gcd(int a, int b) {
+        if (b == 0) return a;
+        return gcd(b, a % b);
+    }
 }
 
 
 ### METADATA
 
 **TimeLimit**
-1000
+2000
 
 **MemoryLimit**
 256
@@ -64,28 +77,37 @@ public static long OrdinaryPairs(int[] arr, int X) {
 
 ### SOLUTION
 
-long long OrdinaryPairs(int arr[], int n, int X) {
-    long long result = 0;
-    long long* freq = (long long*)calloc(X, sizeof(long long));
+int gcd(int a, int b) {
+    return b == 0 ? a : gcd(b, a % b);
+}
 
-    for(int i = 0; i < n; i++){
-        int add = (X - arr[i] % X) % X;
+int MaximumGCD(int arr[], int n) {
+    int* prefix = (int*)calloc(n + 1, sizeof(int));
+    int* suffix = (int*)calloc(n + 2, sizeof(int));
 
-        if((1LL * add * arr[i]) % X == 0){
-            result += freq[add];
-        }
-
-        freq[arr[i] % X]++;
+    for (int i = 0; i < n; i++) {
+        prefix[i + 1] = gcd(prefix[i], arr[i]);
     }
 
-    free(freq);
-    return result;
+    for (int i = n - 1; i >= 0; i--) {
+        suffix[i + 1] = gcd(suffix[i + 2], arr[i]);
+    }
+
+    int res = 1;
+    for (int i = 1; i <= n; i++) {
+        int g = gcd(prefix[i - 1], suffix[i + 1]);
+        if (g > res) res = g;
+    }
+
+    free(prefix);
+    free(suffix);
+    return res;
 }
 
 ### METADATA
 
 **TimeLimit**
-1000
+2000
 
 **MemoryLimit**
 256
@@ -94,28 +116,36 @@ long long OrdinaryPairs(int arr[], int n, int X) {
 
 ### SOLUTION
 
-function OrdinaryPairs(arr, X) {
-    let result = 0;
-    let freq = new Map();
+function gcd(a, b) {
+    return b === 0 ? a : gcd(b, a % b);
+}
 
-    for(let i = 0; i < arr.length; i++){
-        let add = (X - arr[i] % X) % X;
+function MaximumGCD(arr) {
+    const n = arr.length;
+    const prefix = new Array(n + 1).fill(0);
+    const suffix = new Array(n + 2).fill(0);
 
-        if((add * arr[i]) % X === 0){
-            result += freq.get(add) || 0;
-        }
-
-        freq.set(arr[i] % X, (freq.get(arr[i] % X) || 0) + 1);
+    for (let i = 0; i < n; i++) {
+        prefix[i + 1] = gcd(prefix[i], arr[i]);
     }
 
-    return result;
+    for (let i = n - 1; i >= 0; i--) {
+        suffix[i + 1] = gcd(suffix[i + 2], arr[i]);
+    }
+
+    let res = 1;
+    for (let i = 1; i <= n; i++) {
+        res = Math.max(res, gcd(prefix[i - 1], suffix[i + 1]));
+    }
+
+    return res;
 }
 
 
 ### METADATA
 
 **TimeLimit**
-1000
+2000
 
 **MemoryLimit**
 256
@@ -124,26 +154,30 @@ function OrdinaryPairs(arr, X) {
 
 ### SOLUTION
 
-def OrdinaryPairs(arr, X):
-    from collections import defaultdict
-    result = 0
-    freq = defaultdict(int)
+from math import gcd
 
-    for num in arr:
-        add = (X - num % X) % X
+def MaximumGCD(arr):
+    n = len(arr)
+    prefix = [0] * (n + 1)
+    suffix = [0] * (n + 2)
 
-        if (add * num) % X == 0:
-            result += freq[add]
+    for i in range(n):
+        prefix[i + 1] = gcd(prefix[i], arr[i])
 
-        freq[num % X] += 1
+    for i in range(n - 1, -1, -1):
+        suffix[i + 1] = gcd(suffix[i + 2], arr[i])
 
-    return result
+    res = 1
+    for i in range(1, n + 1):
+        res = max(res, gcd(prefix[i - 1], suffix[i + 1]))
+
+    return res
 
 
 ### METADATA
 
 **TimeLimit**
-1000
+2000
 
 **MemoryLimit**
 256

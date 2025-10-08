@@ -1,28 +1,28 @@
 ## CPP
 
-long long OrdinaryPairs(vector<int>& arr, int X) {
+int MaximumGCD(vector<int>& arr) {
     // add your code here
 }
 
 ## JAVA
 
-public static long OrdinaryPairs(int[] arr, int X) {
+public static int MaximumGCD(int[] arr) {
     // add your code here
 }
 
 ## C
 
-long long OrdinaryPairs(int arr[], int n, int X) {
+int MaximumGCD(int arr[], int n) {
     // add your code here
 }
 
 ## JAVASCRIPT
 
-function OrdinaryPairs(arr, X) {
+function MaximumGCD(arr) {
     // add your code here
 }
 
 ## PYTHON
 
-def OrdinaryPairs(arr, X):
-    // add your code here
+def MaximumGCD(arr):
+    # add your code here

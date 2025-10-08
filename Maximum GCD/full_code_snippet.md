@@ -6,14 +6,14 @@ using namespace std;
 // user code comes here
 
 int main() {
-    int n, X;
-    cin >> n >> X;
+    int n;
+    cin >> n;
     vector<int> arr(n);
     for (int i = 0; i < n; i++) {
         cin >> arr[i];
     }
 
-    long long result = OrdinaryPairs(arr, X);
+    long long result = MaximumGCD(arr);
     cout << result << endl;
 
     return 0;
@@ -29,13 +29,12 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int X = sc.nextInt();
         int[] arr = new int[n];
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
 
-        System.out.println(OrdinaryPairs(arr, X));
+        System.out.println(MaximumGCD(arr));
         sc.close();
     }
 }
@@ -49,17 +48,16 @@ public class Main {
 // user code comes here
 
 int main() {
-    int n, X;
-    scanf("%d %d", &n, &X);
+    int n;
+    scanf("%d", &n);
     int arr[n];
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
 
-    printf("%lld\n", OrdinaryPairs(arr, n, X));
+    printf("%d\n", MaximumGCD(arr, n));
     return 0;
 }
-
 
 ## JAVASCRIPT
 
@@ -70,10 +68,9 @@ function main() {
     const input = fs.readFileSync(0, "utf-8").trim().split(/\s+/);
 
     const n = parseInt(input[0]);
-    const X = parseInt(input[1]);
-    const arr = input.slice(2, 2 + n).map(Number);
+    const arr = input.slice(1, 1 + n).map(Number);
 
-    console.log(OrdinaryPairs(arr, X));
+    console.log(MaximumGCD(arr));
 }
 
 main();
@@ -84,10 +81,12 @@ main();
 
 # user code comes here
 
+# user code comes here
+
 def main():
-    n, X = map(int, input().split())
+    n = int(input())
     arr = list(map(int, input().split()))
-    print(OrdinaryPairs(arr, X))
+    print(MaximumGCD(arr))
 
 if __name__ == "__main__":
     main()

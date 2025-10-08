@@ -1,10 +1,10 @@
 ## Title
 
-Ordinary Pairs
+Maximum Gcd
 
 ## Slug
 
-ordinary-pairs
+maximum-gcd
 
 ## Difficulty
 
@@ -12,11 +12,10 @@ Medium
 
 ## Description
 
-You are given an array of postive integers, and a postive integer X.
-Count the number of ordinary pair (i , j) (1 ≤ i < j ≤ N) that satisfy the following condition:
-    1. arr[i] + arr[j] must be divisble by X
-    2. arr[i] * arr[j] must be divisble by X
+There are N integers A1, A2, A3 ... An, written on the blackboard.
+You will be choosen one of them and replace it with any integer of your choice bewteen 1 to 1e9 (inclusive) possible the same integer originally written.
 
+Find the Maximum possible greatest common divisior of the N integers on the blackboard after your move.
 
 ## Examples
 
@@ -24,53 +23,50 @@ Count the number of ordinary pair (i , j) (1 ≤ i < j ≤ N) that satisfy the f
 
 #### Input
 
-3 2
-[2, 2, 3]
+3 
+[7, 6, 8]
 
 #### Output
 
-1
+2
 
 #### Explanation
 
-The array is [2, 2, 3] and X = 2.  
-Ordinary pairs are (1, 2) because 2 + 2 is divisble by 2 and 2 * 2 is also divisble 2.
+If we replace 7 with 4, the greatest common divisor of the three integers on the blackboard will be 2, which is the maximum possible value.
 
 ### 2
 
 #### Input
 
-4 2
-[2, 4, 6, 3]
+2
+[100, 100]
 
 #### Output
 
-3
+100
 
 #### Explanation
 
-The array is [2, 4, 6, 3] and X = 2.  
-Ordinary pairs are (1, 2), (1, 3), (2, 3).
+We can replace an integer with itself.
 
 ## Input Format
 
-- First line: two integer 'n' and 'X' representing the number of elements in the array and value of X respectively.  
-- Second line: 'n' integers representing the elements of the array.
+- First line: integer 'n' representing the number of elements written on the blackboard .  
+- Second line: 'n' integers representing the elements that are written on blackboard.
 - You will be given the array as an input to your function
 
 ## Output Format
 
-- Return an integer representing the number of ordinary pairs.
+- Return an integer representing the greatest common divisor.
 
 ## Constraints
 
-- 1 ≤ n ≤ 10^6
-- 1 ≤ X ≤ 10^6
-- 1 ≤ arr[i] ≤ 10^6
+- 1 ≤ n ≤ 10^5
+- 1 ≤ arr[i] ≤ 10^9
 
 ## Time Limit
 
-1 second
+2 second
 
 ## Memory Limit
 
@@ -78,4 +74,4 @@ Ordinary pairs are (1, 2), (1, 3), (2, 3).
 
 ## Tags
 
-arrays, two pointers, hashmap, math
+arrays, prefix sum, suffix sum, math
