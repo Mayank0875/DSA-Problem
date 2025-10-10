@@ -20,7 +20,7 @@ int main() {
         cin >> queries[i][0] >> queries[i][1] >> queries[i][2];
     }
 
-    long long result = ZeroOneQuery(arr, queries);
+    int result = ZeroOneQuery(arr, queries);
     cout << result << endl;
 
     return 0;
@@ -77,7 +77,7 @@ int main() {
         scanf("%d %d %d", &queries[i][0], &queries[i][1], &queries[i][2]);
     }
 
-    long long result = ZeroOneQuery(arr, n, queries, q);
+    int result = ZeroOneQuery(arr, n, queries, q);
     printf("%lld\n", result);
     free(arr);
 

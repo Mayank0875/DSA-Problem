@@ -34,7 +34,7 @@ int ZeroOneQuery(vector<int>& arr, vector<vector<int>>& queries) {
 
 ### SOLUTION
 
-public class Solution {
+public class Main {
     public static int ZeroOneQuery(int[] arr, int[][] queries) {
         int n = arr.length;
         int[] prefix = new int[n + 1];

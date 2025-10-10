@@ -24,5 +24,5 @@ function ZeroOneQuery(arr, queries) {
 
 ## PYTHON
 
-def ZeroOneQuery(arr, queries):
+def ZeroOneQuery(arr: List[int], queries: List[List[int]]) -> int:
     # add your code here

@@ -12,14 +12,13 @@ Easy
 
 ## Description
 
-You are given a binary array A of size N ( each element is either 0 or 1).
-You are also given Q queries. Each query consist three integers:
-L, R, and Val Where:
-    - L and R represent the range of the query (1-indexed, inclusive).
-    - Val is either 0 or 1.
+You are given a binary array A of size N (each element is either 0 or 1).
+You are also given Q queries. Each query consists of three integers: L, R, and Val, where:
+	•	L and R represent the range of the query (1-indexed, inclusive).
+	•	Val is either 0 or 1.
 
-For Each query, you must find the frequency of Val in the subarray A[L .. R].
-After Processing all queries, output the XOR of all query result.
+For each query, you must find the frequency of Val in the subarray A[L .. R].
+After processing all queries, output the XOR of all query results.
 
 ## Examples
 
@@ -73,7 +72,7 @@ Frequency are 1, 1 so Xor of 1 and 1 is 0.
 
 ## Constraints
 
-- 1 ≤ n ≤ 10^5
+- 1 ≤ N ≤ 10^5
 - 0 ≤ arr[i] ≤ 1
 - 1 ≤ q ≤ 10^5
 - 1 ≤ L ≤ R ≤ N
@@ -89,4 +88,4 @@ Frequency are 1, 1 so Xor of 1 and 1 is 0.
 
 ## Tags
 
-arrays, prefix sum, hashmap
+arrays, prefix sum
