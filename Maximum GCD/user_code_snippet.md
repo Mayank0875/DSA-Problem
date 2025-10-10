@@ -24,5 +24,5 @@ function MaximumGCD(arr) {
 
 ## PYTHON
 
-def MaximumGCD(arr):
+def MaximumGCD(arr: List[int]) -> int:
     # add your code here

@@ -139,7 +139,8 @@ function ZeroOneQuery(arr, queries) {
 
 ### SOLUTION
 
-def ZeroOneQuery(arr, queries):
+
+def ZeroOneQuery(arr: List[int], queries: List[List[int]]) -> int:
     n = len(arr)
     prefix = [0] * (n + 1)
 

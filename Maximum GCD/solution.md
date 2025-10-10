@@ -155,7 +155,8 @@ function MaximumGCD(arr) {
 ### SOLUTION
 
 
-def MaximumGCD(arr):
+
+def MaximumGCD(arr: List[int]) -> int:
     n = len(arr)
     prefix = [0] * (n + 1)
     suffix = [0] * (n + 2)

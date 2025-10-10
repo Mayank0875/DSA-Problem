@@ -114,6 +114,7 @@ main();
 
 # user code comes here
 
+from typing import List
 def main():
     n = int(input())
     arr = list(map(int, input().split()))
