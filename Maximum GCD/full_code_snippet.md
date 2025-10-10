@@ -81,8 +81,6 @@ main();
 
 # user code comes here
 
-# user code comes here
-
 def main():
     n = int(input())
     arr = list(map(int, input().split()))

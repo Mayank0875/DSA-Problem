@@ -12,10 +12,10 @@ Medium
 
 ## Description
 
-There are N integers A1, A2, A3 ... An, written on the blackboard.
-You will be choosen one of them and replace it with any integer of your choice bewteen 1 to 1e9 (inclusive) possible the same integer originally written.
+There are N integers — A₁, A₂, A₃, …, Aₙ — written on a blackboard.
+You are allowed to choose one of them and replace it with any integer of your choice between 1 and 10⁹ (inclusive). The new integer may be the same as the original one.
 
-Find the Maximum possible greatest common divisior of the N integers on the blackboard after your move.
+Your task is to find the maximum possible greatest common divisor (GCD) of all N integers on the blackboard after making your move.
 
 ## Examples
 

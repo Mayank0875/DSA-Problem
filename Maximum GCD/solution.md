@@ -36,7 +36,7 @@ int MaximumGCD(vector<int> & arr){
 
 ### SOLUTION
 
-public class Solution {
+public class Main {
     public static int MaximumGCD(int[] arr) {
         int n = arr.length;
         int[] prefix = new int[n + 1];
@@ -154,7 +154,6 @@ function MaximumGCD(arr) {
 
 ### SOLUTION
 
-from math import gcd
 
 def MaximumGCD(arr):
     n = len(arr)
