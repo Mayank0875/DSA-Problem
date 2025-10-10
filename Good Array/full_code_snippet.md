@@ -1,0 +1,100 @@
+## CPP
+
+#include <bits/stdc++.h>
+using namespace std;
+
+// user code comes here
+
+int main() {
+    int n;
+    cin >> n;
+    vector<int> arr(n);
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
+
+    long long result = GoodSubarray(arr);
+    cout << result << endl;
+
+    return 0;
+}
+
+## JAVA
+
+import java.util.*;
+
+public class Main {
+    // user code comes here
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+
+        long result = GoodSubarray(arr);
+        System.out.println(result);
+
+        sc.close();
+    }
+}
+
+## C
+
+#include <stdio.h>
+#include <stdlib.h>
+
+// user code comes here
+
+int main() {
+    int n;
+    scanf("%d", &n);
+    int* arr = (int*)malloc(n * sizeof(int));
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    long long result = GoodSubarray(arr, n);
+    printf("%lld\n", result);
+
+    free(arr);
+    return 0;
+}
+
+## JAVASCRIPT
+
+// user code comes here
+
+function main() {
+    const fs = require("fs");
+    const input = fs.readFileSync(0, "utf-8").trim().split(/\s+/).map(Number);
+
+    let idx = 0;
+    const n = input[idx++];
+    const arr = input.slice(idx, idx + n);
+
+    const result = GoodSubarray(arr);
+    console.log(result);
+}
+
+main();
+
+
+
+## PYTHON
+
+from typing import List
+
+# user code comes here
+
+def main():
+    n = int(input())
+    arr = list(map(int, input().split()))
+
+    result = GoodSubarray(arr)
+    print(result)
+
+if __name__ == "__main__":
+    main()
