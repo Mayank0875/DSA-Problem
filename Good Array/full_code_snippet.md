@@ -6,15 +6,19 @@ using namespace std;
 // user code comes here
 
 int main() {
-    int n;
-    cin >> n;
-    vector<int> arr(n);
-    for (int i = 0; i < n; i++) {
-        cin >> arr[i];
-    }
+    int t;
+    cin >> t;
+    while(t--){
+        int n;
+        cin >> n;
+        vector<int> arr(n);
+        for (int i = 0; i < n; i++) {
+            cin >> arr[i];
+        }
 
-    long long result = GoodSubarray(arr);
-    cout << result << endl;
+        long long result = GoodSubarray(arr);
+        cout << result << endl;
+    }
 
     return 0;
 }
@@ -28,14 +32,18 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int[] arr = new int[n];
-        for (int i = 0; i < n; i++) {
-            arr[i] = sc.nextInt();
-        }
+        int t = sc.nextInt();
 
-        long result = GoodSubarray(arr);
-        System.out.println(result);
+        while(t-- > 0){
+            int n = sc.nextInt();
+            int[] arr = new int[n];
+            for (int i = 0; i < n; i++) {
+                arr[i] = sc.nextInt();
+            }
+
+            long result = GoodSubarray(arr);
+            System.out.println(result);
+        }
 
         sc.close();
     }
@@ -49,17 +57,23 @@ public class Main {
 // user code comes here
 
 int main() {
-    int n;
-    scanf("%d", &n);
-    int* arr = (int*)malloc(n * sizeof(int));
-    for (int i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
+    int t;
+    scanf("%d", &t);
+
+    while(t--){
+        int n;
+        scanf("%d", &n);
+        int* arr = (int*)malloc(n * sizeof(int));
+        for (int i = 0; i < n; i++) {
+            scanf("%d", &arr[i]);
+        }
+
+        long long result = GoodSubarray(arr, n);
+        printf("%lld\n", result);
+
+        free(arr);
     }
 
-    long long result = GoodSubarray(arr, n);
-    printf("%lld\n", result);
-
-    free(arr);
     return 0;
 }
 
@@ -72,11 +86,16 @@ function main() {
     const input = fs.readFileSync(0, "utf-8").trim().split(/\s+/).map(Number);
 
     let idx = 0;
-    const n = input[idx++];
-    const arr = input.slice(idx, idx + n);
+    const t = input[idx++];
 
-    const result = GoodSubarray(arr);
-    console.log(result);
+    for(let test = 0; test < t; test++){
+        const n = input[idx++];
+        const arr = input.slice(idx, idx + n);
+        idx += n;
+
+        const result = GoodSubarray(arr);
+        console.log(result);
+    }
 }
 
 main();
@@ -90,11 +109,13 @@ from typing import List
 # user code comes here
 
 def main():
-    n = int(input())
-    arr = list(map(int, input().split()))
+    t = int(input())
+    for _ in range(t):
+        n = int(input())
+        arr = list(map(int, input().split()))
 
-    result = GoodSubarray(arr)
-    print(result)
+        result = GoodSubarray(arr)
+        print(result)
 
 if __name__ == "__main__":
     main()

@@ -6,15 +6,19 @@ using namespace std;
 // user code comes here
 
 int main() {
-    int n, k;
-    cin >> n >> k;
-    vector<int> arr(n);
-    for (int i = 0; i < n; i++) {
-        cin >> arr[i];
-    }
+    int t;
+    cin >> t;
+    while(t--){
+        int n, k;
+        cin >> n >> k;
+        vector<int> arr(n);
+        for (int i = 0; i < n; i++) {
+            cin >> arr[i];
+        }
 
-    int result = SlidingMaxXor(arr, k);
-    cout << result << endl;
+        int result = SlidingMaxXor(arr, k);
+        cout << result << endl;
+    }
 
     return 0;
 }
@@ -28,15 +32,19 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int k = sc.nextInt();
-        int[] arr = new int[n];
-        for (int i = 0; i < n; i++) {
-            arr[i] = sc.nextInt();
-        }
+        int t = sc.nextInt();
 
-        int result = SlidingMaxXor(arr, k);
-        System.out.println(result);
+        while(t-- > 0){
+            int n = sc.nextInt();
+            int k = sc.nextInt();
+            int[] arr = new int[n];
+            for (int i = 0; i < n; i++) {
+                arr[i] = sc.nextInt();
+            }
+
+            int result = SlidingMaxXor(arr, k);
+            System.out.println(result);
+        }
 
         sc.close();
     }
@@ -50,17 +58,23 @@ public class Main {
 // user code comes here
 
 int main() {
-    int n, k;
-    scanf("%d %d", &n, &k);
-    int* arr = (int*)malloc(n * sizeof(int));
-    for (int i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
+    int t;
+    scanf("%d", &t);
+
+    while(t--){
+        int n, k;
+        scanf("%d %d", &n, &k);
+        int* arr = (int*)malloc(n * sizeof(int));
+        for (int i = 0; i < n; i++) {
+            scanf("%d", &arr[i]);
+        }
+
+        int result = SlidingMaxXor(arr, n, k);
+        printf("%d\n", result);
+
+        free(arr);
     }
 
-    int result = SlidingMaxXor(arr, n, k);
-    printf("%d\n", result);
-
-    free(arr);
     return 0;
 }
 
@@ -73,16 +87,20 @@ function main() {
     const input = fs.readFileSync(0, "utf-8").trim().split(/\s+/).map(Number);
 
     let idx = 0;
-    const n = input[idx++];
-    const k = input[idx++];
-    const arr = input.slice(idx, idx + n);
+    const t = input[idx++];
 
-    const result = SlidingMaxXor(arr, k);
-    console.log(result);
+    for(let test = 0; test < t; test++){
+        const n = input[idx++];
+        const k = input[idx++];
+        const arr = input.slice(idx, idx + n);
+        idx += n;
+
+        const result = SlidingMaxXor(arr, k);
+        console.log(result);
+    }
 }
 
 main();
-
 
 
 ## PYTHON
@@ -93,11 +111,13 @@ from collections import deque
 # user code comes here
 
 def main():
-    n, k = map(int, input().split())
-    arr = list(map(int, input().split()))
+    t = int(input())
+    for _ in range(t):
+        n, k = map(int, input().split())
+        arr = list(map(int, input().split()))
 
-    result = SlidingMaxXor(arr, k)
-    print(result)
+        result = SlidingMaxXor(arr, k)
+        print(result)
 
 if __name__ == "__main__":
     main()

@@ -6,15 +6,19 @@ using namespace std;
 // user code comes here
 
 int main() {
-    int n;
-    cin >> n;
-    vector<int> arr(n);
-    for (int i = 0; i < n; i++) {
-        cin >> arr[i];
-    }
+    int t;
+    cin >> t;
+    while(t--){
+        int n;
+        cin >> n;
+        vector<int> arr(n);
+        for (int i = 0; i < n; i++) {
+            cin >> arr[i];
+        }
 
-    long long result = MaximumGCD(arr);
-    cout << result << endl;
+        long long result = MaximumGCD(arr);
+        cout << result << endl;
+    }
 
     return 0;
 }
@@ -28,17 +32,21 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int[] arr = new int[n];
-        for (int i = 0; i < n; i++) {
-            arr[i] = sc.nextInt();
+        int t = sc.nextInt();
+
+        while(t-- > 0){
+            int n = sc.nextInt();
+            int[] arr = new int[n];
+            for (int i = 0; i < n; i++) {
+                arr[i] = sc.nextInt();
+            }
+
+            System.out.println(MaximumGCD(arr));
         }
 
-        System.out.println(MaximumGCD(arr));
         sc.close();
     }
 }
-
 
 ## C
 
@@ -48,14 +56,20 @@ public class Main {
 // user code comes here
 
 int main() {
-    int n;
-    scanf("%d", &n);
-    int arr[n];
-    for (int i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
+    int t;
+    scanf("%d", &t);
+
+    while(t--){
+        int n;
+        scanf("%d", &n);
+        int arr[n];
+        for (int i = 0; i < n; i++) {
+            scanf("%d", &arr[i]);
+        }
+
+        printf("%d\n", MaximumGCD(arr, n));
     }
 
-    printf("%d\n", MaximumGCD(arr, n));
     return 0;
 }
 
@@ -65,12 +79,18 @@ int main() {
 
 function main() {
     const fs = require("fs");
-    const input = fs.readFileSync(0, "utf-8").trim().split(/\s+/);
+    const input = fs.readFileSync(0, "utf-8").trim().split(/\s+/).map(Number);
 
-    const n = parseInt(input[0]);
-    const arr = input.slice(1, 1 + n).map(Number);
+    let idx = 0;
+    const t = input[idx++];
 
-    console.log(MaximumGCD(arr));
+    for(let test = 0; test < t; test++){
+        const n = input[idx++];
+        const arr = input.slice(idx, idx + n);
+        idx += n;
+
+        console.log(MaximumGCD(arr));
+    }
 }
 
 main();
@@ -83,9 +103,11 @@ main();
 
 from typing import List
 def main():
-    n = int(input())
-    arr = list(map(int, input().split()))
-    print(MaximumGCD(arr))
+    t = int(input())
+    for _ in range(t):
+        n = int(input())
+        arr = list(map(int, input().split()))
+        print(MaximumGCD(arr))
 
 if __name__ == "__main__":
     main()
