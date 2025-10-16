@@ -2,17 +2,20 @@
 
 ### SOLUTION
 
-int findInsertionPoint(vector<int>& ids, int target) {
-    int left = 0, right = ids.size(); 
-    while (left < right) {
-        int mid = left + (right - left) / 2;
-        if (ids[mid] < target) {
-            left = mid + 1;
+int findSectionEnd(const vector<int>& ids, int target) {
+    int low = 0;
+    int high = ids.size(); 
+
+    while (low < high) {
+        int mid = low + (high - low) / 2;
+
+        if (ids[mid] <= target) {
+            low = mid + 1;
         } else {
-            right = mid;
+            high = mid;
         }
     }
-    return left;
+    return low;
 }
 
 
@@ -29,11 +32,11 @@ int findInsertionPoint(vector<int>& ids, int target) {
 ### SOLUTION
 
 public class Main {
-    public static int findInsertionPoint(int[] ids, int target) {
+    public static int findSectionEnd(int[] ids, int target) {
         int left = 0, right = ids.length;
         while (left < right) {
             int mid = left + (right - left) / 2;
-            if (ids[mid] < target) {
+            if (ids[mid] <= target) {
                 left = mid + 1;
             } else {
                 right = mid;
@@ -56,11 +59,11 @@ public class Main {
 
 ### SOLUTION
 
-int findInsertionPoint(int arr[], int n, int target) {
+int findSectionEnd(int arr[], int n, int target) {
     int left = 0, right = n;
     while (left < right) {
         int mid = left + (right - left) / 2;
-        if (arr[mid] < target) {
+        if (arr[mid] <= target) {
             left = mid + 1;
         } else {
             right = mid;
@@ -81,11 +84,11 @@ int findInsertionPoint(int arr[], int n, int target) {
 
 ### SOLUTION
 
-function findInsertionPoint(ids, target) {
+function findSectionEnd(ids, target) {
     let left = 0, right = ids.length;
     while (left < right) {
         let mid = Math.floor(left + (right - left) / 2);
-        if (ids[mid] < target) {
+        if (ids[mid] <= target) {
             left = mid + 1;
         } else {
             right = mid;
@@ -108,11 +111,11 @@ function findInsertionPoint(ids, target) {
 ### SOLUTION
 
 
-def findInsertionPoint(ids: List[int], target: int) -> int:
+def findSectionEnd(ids: List[int], target: int) -> int:
     left, right = 0, len(ids)
     while left < right:
         mid = left + (right - left) // 2
-        if ids[mid] < target:
+        if ids[mid] <= target:
             left = mid + 1
         else:
             right = mid

@@ -116,7 +116,6 @@ function findGrimoire(ids, target) {
 
 ### SOLUTION
 
-from typing import List
 
 def findGrimoire(ids: List[int], target: int) -> bool:
     left, right = 0, len(ids) - 1
