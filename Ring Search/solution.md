@@ -153,7 +153,6 @@ function findKeyOnRing(keys, target) {
 ### SOLUTION
 
 
-from typing import List
 
 def findKeyOnRing(keys: List[int], target: int) -> int:
     low, high = 0, len(keys) - 1

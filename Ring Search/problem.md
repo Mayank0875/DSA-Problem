@@ -55,7 +55,7 @@ The key numbered 3 is not on this key ring.
 ## Input Format
 
 - The first line contains an integers n and target , the number of keys on the ring and the number of the key to find.
-- The second line contains n space-separated integers representing the sorted grimoire IDs.
+- The second line contains n space-separated integers representing the key numbers after the ring was spun. All numbers are unique.
 
 ## Output Format
 
