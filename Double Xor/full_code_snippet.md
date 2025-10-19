@@ -18,6 +18,8 @@ int main() {
 
         int result = XorofXoR(arr, k);
         cout << result << endl;
+
+        // evaluation completed
     }
 
     return 0;
@@ -44,6 +46,8 @@ public class Main {
 
             int result = XorofXoR(arr, k);
             System.out.println(result);
+
+            // evaluation completed
         }
 
         sc.close();
@@ -73,6 +77,8 @@ int main() {
         printf("%d\n", result);
 
         free(arr);
+
+        // evaluation completed
     }
 
     return 0;
@@ -97,6 +103,8 @@ function main() {
 
         const result = XorofXoR(arr, k);
         console.log(result);
+
+        // evaluation completed
     }
 }
 
@@ -118,6 +126,8 @@ def main():
 
         result = XorofXoR(arr, k)
         print(result)
+
+        # evaluation completed
 
 if __name__ == "__main__":
     main()

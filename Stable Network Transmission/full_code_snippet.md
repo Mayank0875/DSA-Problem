@@ -18,6 +18,8 @@ int main() {
 
         int result = longestStableSegment(arr, k);
         cout << result << endl;
+
+        // evaluation completed
     }
 
     return 0;
@@ -44,6 +46,8 @@ public class Main {
 
             int result = longestStableSegment(arr, k);
             System.out.println(result);
+
+            // evaluation completed
         }
 
         sc.close();
@@ -73,6 +77,8 @@ int main() {
         printf("%d\n", result);
 
         free(arr);
+
+        // evaluation completed
     }
 
     return 0;
@@ -97,6 +103,8 @@ function main() {
 
         const result = longestStableSegment(arr, k);
         console.log(result);
+
+        // evaluation completed
     }
 }
 
@@ -116,6 +124,8 @@ def main():
 
         result = longestStableSegment(arr, k)
         print(result)
+
+        # evaluation completed
 
 if __name__ == "__main__":
     main()

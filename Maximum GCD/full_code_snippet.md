@@ -18,6 +18,8 @@ int main() {
 
         long long result = MaximumGCD(arr);
         cout << result << endl;
+
+        // evaluation completed
     }
 
     return 0;
@@ -42,6 +44,8 @@ public class Main {
             }
 
             System.out.println(MaximumGCD(arr));
+
+            // evaluation completed
         }
 
         sc.close();
@@ -68,6 +72,8 @@ int main() {
         }
 
         printf("%d\n", MaximumGCD(arr, n));
+
+        // evaluation completed
     }
 
     return 0;
@@ -90,6 +96,8 @@ function main() {
         idx += n;
 
         console.log(MaximumGCD(arr));
+
+        // evaluation completed
     }
 }
 
@@ -108,6 +116,8 @@ def main():
         n = int(input())
         arr = list(map(int, input().split()))
         print(MaximumGCD(arr))
+
+        # evaluation completed
 
 if __name__ == "__main__":
     main()

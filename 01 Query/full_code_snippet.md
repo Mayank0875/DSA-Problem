@@ -26,6 +26,8 @@ int main() {
 
         int result = ZeroOneQuery(arr, queries);
         cout << result << endl;
+
+        // evaluation completed
     }
     return 0;
 }
@@ -58,6 +60,8 @@ public class Main {
 
             int result = ZeroOneQuery(arr, queries);
             System.out.println(result);
+
+            // evaluation completed
         }
 
         sc.close();
@@ -94,6 +98,8 @@ int main() {
         printf("%lld\n", result);
 
         free(arr);
+
+        // evaluation completed
     }
 
     return 0;
@@ -123,6 +129,8 @@ function main() {
 
         const result = ZeroOneQuery(arr, queries);
         console.log(result);
+
+        // evaluation completed
     }
 }
 
@@ -131,7 +139,6 @@ main();
 
 ## PYTHON
 
-# user code comes here
 
 # user code comes here
 from typing import List
@@ -149,6 +156,8 @@ def main():
 
         result = ZeroOneQuery(arr, queries)
         print(result)
+
+        # evaluation completed
 
 if __name__ == "__main__":
     main()

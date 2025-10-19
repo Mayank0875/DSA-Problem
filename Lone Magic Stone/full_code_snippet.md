@@ -18,6 +18,8 @@ int main() {
 
         int result = findLoneStone(arr);
         cout << result << endl;
+
+        // evaluation completed
     }
 
     return 0;
@@ -42,6 +44,8 @@ public class Main {
 
             int result = findLoneStone(arr);
             System.out.println(result);
+
+            // evaluation completed
         }
         sc.close();
     }
@@ -67,6 +71,8 @@ int main() {
 
         int result = findLoneStone(arr, n);
         printf("%d\n", result);
+
+        // evaluation completed
     }
     return 0;
 }
@@ -89,6 +95,8 @@ function main() {
 
         const result = findLoneStone(arr);
         console.log(result);
+
+        // evaluation completed
     }
 }
 
@@ -107,6 +115,8 @@ def main():
         arr = list(map(int, input().split()))
         result = findLoneStone(arr)
         print(result)
+
+        # evaluation completed
 
 if __name__ == "__main__":
     main()

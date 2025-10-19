@@ -22,6 +22,8 @@ int main() {
         }else{
             cout << 0 << endl;
         }
+
+        // evaluation completed
     }
 
     return 0;
@@ -51,6 +53,8 @@ public class Main {
             } else {
                 System.out.println(0);
             }
+
+            // evaluation completed
         }
         sc.close();
     }
@@ -81,6 +85,8 @@ int main() {
         } else {
             printf("0\n");
         }
+
+        // evaluation completed
     }
     return 0;
 }
@@ -108,6 +114,8 @@ function main() {
         } else {
             console.log(0);
         }
+
+        // evaluation completed
     }
 }
 
@@ -129,6 +137,8 @@ def main():
             print(1)
         else:
             print(0)
+        
+        # evaluation completed
 
 if __name__ == "__main__":
     main()

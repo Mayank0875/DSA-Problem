@@ -18,6 +18,8 @@ int main() {
 
         long long result = GoodSubarray(arr);
         cout << result << endl;
+
+        // evaluation completed
     }
 
     return 0;
@@ -43,6 +45,8 @@ public class Main {
 
             long result = GoodSubarray(arr);
             System.out.println(result);
+
+            // evaluation completed
         }
 
         sc.close();
@@ -72,6 +76,8 @@ int main() {
         printf("%lld\n", result);
 
         free(arr);
+
+        // evaluation completed
     }
 
     return 0;
@@ -95,6 +101,8 @@ function main() {
 
         const result = GoodSubarray(arr);
         console.log(result);
+
+        // evaluation completed
     }
 }
 
@@ -116,6 +124,8 @@ def main():
 
         result = GoodSubarray(arr)
         print(result)
+
+        # evaluation completed
 
 if __name__ == "__main__":
     main()

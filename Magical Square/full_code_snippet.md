@@ -14,6 +14,8 @@ int main() {
 
         long long result = countPerfectSquaresInRange(arr, target);
         cout << result << endl;
+
+        // evaluation completed
     }
 
     return 0;
@@ -35,6 +37,8 @@ public class Main {
 
             long result = countPerfectSquaresInRange(l, r);
             System.out.println(result);
+
+            // evaluation completed
         }
         sc.close();
     }
@@ -55,6 +59,8 @@ int main() {
 
         long long result = countPerfectSquaresInRange(l, r);
         printf("%lld\n", result);
+
+        // evaluation completed
     }
     return 0;
 }
@@ -78,6 +84,8 @@ function main() {
 
         const result = countPerfectSquaresInRange(l, r);
         console.log(result);
+
+        // evaluation completed
     }
 }
 
@@ -94,6 +102,8 @@ def main():
         l, r = map(int, input().split())
         result = countPerfectSquaresInRange(l, r)
         print(result)
+
+        # evaluation completed
 
 if __name__ == "__main__":
     main()

@@ -18,6 +18,8 @@ int main() {
 
         int result = findInsertionPoint(arr, target);
         cout << result << endl;
+
+        // evaluation completed
     }
 
     return 0;
@@ -43,6 +45,8 @@ public class Main {
 
             int result = findInsertionPoint(arr, target);
             System.out.println(result);
+
+            // evaluation completed
         }
         sc.close();
     }
@@ -68,6 +72,8 @@ int main() {
 
         int result = findInsertionPoint(arr, n, target);
         printf("%d\n", result);
+
+        // evaluation completed
     }
     return 0;
 }
@@ -91,6 +97,8 @@ function main() {
 
         const result = findInsertionPoint(arr, target);
         console.log(result);
+
+        // evaluation completed
     }
 }
 
@@ -109,6 +117,8 @@ def main():
         arr = list(map(int, input().split()))
         result = findInsertionPoint(arr, target)
         print(result)
+
+        # evaluation completed
 
 if __name__ == "__main__":
     main()
