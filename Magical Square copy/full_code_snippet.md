@@ -9,10 +9,14 @@ int main() {
     int t;
     cin >> t;
     while(t--){
-        long long l, r;
-        cin >> l >> r;
+        int n; cin >> n;
+        vector<int> arr(n);
 
-        long long result = countPerfectSquaresInRange(arr, target);
+        for(int i = 0; i < n; ++i){
+            cin >> arr[i];
+        }
+
+        int result = findPeakElementIndex(arr);
         cout << result << endl;
 
         // evaluation completed
@@ -32,10 +36,13 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
         while (t-- > 0) {
-            long l = sc.nextLong();
-            long r = sc.nextLong();
+            int n = sc.nextInt();
+            int[] arr = new int[n];
+            for (int i = 0; i < n; i++) {
+                arr[i] = sc.nextInt();
+            }
 
-            long result = countPerfectSquaresInRange(l, r);
+            int result = findPeakElementIndex(arr);
             System.out.println(result);
 
             // evaluation completed
@@ -54,11 +61,15 @@ int main() {
     int t;
     scanf("%d", &t);
     while (t--) {
-        long long l, r;
-        scanf("%lld %lld", &l, &r);
+        int n;
+        scanf("%d", &n);
+        int arr[n];
+        for (int i = 0; i < n; i++) {
+            scanf("%d", &arr[i]);
+        }
 
-        long long result = countPerfectSquaresInRange(l, r);
-        printf("%lld\n", result);
+        int result = findPeakElementIndex(arr, n);
+        printf("%d\n", result);
 
         // evaluation completed
     }
@@ -77,10 +88,11 @@ function main() {
     const t = input[idx++];
 
     for (let test = 0; test < t; test++) {
-        const l = input[idx++];
-        const r = input[idx++];
+        const n = input[idx++];
+        const arr = [];
+        for (let i = 0; i < n; i++) arr.push(input[idx++]);
 
-        const result = countPerfectSquaresInRange(l, r);
+        const result = findPeakElementIndex(arr);
         console.log(result);
 
         // evaluation completed
@@ -89,16 +101,17 @@ function main() {
 
 main();
 
-## PYTHON
 
+## PYTHON
 
 # user code comes here
 
 def main():
     t = int(input())
     for _ in range(t):
-        l, r = map(int, input().split())
-        result = countPerfectSquaresInRange(l, r)
+        n = int(input())
+        arr = list(map(int, input().split()))
+        result = findPeakElementIndex(arr)
         print(result)
 
         # evaluation completed
