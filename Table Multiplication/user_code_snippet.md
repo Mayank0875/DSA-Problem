@@ -1,24 +1,24 @@
 ## CPP
 
-long long integerSquareRoot(long long x) {
+long long TableMultiplication(long long x) {
     // add your code here
 }
 
 ## JAVA
 
-public static long integerSquareRoot(long x) {
+public static long TableMultiplication(long x) {
     // add your code here
 }
 
 ## C
 
-long long integerSquareRoot(long long x) {
+long long TableMultiplication(long long x) {
     // add your code here
 }
 
 ## JAVASCRIPT
 
-function integerSquareRoot(x) {
+function TableMultiplication(x) {
     // add your code here
 }
 

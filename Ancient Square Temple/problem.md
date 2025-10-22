@@ -45,6 +45,9 @@ r * r ≤ x
 #### Output
 
 5
+
+#### Explanation
+5² = 25 ≤ 25, 6² = 36 > 25  
   
 
 ## Input Format  
@@ -53,7 +56,7 @@ r * r ≤ x
 
 ## Output Format  
 
-- A single integer — the integer square root of x.  
+- Return single integer — the integer square root of x.  
   
 
 ## Constraints  
