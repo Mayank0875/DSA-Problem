@@ -11,9 +11,9 @@ int main() {
     cin >> t;
 
     while (t--) {
-        long long x;
-        cin >> x;
-        cout << findMinimumBulbs(x) << "\n";
+        long long n, x, y;
+        cin >> n >> x >> y;
+        cout << MinimumTime(n, x, y) << "\n";
         
         // evaluation completed
     }
@@ -26,14 +26,18 @@ import java.util.*;
 
 public class Main {
     // User function to implement
-    
+
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
+
         while (t-- > 0) {
+            long n = sc.nextLong();
             long x = sc.nextLong();
-            System.out.println(findMinimumBulbs(x));
+            long y = sc.nextLong();
+            System.out.println(MinimumTime(n, x, y));
+            
             // evaluation completed
         }
         sc.close();
@@ -45,8 +49,6 @@ public class Main {
 #include <stdio.h>
 #include <stdbool.h>
 #include <stdlib.h>
-#include <math.h>
-
 
 // User function to implement
 
@@ -54,10 +56,12 @@ public class Main {
 int main() {
     int t;
     scanf("%d", &t);
+
     while (t--) {
-        long long x;
-        scanf("%lld", &x);
-        printf("%lld\n", findMinimumBulbs(x));
+        long long n, x, y;
+        scanf("%lld %lld %lld", &n, &x, &y);
+        printf("%lld\n", MinimumTime(n, x, y));
+        
         // evaluation completed
     }
     return 0;
@@ -75,8 +79,11 @@ function main() {
 
     const t = parseInt(input[idx++]);
     for (let tc = 0; tc < t; tc++) {
+        const n = BigInt(input[idx++]);
         const x = BigInt(input[idx++]);
-        console.log(findMinimumBulbs(x).toString());
+        const y = BigInt(input[idx++]);
+        console.log(MinimumTime(n, x, y).toString());
+        
         // evaluation completed
     }
 }
@@ -87,12 +94,12 @@ main();
 
 # User function to implement
 
-import math
 def main():
     t = int(input())
     for _ in range(t):
-        x = int(input())
-        print(findMinimumBulbs(x))
+        n, x, y = map(int, input().split())
+        print(MinimumTime(n, x, y))
+        
         # evaluation completed
 
 if __name__ == "__main__":
