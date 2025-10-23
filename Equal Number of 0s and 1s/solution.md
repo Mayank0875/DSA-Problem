@@ -37,33 +37,31 @@ int findMaxLength(vector<int>& nums) {
 
 ### SOLUTION
 
-import java.util.*;
 
-public class Main {
-    public static int findMaxLength(int[] nums) {
-        int n = nums.length;
-        int max_length = 0;
-        int count = 0;
-        Map<Integer, Integer> map = new HashMap<>();
-        map.put(0, -1);
+public static int findMaxLength(int[] nums) {
+    int n = nums.length;
+    int max_length = 0;
+    int count = 0;
+    Map<Integer, Integer> map = new HashMap<>();
+    map.put(0, -1);
 
-        for (int i = 0; i < n; ++i) {
-            if (nums[i] == 0) {
-                count--;
-            } else {
-                count++;
-            }
-
-            if (map.containsKey(count)) {
-                max_length = Math.max(max_length, i - map.get(count));
-            } else {
-                map.put(count, i);
-            }
+    for (int i = 0; i < n; ++i) {
+        if (nums[i] == 0) {
+            count--;
+        } else {
+            count++;
         }
 
-        return max_length;
+        if (map.containsKey(count)) {
+            max_length = Math.max(max_length, i - map.get(count));
+        } else {
+            map.put(count, i);
+        }
     }
+
+    return max_length;
 }
+
 
 
 ### METADATA

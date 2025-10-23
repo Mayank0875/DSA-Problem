@@ -46,37 +46,34 @@ int findShortestBalancingSegment(vector<int>& stream) {
 
 ### SOLUTION
 
-import java.util.*;
-
-public class Main {
-    public static int findShortestBalancingSegment(int[] stream) {
-        int n = stream.length;
-        int ones = 0, zeros = 0;
-        for (int bit : stream) {
-            if (bit == 0) zeros++;
-            else ones++;
-        }
-
-        int diff = ones - zeros;
-        if (diff == 0) return 0;
-
-        Map<Integer, Integer> freq = new HashMap<>();
-        freq.put(0, -1);
-
-        int res = n;
-        int curr = 0;
-
-        for (int i = 0; i < n; i++) {
-            curr += (stream[i] == 1 ? 1 : -1);
-            int fin = curr - diff;
-            if (freq.containsKey(fin)) {
-                res = Math.min(res, i - freq.get(fin));
-            }
-            freq.put(curr, i);
-        }
-        return res;
+public static int findShortestBalancingSegment(int[] stream) {
+    int n = stream.length;
+    int ones = 0, zeros = 0;
+    for (int bit : stream) {
+        if (bit == 0) zeros++;
+        else ones++;
     }
+
+    int diff = ones - zeros;
+    if (diff == 0) return 0;
+
+    Map<Integer, Integer> freq = new HashMap<>();
+    freq.put(0, -1);
+
+    int res = n;
+    int curr = 0;
+
+    for (int i = 0; i < n; i++) {
+        curr += (stream[i] == 1 ? 1 : -1);
+        int fin = curr - diff;
+        if (freq.containsKey(fin)) {
+            res = Math.min(res, i - freq.get(fin));
+        }
+        freq.put(curr, i);
+    }
+    return res;
 }
+
 
 
 ### METADATA

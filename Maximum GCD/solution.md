@@ -36,33 +36,32 @@ int MaximumGCD(vector<int> & arr){
 
 ### SOLUTION
 
-public class Main {
-    public static int MaximumGCD(int[] arr) {
-        int n = arr.length;
-        int[] prefix = new int[n + 1];
-        int[] suffix = new int[n + 2];
+public static int MaximumGCD(int[] arr) {
+    int n = arr.length;
+    int[] prefix = new int[n + 1];
+    int[] suffix = new int[n + 2];
 
-        for (int i = 0; i < n; i++) {
-            prefix[i + 1] = gcd(prefix[i], arr[i]);
-        }
-
-        for (int i = n - 1; i >= 0; i--) {
-            suffix[i + 1] = gcd(suffix[i + 2], arr[i]);
-        }
-
-        int res = 1;
-        for (int i = 1; i <= n; i++) {
-            res = Math.max(res, gcd(prefix[i - 1], suffix[i + 1]));
-        }
-
-        return res;
+    for (int i = 0; i < n; i++) {
+        prefix[i + 1] = gcd(prefix[i], arr[i]);
     }
 
-    private static int gcd(int a, int b) {
-        if (b == 0) return a;
-        return gcd(b, a % b);
+    for (int i = n - 1; i >= 0; i--) {
+        suffix[i + 1] = gcd(suffix[i + 2], arr[i]);
     }
+
+    int res = 1;
+    for (int i = 1; i <= n; i++) {
+        res = Math.max(res, gcd(prefix[i - 1], suffix[i + 1]));
+    }
+
+    return res;
 }
+
+private static int gcd(int a, int b) {
+    if (b == 0) return a;
+    return gcd(b, a % b);
+}
+
 
 
 ### METADATA

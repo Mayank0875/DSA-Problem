@@ -32,25 +32,24 @@ int minSubArrayLen(int target, vector<int>& nums) {
 
 ### SOLUTION
 
-public class Main {
-    public static int minSubArrayLen(int target, int[] nums) {
-        int n = nums.length;
-        if (n == 0) {
-            return 0;
-        }
-        int ans = Integer.MAX_VALUE;
-        int left = 0;
-        int sum = 0;
-        for (int i = 0; i < n; i++) {
-            sum += nums[i];
-            while (sum >= target) {
-                ans = Math.min(ans, i + 1 - left);
-                sum -= nums[left++];
-            }
-        }
-        return (ans != Integer.MAX_VALUE) ? ans : 0;
+public static int minSubArrayLen(int target, int[] nums) {
+    int n = nums.length;
+    if (n == 0) {
+        return 0;
     }
+    int ans = Integer.MAX_VALUE;
+    int left = 0;
+    int sum = 0;
+    for (int i = 0; i < n; i++) {
+        sum += nums[i];
+        while (sum >= target) {
+            ans = Math.min(ans, i + 1 - left);
+            sum -= nums[left++];
+        }
+    }
+    return (ans != Integer.MAX_VALUE) ? ans : 0;
 }
+
 
 ### METADATA
 

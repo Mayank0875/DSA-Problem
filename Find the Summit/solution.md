@@ -29,22 +29,22 @@ int findPeakElementIndex(vector<int>& arr) {
 
 ### SOLUTION
 
-public class Main {
-    public static int findPeakElementIndex(int[] arr) {
-        int left = 0;
-        int right = arr.length - 1;
 
-        while (left < right) {
-            int mid = left + (right - left) / 2;
-            if (arr[mid] < arr[mid + 1]) {
-                left = mid + 1;
-            } else {
-                right = mid;
-            }
+public static int findPeakElementIndex(int[] arr) {
+    int left = 0;
+    int right = arr.length - 1;
+
+    while (left < right) {
+        int mid = left + (right - left) / 2;
+        if (arr[mid] < arr[mid + 1]) {
+            left = mid + 1;
+        } else {
+            right = mid;
         }
-        return left;
     }
+    return left;
 }
+
 
 
 ### METADATA

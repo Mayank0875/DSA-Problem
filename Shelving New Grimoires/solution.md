@@ -28,19 +28,17 @@ int findInsertionPoint(vector<int>& ids, int target) {
 
 ### SOLUTION
 
-public class Main {
-    public static int findInsertionPoint(int[] ids, int target) {
-        int left = 0, right = ids.length;
-        while (left < right) {
-            int mid = left + (right - left) / 2;
-            if (ids[mid] < target) {
-                left = mid + 1;
-            } else {
-                right = mid;
-            }
+public static int findInsertionPoint(int[] ids, int target) {
+    int left = 0, right = ids.length;
+    while (left < right) {
+        int mid = left + (right - left) / 2;
+        if (ids[mid] < target) {
+            left = mid + 1;
+        } else {
+            right = mid;
         }
-        return left;
     }
+    return left;
 }
 
 

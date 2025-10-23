@@ -37,29 +37,28 @@ int longestStableSegment(vector<int>& stream, int k) {
 
 ### SOLUTION
 
-public class Main {
-    public static int longestStableSegment(int[] stream, int k) {
-        int n = stream.length;
-        int left = 0;
-        int zero_count = 0;
-        int max_len = 0;
+public static int longestStableSegment(int[] stream, int k) {
+    int n = stream.length;
+    int left = 0;
+    int zero_count = 0;
+    int max_len = 0;
 
-        for (int right = 0; right < n; ++right) {
-            if (stream[right] == 0) {
-                zero_count++;
-            }
-            while (zero_count > k) {
-                if (stream[left] == 0) {
-                    zero_count--;
-                }
-                left++;
-            }
-            max_len = Math.max(max_len, right - left + 1);
+    for (int right = 0; right < n; ++right) {
+        if (stream[right] == 0) {
+            zero_count++;
         }
-
-        return max_len;
+        while (zero_count > k) {
+            if (stream[left] == 0) {
+                zero_count--;
+            }
+            left++;
+        }
+        max_len = Math.max(max_len, right - left + 1);
     }
+
+    return max_len;
 }
+
 
 ### METADATA
 

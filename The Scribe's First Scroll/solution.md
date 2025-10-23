@@ -36,26 +36,24 @@ int findFirstScroll(vector<int>& ids, int target) {
 
 ### SOLUTION
 
-public class Main {
-    public static int findFirstScroll(int[] ids, int target) {
-        int left = 0, right = ids.length;
-        int ans = -1;
+public static int findFirstScroll(int[] ids, int target) {
+    int left = 0, right = ids.length;
+    int ans = -1;
 
-        while (left < right) {
-            int mid = left + (right - left) / 2;
-            if (ids[mid] < target) {
-                left = mid + 1;
-            } else {
-                right = mid;
-            }
+    while (left < right) {
+        int mid = left + (right - left) / 2;
+        if (ids[mid] < target) {
+            left = mid + 1;
+        } else {
+            right = mid;
         }
-
-        if (left < ids.length && ids[left] == target) {
-            ans = left;
-        }
-
-        return ans;
     }
+
+    if (left < ids.length && ids[left] == target) {
+        ans = left;
+    }
+
+    return ans;
 }
 
 

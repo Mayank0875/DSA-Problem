@@ -57,46 +57,45 @@ long long AncientScrolls(int n, int k, vector<int> &x) {
 
 ### SOLUTION
 
-public class Main {
-    static boolean check(long maxSum, int n, int k, List<Integer> x) {
-        int requiredScribes = 1;
-        long currentSum = 0;
-        for (int pages : x) {
-            if (pages > maxSum) return false;
-            if (currentSum + pages <= maxSum) {
-                currentSum += pages;
-            } else {
-                requiredScribes++;
-                currentSum = pages;
-            }
+static boolean check(long maxSum, int n, int k, List<Integer> x) {
+    int requiredScribes = 1;
+    long currentSum = 0;
+    for (int pages : x) {
+        if (pages > maxSum) return false;
+        if (currentSum + pages <= maxSum) {
+            currentSum += pages;
+        } else {
+            requiredScribes++;
+            currentSum = pages;
         }
-        return requiredScribes <= k;
     }
-
-    public static long AncientScrolls(int n, int k, List<Integer> x) {
-        long totalSum = 0;
-        int maxSingle = 0;
-        for (int pages : x) {
-            totalSum += pages;
-            maxSingle = Math.max(maxSingle, pages);
-        }
-
-        long low = maxSingle;
-        long high = totalSum;
-        long ans = high;
-
-        while (low <= high) {
-            long mid = low + (high - low) / 2;
-            if (check(mid, n, k, x)) {
-                ans = mid;
-                high = mid - 1;
-            } else {
-                low = mid + 1;
-            }
-        }
-        return ans;
-    }
+    return requiredScribes <= k;
 }
+
+public static long AncientScrolls(int n, int k, List<Integer> x) {
+    long totalSum = 0;
+    int maxSingle = 0;
+    for (int pages : x) {
+        totalSum += pages;
+        maxSingle = Math.max(maxSingle, pages);
+    }
+
+    long low = maxSingle;
+    long high = totalSum;
+    long ans = high;
+
+    while (low <= high) {
+        long mid = low + (high - low) / 2;
+        if (check(mid, n, k, x)) {
+            ans = mid;
+            high = mid - 1;
+        } else {
+            low = mid + 1;
+        }
+    }
+    return ans;
+}
+
 
 ### METADATA
 
@@ -110,8 +109,6 @@ public class Main {
 
 ### SOLUTION
 
-
-#include <stdbool.h>
 
 bool check(long long max_sum, int n, int k, int x[]) {
     int required_scribes = 1;

@@ -52,47 +52,45 @@ long long MinimumTime(int n, long long t, vector<int>& k) {
 
 ### SOLUTION
 
-public class Main {
-    public static long MinimumTime(int n, long t, List<Integer> k) {
-        long low = 1;
-        long high = (long) 1e18;
-        long ans = high;
+public static long MinimumTime(int n, long t, List<Integer> k) {
+    long low = 1;
+    long high = (long) 1e18;
+    long ans = high;
 
-        while (low <= high) {
-            long mid = low + (high - low) / 2;
-            long productsMade = 0;
-            boolean overflow = false;
+    while (low <= high) {
+        long mid = low + (high - low) / 2;
+        long productsMade = 0;
+        boolean overflow = false;
 
-            for (int timePerProduct : k) {
-                if (timePerProduct == 0) {
-                    productsMade = t;
-                    overflow = true;
-                    break;
-                }
-
-                long currentMachineProducts = mid / timePerProduct;
-                if (productsMade > t - currentMachineProducts) {
-                    overflow = true;
-                    break;
-                }
-
-                productsMade += currentMachineProducts;
-                if (productsMade >= t) {
-                    overflow = true;
-                    break;
-                }
+        for (int timePerProduct : k) {
+            if (timePerProduct == 0) {
+                productsMade = t;
+                overflow = true;
+                break;
             }
 
-            if (overflow || productsMade >= t) {
-                ans = mid;
-                high = mid - 1;
-            } else {
-                low = mid + 1;
+            long currentMachineProducts = mid / timePerProduct;
+            if (productsMade > t - currentMachineProducts) {
+                overflow = true;
+                break;
+            }
+
+            productsMade += currentMachineProducts;
+            if (productsMade >= t) {
+                overflow = true;
+                break;
             }
         }
 
-        return ans;
+        if (overflow || productsMade >= t) {
+            ans = mid;
+            high = mid - 1;
+        } else {
+            low = mid + 1;
+        }
     }
+
+    return ans;
 }
 
 ### METADATA

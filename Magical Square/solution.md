@@ -37,30 +37,30 @@ long long countPerfectSquaresInRange(long long L, long long R) {
 
 ### SOLUTION
 
-public class Main {
-    public static long countUpTo(long n) {
-        if (n < 1) {
-            return 0;
-        }
-        long low = 1, high = 2000000000L;
-        long ans = 0;
 
-        while (low <= high) {
-            long mid = low + (high - low) / 2;
-            if (mid > n / mid) {
-                high = mid - 1;
-            } else {
-                ans = mid;
-                low = mid + 1;
-            }
-        }
-        return ans;
+public static long countUpTo(long n) {
+    if (n < 1) {
+        return 0;
     }
+    long low = 1, high = 2000000000L;
+    long ans = 0;
 
-    public static long countPerfectSquaresInRange(long L, long R) {
-        return countUpTo(R) - countUpTo(L - 1);
+    while (low <= high) {
+        long mid = low + (high - low) / 2;
+        if (mid > n / mid) {
+            high = mid - 1;
+        } else {
+            ans = mid;
+            low = mid + 1;
+        }
     }
+    return ans;
 }
+
+public static long countPerfectSquaresInRange(long L, long R) {
+    return countUpTo(R) - countUpTo(L - 1);
+}
+
 
 
 ### METADATA

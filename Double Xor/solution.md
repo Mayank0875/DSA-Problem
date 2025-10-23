@@ -33,23 +33,21 @@ int XorofXoR(vector<int> &arr, int k){
 
 ### SOLUTION
 
-public class Main {
-    public static int XorofXoR(int[] arr, int k) {
-        int n = arr.length;
-        int res = 0, l = 0, cur = 0;
+public static int XorofXoR(int[] arr, int k) {
+    int n = arr.length;
+    int res = 0, l = 0, cur = 0;
 
-        for (int r = 0; r < n; ++r) {
-            cur ^= arr[r];
+    for (int r = 0; r < n; ++r) {
+        cur ^= arr[r];
 
-            if (r - l + 1 == k) {
-                res ^= cur;
-                cur ^= arr[l];
-                l++;
-            }
+        if (r - l + 1 == k) {
+            res ^= cur;
+            cur ^= arr[l];
+            l++;
         }
-
-        return res;
     }
+
+    return res;
 }
 
 

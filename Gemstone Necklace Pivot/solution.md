@@ -37,28 +37,27 @@ int findSmallestGem(vector<int>& gems) {
 
 ### SOLUTION
 
-public class Main {
-    public static int findSmallestGem(int[] gems) {
-        int low = 0, high = gems.length - 1;
+public static int findSmallestGem(int[] gems) {
+    int low = 0, high = gems.length - 1;
 
-        if (gems[low] <= gems[high]) {
-            return gems[low];
-        }
-
-        while (low < high) {
-            int mid = low + (high - low) / 2;
-            if (mid > 0 && gems[mid] < gems[mid - 1]) {
-                return gems[mid];
-            }
-            if (gems[mid] >= gems[low]) {
-                low = mid + 1;
-            } else {
-                high = mid;
-            }
-        }
+    if (gems[low] <= gems[high]) {
         return gems[low];
     }
+
+    while (low < high) {
+        int mid = low + (high - low) / 2;
+        if (mid > 0 && gems[mid] < gems[mid - 1]) {
+            return gems[mid];
+        }
+        if (gems[mid] >= gems[low]) {
+            low = mid + 1;
+        } else {
+            high = mid;
+        }
+    }
+    return gems[low];
 }
+
 
 ### METADATA
 

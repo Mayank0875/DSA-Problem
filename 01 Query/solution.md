@@ -34,28 +34,28 @@ int ZeroOneQuery(vector<int>& arr, vector<vector<int>>& queries) {
 
 ### SOLUTION
 
-public class Main {
-    public static int ZeroOneQuery(int[] arr, int[][] queries) {
-        int n = arr.length;
-        int[] prefix = new int[n + 1];
 
-        for (int i = 0; i < n; i++) {
-            prefix[i + 1] = prefix[i] + arr[i];
-        }
+public static int ZeroOneQuery(int[] arr, int[][] queries) {
+    int n = arr.length;
+    int[] prefix = new int[n + 1];
 
-        int result = 0;
-
-        for (int[] q : queries) {
-            int l = q[0], r = q[1], val = q[2];
-            int ones = prefix[r] - prefix[l - 1];
-            int zeros = (r - l + 1) - ones;
-
-            result ^= (val == 1 ? ones : zeros);
-        }
-
-        return result;
+    for (int i = 0; i < n; i++) {
+        prefix[i + 1] = prefix[i] + arr[i];
     }
+
+    int result = 0;
+
+    for (int[] q : queries) {
+        int l = q[0], r = q[1], val = q[2];
+        int ones = prefix[r] - prefix[l - 1];
+        int zeros = (r - l + 1) - ones;
+
+        result ^= (val == 1 ? ones : zeros);
+    }
+
+    return result;
 }
+
 
 
 ### METADATA

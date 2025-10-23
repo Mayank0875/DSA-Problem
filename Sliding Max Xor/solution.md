@@ -39,28 +39,27 @@ int SlidingMaxXor(vector<int> &arr, int k){
 ### SOLUTION
 
 
-public class Main {
-    public static int SlidingMaxXor(int[] arr, int k) {
-        int n = arr.length;
-        int res = 0;
-        Deque<Integer> dq = new ArrayDeque<>();
+public static int SlidingMaxXor(int[] arr, int k) {
+    int n = arr.length;
+    int res = 0;
+    Deque<Integer> dq = new ArrayDeque<>();
 
-        for(int i = 0; i < n; i++){
-            while(!dq.isEmpty() && arr[dq.peekLast()] <= arr[i])
-                dq.pollLast();
-            dq.addLast(i);
+    for(int i = 0; i < n; i++){
+        while(!dq.isEmpty() && arr[dq.peekLast()] <= arr[i])
+            dq.pollLast();
+        dq.addLast(i);
 
-            if(i >= k - 1){
-                res ^= arr[dq.peekFirst()];
+        if(i >= k - 1){
+            res ^= arr[dq.peekFirst()];
 
-                if(dq.peekFirst() == i - k + 1)
-                    dq.pollFirst();
-            }
+            if(dq.peekFirst() == i - k + 1)
+                dq.pollFirst();
         }
-
-        return res;
     }
+
+    return res;
 }
+
 
 
 ### METADATA

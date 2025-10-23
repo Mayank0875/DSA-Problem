@@ -57,8 +57,6 @@ public static long integerSquareRoot(long x) {
 
 ### SOLUTION
 
-#include <stdbool.h>
-#include <stdlib.h>
 
 bool canSqrt(long long x, long long mid) {
     return mid * mid <= x;
