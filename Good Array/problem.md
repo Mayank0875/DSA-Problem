@@ -16,6 +16,8 @@ You are given an array — A₁, A₂, A₃, …, Aₙ, consisting of integers f
 A subarray A[L ... R] is called good if the sum of its elements is equal to the length of the subarray.
 Your task is to calculate the number of good subarrays in the given array.
 
+Note: The array is 1-based indexed, i.e., the first element is A₁.
+
 ## Examples
 
 ### 1
