@@ -31,23 +31,21 @@ long long GoodSubarray(vector<int> &arr){
 
 ### SOLUTION
 
-public class Main {
-    public static long GoodSubarray(int[] arr) {
-        int n = arr.length;
-        Map<Integer, Integer> freq = new HashMap<>();
-        freq.put(1, 1);  
+public static long GoodSubarray(int[] arr) {
+    int n = arr.length;
+    Map<Integer, Integer> freq = new HashMap<>();
+    freq.put(1, 1);  
 
-        long res = 0;
-        int cur = 0;
+    long res = 0;
+    int cur = 0;
 
-        for (int i = 0; i < n; i++) {
-            cur += arr[i];
-            res += freq.getOrDefault(cur - i, 0);
-            freq.put(cur - i, freq.getOrDefault(cur - i, 0) + 1);
-        }
-
-        return res;
+    for (int i = 0; i < n; i++) {
+        cur += arr[i];
+        res += freq.getOrDefault(cur - i, 0);
+        freq.put(cur - i, freq.getOrDefault(cur - i, 0) + 1);
     }
+
+    return res;
 }
 
 
@@ -66,15 +64,17 @@ public class Main {
 long long GoodSubarray(int* arr, int n) {
     long long res = 0;
     int cur = 0;
+    int shift = n * 10;
+    int size = 2 * shift + 5;
 
-    int size = 2 * n + 5;
     long long* freq = (long long*)calloc(size, sizeof(long long));
-    freq[1] = 1;  
+    freq[shift + 1] = 1;  
 
     for (int i = 0; i < n; i++) {
         cur += arr[i];
-        res += freq[cur - i + n];  // shift by n to avoid negative index
-        freq[cur - i + n]++;
+        int key = cur - i + shift;
+        res += freq[key];
+        freq[key]++;
     }
 
     free(freq);
