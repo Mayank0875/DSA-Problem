@@ -10,7 +10,6 @@ int XorofXoR(vector<int> &arr, int k){
         cur ^= arr[r];
 
         if(r - l + 1 == k){
-                    cout << cur << endl;
             res ^= cur;
             cur ^= arr[l];
             l++;
