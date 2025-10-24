@@ -20,7 +20,7 @@ Given an array of positive integers nums and a positive integer target, find the
 
 #### Input
 
-7 7
+6 7
 [2, 1, 5, 2, 3, 2]
 
 #### Output
@@ -35,7 +35,7 @@ The subarray [5, 2] has the minimal length of 2 and its sum is 7, which is equal
 
 #### Input
 
-7 8
+6 8
 [2, 1, 5, 2, 3, 2]
 
 #### Output
@@ -58,7 +58,7 @@ The subarray [5, 2, 3] has the minimal length of 3 and its sum is 10, which is g
 ## Constraints
 
 - 1 ≤ n ≤ 10^5
-- 1 ≤ target ≤ 10^18
+- 1 ≤ target ≤ 10^14
 - 0 ≤ arr[i] ≤ 10^9
 
 ## Time Limit

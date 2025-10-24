@@ -99,35 +99,37 @@ int findShortestBalancingSegment(int* stream, int n) {
     if (diff == 0)
         return 0;
 
-    int size = 4 * n + 10;      // large enough for shifts
+    int shift = n;                  
+    int size = 2 * n + 5;
     int *freq = (int*)malloc(size * sizeof(int));
-    for (int i = 0; i < size; i++) freq[i] = INT_MIN;  // store index; -inf = not seen yet
+    for (int i = 0; i < size; i++)
+        freq[i] = INT_MIN;
 
-    int shift = 2 * n;          // to avoid negative indices
-    freq[shift + 0] = -1;       // freq[0] = -1
+    freq[shift + 0] = -1;             
 
-    int res = n;
     int curr = 0;
+    int res = n;
 
     for (int i = 0; i < n; i++) {
         curr += (stream[i] == 1 ? 1 : -1);
 
         int fin = curr - diff;
+        int idx_fin = fin + shift;
 
-        // check if previously seen prefix = fin
-        if (freq[shift + fin] != INT_MIN) {
-            int len = i - freq[shift + fin];
+        if (idx_fin >= 0 && idx_fin < size && freq[idx_fin] != INT_MIN) {
+            int len = i - freq[idx_fin];
             if (len < res) res = len;
         }
 
-        // store first occurrence of curr
-        if (freq[shift + curr] == INT_MIN)
-            freq[shift + curr] = i;
+        int idx_curr = curr + shift;
+        if (idx_curr >= 0 && idx_curr < size)
+            freq[idx_curr] = i;
     }
 
     free(freq);
     return res;
 }
+
 
 ### METADATA
 

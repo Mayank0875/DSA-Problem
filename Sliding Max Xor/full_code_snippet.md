@@ -115,6 +115,7 @@ main();
 
 from typing import List
 from collections import deque
+import collections
 
 # user code comes here
 

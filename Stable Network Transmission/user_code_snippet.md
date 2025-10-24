@@ -1,29 +1,29 @@
 ## CPP
 
-int longestStableSegment(vector<int> &arr, int k){
+int longestStableSegment(vector<int> &stream, int k){
     // add your code here    
 }
 
 ## JAVA
 
-public static int longestStableSegment(int[] arr, int k) {
+public static int longestStableSegment(int[] stream, int k) {
     // add your code here
 }
 
 ## C
 
-int longestStableSegment(int* arr, int n, int k) {
+int longestStableSegment(int* stream, int n, int k) {
     // add your code here
 }
 
 ## JAVASCRIPT
 
-function longestStableSegment(arr, k) {
+function longestStableSegment(stream, k) {
     // add your code here
 }
 
 ## PYTHON
 
 
-def longestStableSegment(arr: List[int], k: int) -> int:
+def longestStableSegment(stream : List[int], k : int) -> int:
     # add your code here

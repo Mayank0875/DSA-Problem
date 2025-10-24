@@ -55,7 +55,7 @@ Given a binary array nums, return the length of the longest contiguous subarray 
 
 ## Output Format
 
-- A single integer representing the length of the longest contiguous subarray with an equal number of 0s and 1s.
+- Return single integer representing the length of the longest contiguous subarray with an equal number of 0s and 1s.
 
 
 ## Constraints

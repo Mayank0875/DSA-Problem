@@ -29,9 +29,10 @@ int main() {
 
 import java.util.*;
 
-// user code comes here
-
 public class Main {
+
+    // user code comes here
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
@@ -56,6 +57,8 @@ public class Main {
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <limits.h>
+
 
 // user code comes here
 

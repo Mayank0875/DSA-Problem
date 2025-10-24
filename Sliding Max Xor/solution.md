@@ -142,7 +142,7 @@ function SlidingMaxXor(arr, k) {
 
 
 
-def SlidingMaxXor(arr, k):
+def SlidingMaxXor(arr: List[int], k: int) -> int:
     dq = deque()
     res = 0
 
