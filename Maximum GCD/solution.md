@@ -2,6 +2,11 @@
 
 ### SOLUTION
 
+int gcd(int a, int b) {
+    if (b == 0) return a;
+    return gcd(b, a % b);
+}
+
 int MaximumGCD(vector<int> & arr){
     int n = arr.size();
     vector<int> prefix(n + 1, 0), suffix(n + 2, 0);
@@ -153,7 +158,10 @@ function MaximumGCD(arr) {
 
 ### SOLUTION
 
-
+def gcd(a, b):
+    if b == 0:
+        return a
+    return gcd(b, a % b)
 
 def MaximumGCD(arr: List[int]) -> int:
     n = len(arr)

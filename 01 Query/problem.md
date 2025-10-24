@@ -13,7 +13,7 @@ Easy
 ## Description
 
 You are given a binary array A of size N (each element is either 0 or 1).
-You are also given Q queries. Each query consists of three integers: L, R, and Val, where:
+You are also given an array of Q queries. Each query consists of three integers: L, R, and Val, where:
 	•	L and R represent the range of the query (1-indexed, inclusive).
 	•	Val is either 0 or 1.
 

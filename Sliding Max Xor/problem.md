@@ -8,7 +8,7 @@ sliding-max-xor
 
 ## Difficulty
 
-Easy
+Medium
 
 ## Description
 

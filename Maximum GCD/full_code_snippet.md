@@ -107,9 +107,10 @@ main();
 
 ## PYTHON
 
+from typing import List
+
 # user code comes here
 
-from typing import List
 def main():
     t = int(input())
     for _ in range(t):

@@ -57,7 +57,7 @@ We can replace an integer with itself.
 
 ## Output Format
 
-- Return an integer representing the greatest common divisor.
+- Return an integer representing the greatest common divisor after making your move.
 
 ## Constraints
 
