@@ -3,7 +3,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// User function to implement
+// user code comes here
 
 
 int main() {
@@ -25,7 +25,7 @@ int main() {
 import java.util.*;
 
 public class Main {
-    // User function to implement
+    // user code comes here
     
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -44,7 +44,7 @@ public class Main {
 #include <stdio.h>
 #include <string.h>
 
-// User function to implement
+// user code comes here
 
 int main() {
     int t;
@@ -60,7 +60,7 @@ int main() {
 
 ## JAVASCRIPT
 
-// User function to implement
+// user code comes here
 
 function main() {
     const fs = require("fs");
@@ -79,7 +79,7 @@ main();
 
 ## PYTHON
 
-# User function to implement
+# user code comes here
 
 def main():
     t = int(input())
