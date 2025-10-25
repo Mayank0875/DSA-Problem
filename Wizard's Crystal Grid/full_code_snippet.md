@@ -85,9 +85,12 @@ main();
 
 ## PYTHON
 
+import math
+from typing import List
+import collections
+
 # User function to implement
 
-import math
 def main():
     t = int(input())
     for _ in range(t):

@@ -126,6 +126,7 @@ main();
 # user code comes here
 
 from typing import List
+import collections
 
 def main():
     t = int(input())

@@ -82,6 +82,7 @@ function main() {
 main();
 
 ## PYTHON
+import collections
 
 # User function to implement
 
