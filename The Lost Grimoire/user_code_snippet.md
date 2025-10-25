@@ -24,5 +24,5 @@ function findGrimoire(ids, target) {
 
 ## PYTHON
 
-def findGrimoire(ids: list, target: int) -> bool:
+def findGrimoire(ids: List[int], target: int) -> bool:
     # add your code here

@@ -14,7 +14,7 @@ Easy
 
 The librarian needs to catalog sections of grimoires that share the same identification number. 
 To find the end of the section for a given ID, they must locate the first grimoire on the shelf with an ID that is strictly greater than the target ID. This position marks the boundary where the next section begins. If no grimoire has a greater ID, the section extends to the end of the shelf.
-Your task is to write a function that helps the librarian by quickly finding this boundary index.
+Your task is to write a function that helps the librarian by quickly finding this boundary index. The grimoire IDs are sorted in non-decreasing order.
 
 
 You must write an algorithm with O(log n) runtime complexity
@@ -55,7 +55,7 @@ There is no grimoire with ID 6. The first grimoire with an ID strictly greater t
 
 - The first line contains an integers n and target , the number of grimoires and the ID of the grimoire to find. 
 - The second line contains n space-separated integers representing the sorted grimoire IDs.
-- You will be given the array as an input to your function
+
 
 ## Output Format
 

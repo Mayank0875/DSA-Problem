@@ -24,5 +24,5 @@ function findSectionEnd(ids, target) {
 
 ## PYTHON
 
-def findSectionEnd(ids: list, target: int) -> int:
+def findSectionEnd(ids: List[int], target: int) -> int:
     # add your code here

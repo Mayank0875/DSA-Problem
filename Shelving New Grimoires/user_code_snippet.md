@@ -24,5 +24,5 @@ function findInsertionPoint(ids, target) {
 
 ## PYTHON
 
-def findInsertionPoint(ids: list, target: int) -> int:
+def findInsertionPoint(ids: List[int], target: int) -> int:
     # add your code here

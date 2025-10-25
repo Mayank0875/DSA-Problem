@@ -17,8 +17,6 @@ One day, you are asked by the High Priest to rebuild the outer courtyard of the 
 You are given x, the total number of tiles available.
 Your task is to determine the maximum possible side length of the square courtyard that can be built using those tiles.
 
-Formally, find the largest integer r such that:
-r * r ≤ x
 
 ## Examples
 
@@ -52,11 +50,11 @@ r * r ≤ x
 
 ## Input Format  
 
-- A single integer x  
+- A single integer x — the total number of tiles available.
 
 ## Output Format  
 
-- Return single integer — the integer square root of x.  
+- Return single integer — the maximum possible side length r of the square courtyard that can be built using those tiles.
   
 
 ## Constraints  

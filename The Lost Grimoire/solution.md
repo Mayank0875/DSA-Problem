@@ -60,13 +60,13 @@ public static boolean findGrimoire(int[] ids, int target) {
 
 ### SOLUTION
 
-bool findGrimoire(int arr[], int n, int target) {
+bool findGrimoire(const int* ids, int n, int target) {
     int left = 0, right = n - 1;
     while (left <= right) {
         int mid = left + (right - left) / 2;
-        if (arr[mid] == target) {
+        if (ids[mid] == target) {
             return true;
-        } else if (arr[mid] < target) {
+        } else if (ids[mid] < target) {
             left = mid + 1;
         } else {
             right = mid - 1;

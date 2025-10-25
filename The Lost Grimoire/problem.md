@@ -13,7 +13,8 @@ Easy
 ## Description
 
 An ancient library contains countless magical grimoires, all neatly arranged on a single, vast shelf and sorted by a unique identification number. 
-A librarian needs to quickly check if a specific grimoire is on this shelf without searching one by one. Your task is to create a function that takes the sorted list of grimoire IDs and a target ID as input. The function should efficiently determine whether the grimoire is present and return a simple confirmation.
+A librarian needs to quickly check if a specific grimoire is on this shelf without searching one by one. Your task is to create a function that takes the sorted list of grimoire IDs and a target ID as input. 
+The function should efficiently determine whether the grimoire is present and return a simple confirmation. The grimoire IDs are sorted in non-decreasing order.
 
 You must write an algorithm with O(log n) runtime complexity
 
@@ -54,11 +55,10 @@ The target ID 6 is not found in the list.
 
 - The first line contains an integers n and target , the number of grimoires and the ID of the grimoire to find. 
 - The second line contains n space-separated integers representing the sorted grimoire IDs.
-- You will be given the array as an input to your function
 
 ## Output Format
 
-- Return 1 if the grimoire is found, and 0 otherwise.
+- Return True if the grimoire is found, and False otherwise.
 
 ## Constraints
 

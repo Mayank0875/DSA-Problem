@@ -123,10 +123,10 @@ main();
 
 ## PYTHON
 
-# user code comes here
-
 from typing import List
 import collections
+
+# user code comes here
 
 def main():
     t = int(input())

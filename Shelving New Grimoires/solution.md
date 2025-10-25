@@ -54,11 +54,11 @@ public static int findInsertionPoint(int[] ids, int target) {
 
 ### SOLUTION
 
-int findInsertionPoint(int arr[], int n, int target) {
+int findInsertionPoint(const int* ids, int n, int target) {
     int left = 0, right = n;
     while (left < right) {
         int mid = left + (right - left) / 2;
-        if (arr[mid] < target) {
+        if (ids[mid] < target) {
             left = mid + 1;
         } else {
             right = mid;
