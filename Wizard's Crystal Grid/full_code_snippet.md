@@ -3,7 +3,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// User function to implement
+// user code comes here
 
 
 int main() {
@@ -25,7 +25,7 @@ int main() {
 import java.util.*;
 
 public class Main {
-    // User function to implement
+    // user code comes here
     
 
     public static void main(String[] args) {
@@ -48,7 +48,7 @@ public class Main {
 #include <math.h>
 
 
-// User function to implement
+// user code comes here
 
 
 int main() {
@@ -65,7 +65,7 @@ int main() {
 
 ## JAVASCRIPT
 
-// User function to implement
+// user code comes here
 
 
 function main() {
@@ -89,7 +89,7 @@ import math
 from typing import List
 import collections
 
-# User function to implement
+# user code comes here
 
 def main():
     t = int(input())
