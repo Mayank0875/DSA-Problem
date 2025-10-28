@@ -53,12 +53,12 @@ The subarray [5, 2, 3] has the minimal length of 3 and its sum is 10, which is g
 
 ## Output Format
 
-- Return a single integer — the final XOR of all window XORs.
+- Return a single integer — length of the shortest contiguous subarray
 
 ## Constraints
 
 - 1 ≤ n ≤ 10^5
-- 1 ≤ target ≤ 10^14
+- 1 ≤ target ≤ 10^9
 - 0 ≤ arr[i] ≤ 10^9
 
 ## Time Limit
