@@ -12,9 +12,11 @@ Medium
 
 ## Description
 
-In the ancient city of Lumeria, mirrors are crafted using magical silver. A mirror is said to be perfectly balanced only if its surface area forms a perfect square.
+Every secret code in the cyber vault is represented by a number. A code is considered stable only if its number is a perfect square.
 
-Given two numbers L and R, representing the smallest and largest sizes of mirrors that can be made, determine how many mirror sizes correspond to perfectly balanced mirrors (i.e., perfect squares).
+You are given two integers L and R, the smallest and largest code numbers. Determine how many stable codes (perfect squares) exist within this range.
+
+You cannot use any built-in square root functions.
 
 
 ## Examples

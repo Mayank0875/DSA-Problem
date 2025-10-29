@@ -12,10 +12,11 @@ Medium
 
 ## Description
 
-In the ancient city of Lumeria, mirrors are crafted using magical silver. A mirror is said to be perfectly balanced only if its surface area forms a perfect square.
+Deep beneath the lunar caves, miners discover moonstones that naturally form in cubic patterns. However, the surface area of each moonstone chunk is a perfect square only for special batches.
 
-Given two numbers L and R, representing the smallest and largest sizes of mirrors that can be made, determine how many mirror sizes correspond to perfectly balanced mirrors (i.e., perfect squares).
+Given two integers L and R, representing the range of moonstone batch IDs, count how many batch IDs form perfect squares.
 
+Avoid using any square root library functions.
 
 ## Examples
 

@@ -12,9 +12,11 @@ Medium
 
 ## Description
 
-In the ancient city of Lumeria, mirrors are crafted using magical silver. A mirror is said to be perfectly balanced only if its surface area forms a perfect square.
+A wizard stores spells in magical pages. The strength of a spell page is said to be complete only if its magic number is a perfect square.
 
-Given two numbers L and R, representing the smallest and largest sizes of mirrors that can be made, determine how many mirror sizes correspond to perfectly balanced mirrors (i.e., perfect squares).
+Given two integers L and R, representing the range of spell pages, find how many pages have complete magic numbers.
+
+You must not use sqrt or similar functions.
 
 
 ## Examples
