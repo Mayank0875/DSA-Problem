@@ -58,6 +58,7 @@ public class Main {
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <limits.h>
 
 // user code comes here
 
