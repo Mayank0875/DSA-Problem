@@ -57,7 +57,7 @@ The input consists of a single line with two space-separated integers, L and R.
 
 ## Constraints
 
-- 1 ≤ L ≤ R ≤ 10^18
+- 1 ≤ L ≤ R ≤ 10^9
 
 ## Time Limit
 

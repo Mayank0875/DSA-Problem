@@ -114,26 +114,26 @@ function countUpTo(n) {
     n = BigInt(n);
     if (n < 1n) return 0n;
 
-    let low = 1n, high = 2000000000n;
+    let low = 1n, high = 1000000000n; 
     let ans = 0n;
 
     while (low <= high) {
-        let mid = (low + high) >> 1n; 
-        if (mid > n / mid) {
-            high = mid - 1n;
-        } else {
+        let mid = (low + high) >> 1n;
+        if (mid * mid <= n) {
             ans = mid;
             low = mid + 1n;
+        } else {
+            high = mid - 1n;
         }
     }
-
     return ans;
 }
 
 function countPerfectSquaresInRange(L, R) {
     L = BigInt(L);
     R = BigInt(R);
-    return countUpTo(R) - countUpTo(L - 1n);
+    const res = countUpTo(R) - countUpTo(L - 1n);
+    return Number(res); 
 }
 
 ### METADATA
