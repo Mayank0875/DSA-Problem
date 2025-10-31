@@ -15,7 +15,7 @@ Medium
 The Head Librarian of the Grand Archives is performing a complete inventory. For any given manuscript ID, they need to know exactly how many copies are on the shelf. 
 The manuscripts are sorted by their ID, with all identical copies placed consecutively. 
 Your job is to create a function that can quickly count the number of occurrences of any manuscript ID. The function will receive the sorted list of IDs and a target ID, and it should return the total count of that ID in the list.
-
+The IDs are sorted in non-decreasing order.
 
 You must write an algorithm with O(log n) runtime complexity
 
@@ -77,4 +77,4 @@ The target ID 6 appears 0 times in the list.
 
 ## Tags
 
-binary-search, array, counting
+binary-search, array

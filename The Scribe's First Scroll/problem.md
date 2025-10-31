@@ -13,7 +13,7 @@ Easy
 ## Description
 
 A historian is searching for the earliest known copy of a famous text in a vast, sorted archive. The archive contains many scrolls, some of which are identical copies, shelved consecutively according to their identification number. To begin their research, the historian needs to find the index of the very first scroll with a specific ID. 
-Your task is to write a function that takes the sorted list of scroll IDs and a target ID, and returns the index of its first appearance. If the scroll is not in the archive, you should indicate this by returning -1.
+Your task is to write a function that takes the non-decreasing sorted array IDs and a target ID, and returns the index of its first appearance. If the scroll is not in the archive, you should indicate this by returning -1.
 
 
 You must write an algorithm with O(log n) runtime complexity
@@ -25,12 +25,12 @@ You must write an algorithm with O(log n) runtime complexity
 #### Input
 
 6 8
-[2, 5, 7, 8, 11, 12]
+[2, 8, 8, 8, 9 , 9]
 
 
 #### Output
 
-3
+1
 
 #### Explanation
 

@@ -59,7 +59,7 @@ Your task is to determine the maximum possible side length of the square courtya
 
 ## Constraints  
 
-- 0 ≤ x ≤ 1e18 
+- 0 ≤ x ≤ 1e9
 
 ## Time Limit
 

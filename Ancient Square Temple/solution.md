@@ -91,11 +91,16 @@ function canSqrt(x, mid) {
 }
 
 function integerSquareRoot(x) {
-    let l = 0n, h = BigInt(x), ans = 0n;
+    x = BigInt(x);  
+    let l = 0n, h = x, ans = 0n;
     while (l <= h) {
-        let mid = (l + h) / 2n;
-        if (canSqrt(x, mid)) { ans = mid; l = mid + 1n; }
-        else h = mid - 1n;
+        let mid = (l + h) >> 1n;  
+        if (canSqrt(x, mid)) {
+            ans = mid;
+            l = mid + 1n;
+        } else {
+            h = mid - 1n;
+        }
     }
     return ans;
 }
@@ -114,14 +119,11 @@ function integerSquareRoot(x) {
 
 ### SOLUTION
 
-def canSqrt(x, mid):
-    return mid * mid <= x
-
-def integerSquareRoot(x):
+def integerSquareRoot(x: int) -> int:
     l, h, ans = 0, x, 0
     while l <= h:
         mid = (l + h) // 2
-        if canSqrt(x, mid):
+        if mid * mid <= x:
             ans = mid
             l = mid + 1
         else:

@@ -12,7 +12,7 @@ int main() {
         long long l, r;
         cin >> l >> r;
 
-        long long result = countPerfectSquaresInRange(arr, target);
+        long long result = countPerfectSquaresInRange(l, r);
         cout << result << endl;
 
         // evaluation completed

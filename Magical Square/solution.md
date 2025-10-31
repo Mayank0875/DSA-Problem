@@ -111,18 +111,19 @@ long long countPerfectSquaresInRange(long long L, long long R) {
 ### SOLUTION
 
 function countUpTo(n) {
-    if (n < 1) return 0;
+    n = BigInt(n);
+    if (n < 1n) return 0n;
 
-    let low = 1, high = 2000000000;
-    let ans = 0;
+    let low = 1n, high = 2000000000n;
+    let ans = 0n;
 
     while (low <= high) {
-        let mid = Math.floor(low + (high - low) / 2);
-        if (mid > Math.floor(n / mid)) {
-            high = mid - 1;
+        let mid = (low + high) >> 1n; 
+        if (mid > n / mid) {
+            high = mid - 1n;
         } else {
             ans = mid;
-            low = mid + 1;
+            low = mid + 1n;
         }
     }
 
@@ -130,7 +131,9 @@ function countUpTo(n) {
 }
 
 function countPerfectSquaresInRange(L, R) {
-    return countUpTo(R) - countUpTo(L - 1);
+    L = BigInt(L);
+    R = BigInt(R);
+    return countUpTo(R) - countUpTo(L - 1n);
 }
 
 ### METADATA

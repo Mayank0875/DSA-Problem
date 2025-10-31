@@ -119,7 +119,7 @@ def main():
         result = findFirstScroll(arr, target)
         print(result)
 
-        // evaluation completed
+        # evaluation completed
 
 if __name__ == "__main__":
     main()

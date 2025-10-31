@@ -59,7 +59,7 @@ There is no grimoire with ID 6. The first grimoire with an ID greater than 6 is 
 
 ## Output Format
 
-- Return a single integer representing the index of the first element that is greater than or equal to the target.
+- Return a single integer representing the index (0 based) of the first element that is greater than or equal to the target.
 
 
 ## Constraints
