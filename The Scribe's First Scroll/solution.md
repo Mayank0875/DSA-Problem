@@ -69,20 +69,20 @@ public static int findFirstScroll(int[] ids, int target) {
 
 ### SOLUTION
 
-int findFirstScroll(int arr[], int n, int target) {
+int findFirstScroll(int ids[], int n, int target) {
     int left = 0, right = n;
     int ans = -1;
 
     while (left < right) {
         int mid = left + (right - left) / 2;
-        if (arr[mid] < target) {
+        if (ids[mid] < target) {
             left = mid + 1;
         } else {
             right = mid;
         }
     }
 
-    if (left < n && arr[left] == target) {
+    if (left < n && ids[left] == target) {
         ans = left;
     }
 
