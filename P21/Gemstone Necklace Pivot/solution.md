@@ -2,26 +2,26 @@
 
 ### SOLUTION
 
-int findSmallest(vector<int>& gems) {
-    int low = 0, high = gems.size() - 1;
+int findSmallest(vector<int>& arr) {
+    int low = 0, high = arr.size() - 1;
 
-    if (gems[low] <= gems[high]) {
-        return gems[low];
+    if (arr[low] <= arr[high]) {
+        return arr[low];
     }
 
     while (low < high) {
         int mid = low + (high - low) / 2;
-        if (mid > 0 && gems[mid] < gems[mid - 1]) {
-             return gems[mid];
+        if (mid > 0 && arr[mid] < arr[mid - 1]) {
+             return arr[mid];
         }
-        if (gems[mid] >= gems[low]) {
+        if (arr[mid] >= arr[low]) {
             low = mid + 1;
         }
         else {
             high = mid;
         }
     }
-    return gems[low];
+    return arr[low];
 }
 
 
@@ -37,25 +37,25 @@ int findSmallest(vector<int>& gems) {
 
 ### SOLUTION
 
-public static int findSmallest(int[] gems) {
-    int low = 0, high = gems.length - 1;
+public static int findSmallest(int[] arr) {
+    int low = 0, high = arr.length - 1;
 
-    if (gems[low] <= gems[high]) {
-        return gems[low];
+    if (arr[low] <= arr[high]) {
+        return arr[low];
     }
 
     while (low < high) {
         int mid = low + (high - low) / 2;
-        if (mid > 0 && gems[mid] < gems[mid - 1]) {
-            return gems[mid];
+        if (mid > 0 && arr[mid] < arr[mid - 1]) {
+            return arr[mid];
         }
-        if (gems[mid] >= gems[low]) {
+        if (arr[mid] >= arr[low]) {
             low = mid + 1;
         } else {
             high = mid;
         }
     }
-    return gems[low];
+    return arr[low];
 }
 
 
@@ -104,25 +104,25 @@ int findSmallest(int arr[], int n) {
 
 ### SOLUTION
 
-function findSmallest(gems) {
-    let low = 0, high = gems.length - 1;
+function findSmallest(arr) {
+    let low = 0, high = arr.length - 1;
 
-    if (gems[low] <= gems[high]) {
-        return gems[low];
+    if (arr[low] <= arr[high]) {
+        return arr[low];
     }
 
     while (low < high) {
         let mid = Math.floor(low + (high - low) / 2);
-        if (mid > 0 && gems[mid] < gems[mid - 1]) {
-            return gems[mid];
+        if (mid > 0 && arr[mid] < arr[mid - 1]) {
+            return arr[mid];
         }
-        if (gems[mid] >= gems[low]) {
+        if (arr[mid] >= arr[low]) {
             low = mid + 1;
         } else {
             high = mid;
         }
     }
-    return gems[low];
+    return arr[low];
 }
 
 ### METADATA
@@ -138,21 +138,21 @@ function findSmallest(gems) {
 ### SOLUTION
 
 
-def findSmallest(gems: List[int]) -> int:
-    low, high = 0, len(gems) - 1
+def findSmallest(arr: List[int]) -> int:
+    low, high = 0, len(arr) - 1
 
-    if gems[low] <= gems[high]:
-        return gems[low]
+    if arr[low] <= arr[high]:
+        return arr[low]
 
     while low < high:
         mid = low + (high - low) // 2
-        if mid > 0 and gems[mid] < gems[mid - 1]:
-            return gems[mid]
-        if gems[mid] >= gems[low]:
+        if mid > 0 and arr[mid] < arr[mid - 1]:
+            return arr[mid]
+        if arr[mid] >= arr[low]:
             low = mid + 1
         else:
             high = mid
-    return gems[low]
+    return arr[low]
 
 ### METADATA
 

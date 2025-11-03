@@ -1,10 +1,10 @@
 ## Title
 
-Spun Key Ring Search
+Spun Prize Wheel
 
 ## Slug
 
-spun-key-ring-search
+spun-prize-wheel
 
 ## Difficulty
 
@@ -12,12 +12,7 @@ Medium
 
 ## Description
 
-Imagine you have a large key ring where keys are numbered and originally arranged in increasing order. 
-Someone spun the ring, so the sequence of key numbers is now shifted. 
-For example, keys numbered [1, 2, 3, 4, 5, 6] might now appear as [4, 5, 6, 1, 2, 3]. 
-All key numbers on the ring are unique. Given this spun sequence of keys and the number of a specific key you're looking for, your task is to find the position (index) of that key on the ring. If the key isn't there, you should report that.
-
-You must write an algorithm with O(log n) runtime complexity
+A prize wheel has slots with unique prize values, sorted in increasing order around the wheel. After a spin, the wheel stops at a random position. The list of prizes, starting from the 'winner' slot, is now a rotated sorted array (e.g., [10, 20, 50, 100] might become [50, 100, 10, 20]). Given this array and a target prize value, find its index on the wheel in O(log n) time. Return -1 if the prize is not on the wheel.
 
 ## Examples
 

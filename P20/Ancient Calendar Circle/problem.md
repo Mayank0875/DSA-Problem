@@ -1,10 +1,10 @@
 ## Title
 
-Spun Key Ring Search
+Ancient Calendar Circle
 
 ## Slug
 
-spun-key-ring-search
+ancient-calendar-circle
 
 ## Difficulty
 
@@ -12,12 +12,7 @@ Medium
 
 ## Description
 
-Imagine you have a large key ring where keys are numbered and originally arranged in increasing order. 
-Someone spun the ring, so the sequence of key numbers is now shifted. 
-For example, keys numbered [1, 2, 3, 4, 5, 6] might now appear as [4, 5, 6, 1, 2, 3]. 
-All key numbers on the ring are unique. Given this spun sequence of keys and the number of a specific key you're looking for, your task is to find the position (index) of that key on the ring. If the key isn't there, you should report that.
-
-You must write an algorithm with O(log n) runtime complexity
+An ancient circular calendar has stones numbered sequentially (e.g., 1, 2, ... 7). An earthquake has rotated the entire stone circle, so the starting stone is no longer #1. You are given an array representing the stones' numbers in their new positions (e.g., [4, 5, 6, 7, 1, 2, 3]). Find the index of a specific stone (target) in O(log n) time. All stone numbers are unique. If not found, return -1.
 
 ## Examples
 

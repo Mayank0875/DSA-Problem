@@ -1,10 +1,10 @@
 ## Title
 
-Spun Key Ring Search
+Spy's Shifted Codebook
 
 ## Slug
 
-spun-key-ring-search
+spys-shifted-codebook
 
 ## Difficulty
 
@@ -12,12 +12,7 @@ Medium
 
 ## Description
 
-Imagine you have a large key ring where keys are numbered and originally arranged in increasing order. 
-Someone spun the ring, so the sequence of key numbers is now shifted. 
-For example, keys numbered [1, 2, 3, 4, 5, 6] might now appear as [4, 5, 6, 1, 2, 3]. 
-All key numbers on the ring are unique. Given this spun sequence of keys and the number of a specific key you're looking for, your task is to find the position (index) of that key on the ring. If the key isn't there, you should report that.
-
-You must write an algorithm with O(log n) runtime complexity
+A spy uses a codebook where pages are numbered sequentially. To add security, the spy's personal copy is "shifted," like a rotated sorted array (e.g., [1, 2, 3, 4] becomes [3, 4, 1, 2]). You are given the shifted list of unique page numbers and a target page to find. You must find its index in O(log n) time. If the page is missing from the codebook, return -1.
 
 ## Examples
 

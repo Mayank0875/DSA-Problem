@@ -1,10 +1,10 @@
 ## Title
 
-Spun Key Ring Search
+Circular Assembly Line
 
 ## Slug
 
-spun-key-ring-search
+circular-assembly-line
 
 ## Difficulty
 
@@ -12,12 +12,7 @@ Medium
 
 ## Description
 
-Imagine you have a large key ring where keys are numbered and originally arranged in increasing order. 
-Someone spun the ring, so the sequence of key numbers is now shifted. 
-For example, keys numbered [1, 2, 3, 4, 5, 6] might now appear as [4, 5, 6, 1, 2, 3]. 
-All key numbers on the ring are unique. Given this spun sequence of keys and the number of a specific key you're looking for, your task is to find the position (index) of that key on the ring. If the key isn't there, you should report that.
-
-You must write an algorithm with O(log n) runtime complexity
+A circular assembly line has stations numbered 1 to n. The parts on the line are sorted by their unique ID. The belt was stopped, and the list of parts now starts from an arbitrary station, effectively "rotating" the sorted list. For example, a sorted list [10, 20, 30, 40] might appear as [30, 40, 10, 20]. Given this rotated list and a target part ID, find its index on the line. An O(log n) solution is needed. Return -1 if the part is not found.
 
 ## Examples
 

@@ -1,10 +1,10 @@
 ## Title
 
-Spun Key Ring Search
+Rotated Playlist Search
 
 ## Slug
 
-spun-key-ring-search
+rotated-playlist-search
 
 ## Difficulty
 
@@ -12,12 +12,7 @@ Medium
 
 ## Description
 
-Imagine you have a large key ring where keys are numbered and originally arranged in increasing order. 
-Someone spun the ring, so the sequence of key numbers is now shifted. 
-For example, keys numbered [1, 2, 3, 4, 5, 6] might now appear as [4, 5, 6, 1, 2, 3]. 
-All key numbers on the ring are unique. Given this spun sequence of keys and the number of a specific key you're looking for, your task is to find the position (index) of that key on the ring. If the key isn't there, you should report that.
-
-You must write an algorithm with O(log n) runtime complexity
+You have a playlist of songs, identified by unique track numbers and sorted in order. The playlist is set to "repeat" and you've started playing from a random song, creating a rotated list (e.g., [1, 2, 3, 4, 5] might be [4, 5, 1, 2, 3]). Given this list of track numbers and a target track, find its current index in the playlist. If the track isn't there, return -1. Your algorithm must run in O(log n) time.
 
 ## Examples
 

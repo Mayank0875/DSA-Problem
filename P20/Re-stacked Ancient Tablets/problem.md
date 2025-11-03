@@ -1,10 +1,10 @@
 ## Title
 
-Spun Key Ring Search
+Re-stacked Ancient Tablets
 
 ## Slug
 
-spun-key-ring-search
+re-stacked-ancient-tablets
 
 ## Difficulty
 
@@ -12,12 +12,7 @@ Medium
 
 ## Description
 
-Imagine you have a large key ring where keys are numbered and originally arranged in increasing order. 
-Someone spun the ring, so the sequence of key numbers is now shifted. 
-For example, keys numbered [1, 2, 3, 4, 5, 6] might now appear as [4, 5, 6, 1, 2, 3]. 
-All key numbers on the ring are unique. Given this spun sequence of keys and the number of a specific key you're looking for, your task is to find the position (index) of that key on the ring. If the key isn't there, you should report that.
-
-You must write an algorithm with O(log n) runtime complexity
+An archaeologist found a stack of ancient tablets, numbered sequentially. They discovered the stack was "cut" at some point, and the bottom part was moved to the top, creating a rotated sorted array of tablet IDs (e.g., [1, 2, 3, 4, 5] became [4, 5, 1, 2, 3]). Given this array of unique IDs and a target ID, find the tablet's index in O(log n) time. If the tablet is not in the stack, return -1.
 
 ## Examples
 

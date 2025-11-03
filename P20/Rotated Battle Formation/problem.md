@@ -1,10 +1,10 @@
 ## Title
 
-Spun Key Ring Search
+Rotated Battle Formation
 
 ## Slug
 
-spun-key-ring-search
+rotated-battle-formation
 
 ## Difficulty
 
@@ -12,12 +12,7 @@ Medium
 
 ## Description
 
-Imagine you have a large key ring where keys are numbered and originally arranged in increasing order. 
-Someone spun the ring, so the sequence of key numbers is now shifted. 
-For example, keys numbered [1, 2, 3, 4, 5, 6] might now appear as [4, 5, 6, 1, 2, 3]. 
-All key numbers on the ring are unique. Given this spun sequence of keys and the number of a specific key you're looking for, your task is to find the position (index) of that key on the ring. If the key isn't there, you should report that.
-
-You must write an algorithm with O(log n) runtime complexity
+A general arranges units in a line, sorted by their unique unit ID. To confuse the enemy, the general "rotates" the formation (e.g., [10, 20, 30, 40] becomes [30, 40, 10, 20]). You are given this rotated list of unique unit IDs and a target ID. Find the unit's index in the formation in O(log n) time. If the unit is not present, return -1.
 
 ## Examples
 

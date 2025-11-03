@@ -1,10 +1,10 @@
 ## Title
 
-Spun Key Ring Search
+Circular Gene Sequence
 
 ## Slug
 
-spun-key-ring-search
+circular-gene-sequence
 
 ## Difficulty
 
@@ -12,12 +12,7 @@ Medium
 
 ## Description
 
-Imagine you have a large key ring where keys are numbered and originally arranged in increasing order. 
-Someone spun the ring, so the sequence of key numbers is now shifted. 
-For example, keys numbered [1, 2, 3, 4, 5, 6] might now appear as [4, 5, 6, 1, 2, 3]. 
-All key numbers on the ring are unique. Given this spun sequence of keys and the number of a specific key you're looking for, your task is to find the position (index) of that key on the ring. If the key isn't there, you should report that.
-
-You must write an algorithm with O(log n) runtime complexity
+A circular DNA strand is represented by a sorted list of unique gene IDs. When the strand was sequenced, the lab started at a random point, producing a "rotated" sorted array (e.g., [100, 200, 300] might read as [300, 100, 200]). You are given this array and a target gene ID. Find the index of the gene in O(log n) time. If the gene is not in the sequence, return -1.
 
 ## Examples
 

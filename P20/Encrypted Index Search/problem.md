@@ -1,10 +1,10 @@
 ## Title
 
-Spun Key Ring Search
+Encrypted Index Search
 
 ## Slug
 
-spun-key-ring-search
+encrypted-index-search
 
 ## Difficulty
 
@@ -12,12 +12,7 @@ Medium
 
 ## Description
 
-Imagine you have a large key ring where keys are numbered and originally arranged in increasing order. 
-Someone spun the ring, so the sequence of key numbers is now shifted. 
-For example, keys numbered [1, 2, 3, 4, 5, 6] might now appear as [4, 5, 6, 1, 2, 3]. 
-All key numbers on the ring are unique. Given this spun sequence of keys and the number of a specific key you're looking for, your task is to find the position (index) of that key on the ring. If the key isn't there, you should report that.
-
-You must write an algorithm with O(log n) runtime complexity
+A file index is sorted by unique entry IDs. As a simple encryption, the entire index has been "rotated" or "shifted" (e.g., [1, 2, 3, 4, 5] becomes [4, 5, 1, 2, 3]). You are given this rotated array and a target ID to find. You must locate its index in O(log n) time. All IDs are unique. If the target is not in the index, return -1.
 
 ## Examples
 

@@ -1,28 +1,28 @@
 ## CPP
 
-int findKeyOnRing(vector<int>& ids, int target) {
+int findKeyOnRing(vector<int>& keys, int target) {
     // add your code here
 }
 
 ## JAVA
 
-public static int findKeyOnRing(int[] ids, int target) {
+public static int findKeyOnRing(int[] keys, int target) {
     // add your code here
 }
 
 ## C
 
-int findKeyOnRing(const int* ids, int n, int target) {
+int findKeyOnRing(const int* keys, int n, int target) {
     // add your code here
 }
 
 ## JAVASCRIPT
 
-function findKeyOnRing(ids, target) {
+function findKeyOnRing(keys, target) {
     // add your code here
 }
 
 ## PYTHON
 
-def findKeyOnRing(ids: list, target: int) -> int:
+def findKeyOnRing(keys: list, target: int) -> int:
     # add your code here

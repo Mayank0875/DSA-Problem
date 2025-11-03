@@ -1,10 +1,10 @@
 ## Title
 
-Spun Key Ring Search
+Shifted Library Books
 
 ## Slug
 
-spun-key-ring-search
+shifted-library-books
 
 ## Difficulty
 
@@ -12,12 +12,7 @@ Medium
 
 ## Description
 
-Imagine you have a large key ring where keys are numbered and originally arranged in increasing order. 
-Someone spun the ring, so the sequence of key numbers is now shifted. 
-For example, keys numbered [1, 2, 3, 4, 5, 6] might now appear as [4, 5, 6, 1, 2, 3]. 
-All key numbers on the ring are unique. Given this spun sequence of keys and the number of a specific key you're looking for, your task is to find the position (index) of that key on the ring. If the key isn't there, you should report that.
-
-You must write an algorithm with O(log n) runtime complexity
+A library shelf holds books sorted by a unique serial number. A careless intern moved a block of books from the end of the shelf to the beginning, maintaining their order. The result is a "rotated" sorted list (e.g., [101, 102, 103, 104] might become [103, 104, 101, 102]). Given this list and a target serial number, find the book's current position (index) on the shelf. If it's not there, return -1. Your method must be O(log n).
 
 ## Examples
 

@@ -1,12 +1,12 @@
 ## CPP
 
-int findSmallest(vector<int>& gems) {
+int findSmallest(vector<int>& arr) {
     // add your code here
 }
 
 ## JAVA
 
-public static int findSmallest(int[] gems) {
+public static int findSmallest(int[] arr) {
     // add your code here
 }
 
@@ -18,11 +18,11 @@ int findSmallest(int arr[], int n) {
 
 ## JAVASCRIPT
 
-function findSmallest(gems) {
+function findSmallest(arr) {
     // add your code here
 }
 
 ## PYTHON
 
-def findSmallest(gems: List[int]) -> int:
+def findSmallest(arr: List[int]) -> int:
     # add your code here

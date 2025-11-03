@@ -1,10 +1,10 @@
 ## Title
 
-Spun Key Ring Search
+Shifted Royal Lineage
 
 ## Slug
 
-spun-key-ring-search
+shifted-royal-lineage
 
 ## Difficulty
 
@@ -12,12 +12,7 @@ Medium
 
 ## Description
 
-Imagine you have a large key ring where keys are numbered and originally arranged in increasing order. 
-Someone spun the ring, so the sequence of key numbers is now shifted. 
-For example, keys numbered [1, 2, 3, 4, 5, 6] might now appear as [4, 5, 6, 1, 2, 3]. 
-All key numbers on the ring are unique. Given this spun sequence of keys and the number of a specific key you're looking for, your task is to find the position (index) of that key on the ring. If the key isn't there, you should report that.
-
-You must write an algorithm with O(log n) runtime complexity
+A historian has a list of kings, sorted by their unique "reign ID". The list they are reading was copied from a circular tablet, starting at an arbitrary king. This results in a rotated sorted array (e.g., [1, 2, 3, 4] becomes [3, 4, 1, 2]). You are given this array and a target reign ID. Find the king's index in the list in O(log n) time. If the ID is not found, return -1.
 
 ## Examples
 
