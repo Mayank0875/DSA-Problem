@@ -55,36 +55,42 @@ bool exist(vector<vector<char>>& board, string word) {
 
 ### SOLUTION
 
-public static boolean exist(char[][] board, String word) {
-    int rows = board.length;
-    int cols = board[0].length;
-    Set<String> visited = new HashSet<>();
+static int rows, cols;
+static char[][] board;
+static String word;
+static Set<String> visited;
 
+static boolean dfs(int r, int c, int k) {
+    if (k == word.length()) return true;
+    if (r < 0 || r >= rows || c < 0 || c >= cols ||
+        visited.contains(r + "," + c) || board[r][c] != word.charAt(k))
+        return false;
+
+    visited.add(r + "," + c);
+    boolean res = dfs(r + 1, c, k + 1) ||
+                    dfs(r - 1, c, k + 1) ||
+                    dfs(r, c + 1, k + 1) ||
+                    dfs(r, c - 1, k + 1);
+    visited.remove(r + "," + c);
+    return res;
+}
+
+public static boolean exist(char[][] b, String w) {
+    board = b;
+    word = w;
+    rows = board.length;
+    cols = board[0].length;
+    visited = new HashSet<>();
+
+    // small optimization: reverse if starting char rarer
     Map<Character, Integer> count = new HashMap<>();
     for (char ch : word.toCharArray()) count.put(ch, count.getOrDefault(ch, 0) + 1);
-
     if (count.getOrDefault(word.charAt(0), 0) > count.getOrDefault(word.charAt(word.length() - 1), 0))
         word = new StringBuilder(word).reverse().toString();
 
-    java.util.function.BiFunction<Integer, Integer, Boolean> dfs = new java.util.function.BiFunction<>() {
-        boolean dfs(int r, int c, int k) {
-            if (k == word.length()) return true;
-            if (r < 0 || r >= rows || c < 0 || c >= cols ||
-                visited.contains(r + "," + c) || board[r][c] != word.charAt(k)) return false;
-
-            visited.add(r + "," + c);
-            boolean res = dfs(r + 1, c, k + 1) ||
-                          dfs(r - 1, c, k + 1) ||
-                          dfs(r, c + 1, k + 1) ||
-                          dfs(r, c - 1, k + 1);
-            visited.remove(r + "," + c);
-            return res;
-        }
-    };
-
     for (int r = 0; r < rows; r++) {
         for (int c = 0; c < cols; c++) {
-            if (dfs.dfs(r, c, 0)) return true;
+            if (dfs(r, c, 0)) return true;
         }
     }
     return false;
