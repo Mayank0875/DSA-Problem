@@ -6,7 +6,7 @@ bool hasSubsetSum(vector<long long>& arr, long long sum) {
 
 ## JAVA
 
-boolean hasSubsetSum(long[] arr, long sum) {
+public static boolean hasSubsetSum(long[] arr, long sum) {
     // add your code here
 }
 

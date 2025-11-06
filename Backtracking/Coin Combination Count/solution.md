@@ -34,7 +34,7 @@ int countCombinations(vector<int>& candidates, int target) {
 
 ### SOLUTION
 
-static int solve(int target, int[] candidates, int startIndex) {
+public static int solve(int target, int[] candidates, int startIndex) {
     if (target == 0) {
         return 1;
     }

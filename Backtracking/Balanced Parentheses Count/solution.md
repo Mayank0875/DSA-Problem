@@ -34,7 +34,7 @@ int countWellFormed(int n) {
 
 ### SOLUTION
 
-static int backtrack(int openN, int closedN, int n) {
+public static int backtrack(int openN, int closedN, int n) {
     if (openN == n && closedN == n) {
         return 1;
     }

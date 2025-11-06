@@ -55,7 +55,7 @@ static boolean[] diag1;
 static boolean[] diag2;
 static int boardSize;
 
-static void solve(int y) {
+public static void solve(int y) {
     if (y == boardSize) {
         totalSolutions++;
         return;

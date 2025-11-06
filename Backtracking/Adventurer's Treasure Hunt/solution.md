@@ -40,7 +40,7 @@ bool hasSubsetSum(vector<long long>& arr, long long sum) {
 
 ### SOLUTION
 
-boolean solve(long[] arr, int n, int index, long remaining_sum) {
+public static boolean solve(long[] arr, int n, int index, long remaining_sum) {
     if (remaining_sum == 0)
         return true;
 
@@ -56,7 +56,7 @@ boolean solve(long[] arr, int n, int index, long remaining_sum) {
     return false;
 }
 
-boolean hasSubsetSum(long[] arr, long sum) {
+public static boolean hasSubsetSum(long[] arr, long sum) {
     int n = arr.length;
     return solve(arr, n, 0, sum);
 }
