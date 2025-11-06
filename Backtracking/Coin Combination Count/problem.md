@@ -48,8 +48,8 @@ The three unique combinations are [2, 2, 2, 2], [2, 3, 3], and [3, 5].
 
 ## Input Format  
 
-- The first line contains two integers, $N$ and $T$, representing the number of coin denominations and the target sum
-- The second line contains $N$ distinct space-separated integers, $candidates_i$, representing the coin denominations.
+- The first line contains two integers, N and T, representing the number of coin denominations and the target sum
+- The second line contains N distinct space-separated integers, candidates_i, representing the coin denominations.
 
 ## Output Format  
 
