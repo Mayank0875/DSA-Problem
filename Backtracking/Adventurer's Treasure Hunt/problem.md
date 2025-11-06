@@ -12,7 +12,7 @@ Medium
 
 ## Description
 
-A group of adventurers has found `n` ancient artifacts, and each artifact has a specific gold value. Your team needs to pay a dragon a tribute of `sum` gold. You must determine if it is possible to select a group (a subset) of these artifacts whose values add up exactly to `sum`. You can only use each artifact once.
+A group of adventurers has found `n` ancient artifacts, and each artifact has a specific gold value. Your team needs to pay a dragon a tribute of `sum` gold. You must determine if it is possible to select a group (a subset) of these artifacts whose values add up exactly to `sum`. You can only use each artifact once. Return true if a subset with the given sum exists. Otherwise false
 ## Examples
 
 ### 1
