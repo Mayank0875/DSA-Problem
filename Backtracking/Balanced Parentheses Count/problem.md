@@ -12,7 +12,7 @@ Easy
 
 ## Description
 
-You are building a linter for a new programming language. A key feature is checking if parentheses are balanced. A sequence of parentheses is 'well-formed' if every opening parenthesis has a corresponding closing parenthesis, and they are properly nested. For example, `(())` is well-formed, but `)(` is not. Given an integer $n$, your task is to determine how many different well-formed combinations of parentheses can be created using exactly $n$ opening parentheses and $n$ closing parentheses. You just need to return the total count.
+You are building a linter for a new programming language. A key feature is checking if parentheses are balanced. A sequence of parentheses is 'well-formed' if every opening parenthesis has a corresponding closing parenthesis, and they are properly nested. For example, `(())` is well-formed, but `)(` is not. Given an integer n, your task is to determine how many different well-formed combinations of parentheses can be created using exactly n opening parentheses and n closing parentheses. You just need to return the total count.
 ## Examples
 
 ### 1
