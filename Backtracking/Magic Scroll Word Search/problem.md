@@ -24,11 +24,19 @@ The word can be formed from letters in neighboring cells (up, down, left, or rig
 [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]]
 "SEE"
 
+img(https://d3gmywgj71m21w.cloudfront.net/coding-questions/f38bb29e6cb34c8047e1d947df307df4)
+
+
+
+
 #### Output
 
 Yes
 
 #### Explanation
+
+img(https://d3gmywgj71m21w.cloudfront.net/coding-questions/39c703039d6f54dd1fd9c6d7641b2b5e)
+
 
 Word Exist's in Grid.
     
@@ -38,6 +46,11 @@ Word Exist's in Grid.
 
 [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]]
 "ABCB"
+
+img(https://d3gmywgj71m21w.cloudfront.net/coding-questions/f38bb29e6cb34c8047e1d947df307df4)
+
+
+
 
 #### Output
 
