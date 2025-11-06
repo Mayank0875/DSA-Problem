@@ -14,7 +14,8 @@ Medium
 
 You have found an ancient magic scroll, represented as a grid of letters. A powerful magic word is hidden inside. You must find out if the word exists on the scroll.
 
-The word can be formed from letters in neighboring cells (up, down, left, or right). You must follow the path of letters in order. You cannot use the same letter cell more than once for a single word. Your task is to write a program that checks if the given `word` can be found on the `board`.
+The word can be formed from letters in neighboring cells (up, down, left, or right). You must follow the path of letters in order. You cannot use the same letter cell more than once for a single word. Your task is to write a program that checks if the given `word` can be found on the `board`. Return ⁠ true ⁠ if the word exists in the grid. Otherwise ⁠ false ⁠.
+
 ## Examples
 
 ### 1
