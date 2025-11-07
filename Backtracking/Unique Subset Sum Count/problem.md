@@ -12,7 +12,7 @@ Medium
 
 ## Description
 
-You are given a list of candidate numbers, which may include duplicates, and a target sum. Your task is to find the *total count* of unique combinations of these numbers that sum exactly to the target. Each number from the list may be used *only once* in any combination. The solution must not count duplicate combinations. For example, if the input list is [1, 1, 2] and the target is 3, the combination [1, 2] should only be counted once.
+You are given a list of candidate numbers, which may include duplicates, and a target sum. Your task is to find the `total count` of unique combinations of these numbers that sum exactly to the target. Each number from the list may be used `only once` in any combination. The solution must not count duplicate combinations. For example, if the input list is [1, 1, 2] and the target is 3, the combination [1, 2] should only be counted once.
 
 ## Examples
 
@@ -47,8 +47,8 @@ The 2 unique combinations are [1, 2, 2] and [5].
 
 ## Input Format  
 
-- The first line contains two integers, $N$ and $T$, representing the number of candidate numbers and the target sum.
-- The second line contains $N$ space-separated integers, $candidates_i$.
+- The first line contains two integers, N and T, representing the number of candidate numbers and the target sum.
+- The second line contains N space-separated integers, candidates_i.
 
 ## Output Format  
 

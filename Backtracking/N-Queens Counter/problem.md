@@ -27,6 +27,9 @@ A queen is hosting a grand chess tournament. To decorate the main hall, she want
 
 #### Explanation
 
+img(https://d3gmywgj71m21w.cloudfront.net/coding-questions/51da88cce75a2ec8792ca24e08fffdf5)
+
+
 On a 1x1 board, there is only one square, and placing one queen there is a valid solution.
     
 ### 2
@@ -40,6 +43,10 @@ On a 1x1 board, there is only one square, and placing one queen there is a valid
 2
 
 #### Explanation
+
+img(https://d3gmywgj71m21w.cloudfront.net/coding-questions/8ea879bced8a33ff6f5d05147002d90d)
+
+
 There are two distinct ways to place 4 queens on a 4x4 board safely.
 
 ## Input Format  
