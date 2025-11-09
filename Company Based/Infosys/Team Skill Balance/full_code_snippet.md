@@ -11,9 +11,10 @@ int main() {
     cin >> t;
 
     while (t--) {
-        long long x;
-        cin >> x;
-        cout << findMinimumBulbs(x) << "\n";
+        int n; cin >> n;
+        vector<int> arr(n);
+        for(int i = 0; i < n; ++i) cin >> arr[i];
+        cout << countBalancedTriplets(arr) << "\n";
         
         // evaluation completed
     }
@@ -26,47 +27,52 @@ import java.util.*;
 
 public class Main {
     // user code comes here
-    
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
         while (t-- > 0) {
-            long x = sc.nextLong();
-            System.out.println(findMinimumBulbs(x));
+            int n = sc.nextInt();
+            int[] arr = new int[n];
+            for (int i = 0; i < n; i++) {
+                arr[i] = sc.nextInt();
+            }
+            System.out.println(countBalancedTriplets(arr));
             // evaluation completed
         }
         sc.close();
     }
 }
 
+
 ## C
 
 #include <stdio.h>
-#include <stdbool.h>
 #include <stdlib.h>
-#include <math.h>
-
 
 // user code comes here
-
 
 int main() {
     int t;
     scanf("%d", &t);
     while (t--) {
-        long long x;
-        scanf("%lld", &x);
-        printf("%lld\n", findMinimumBulbs(x));
+        int n;
+        scanf("%d", &n);
+        int* arr = (int*)malloc(n * sizeof(int));
+        for (int i = 0; i < n; i++) {
+            scanf("%d", &arr[i]);
+        }
+        printf("%lld\n", countBalancedTriplets(arr, n));
+        free(arr);
         // evaluation completed
     }
     return 0;
 }
 
+
 ## JAVASCRIPT
 
 // user code comes here
-
 
 function main() {
     const fs = require("fs");
@@ -75,13 +81,16 @@ function main() {
 
     const t = parseInt(input[idx++]);
     for (let tc = 0; tc < t; tc++) {
-        const x = BigInt(input[idx++]);
-        console.log(findMinimumBulbs(x).toString());
+        const n = parseInt(input[idx++]);
+        const arr = [];
+        for (let i = 0; i < n; i++) arr.push(parseInt(input[idx++]));
+        console.log(countBalancedTriplets(arr));
         // evaluation completed
     }
 }
 
 main();
+
 
 ## PYTHON
 
@@ -94,8 +103,9 @@ import collections
 def main():
     t = int(input())
     for _ in range(t):
-        x = int(input())
-        print(findMinimumBulbs(x))
+        n = int(input())
+        arr = list(map(int, input().split()))
+        print(countBalancedTriplets(arr))
         # evaluation completed
 
 if __name__ == "__main__":
