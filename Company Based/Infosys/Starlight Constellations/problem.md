@@ -12,7 +12,7 @@ Medium
 
 ## Description
 
-An astronomer is analyzing $N$ stars, each with a specific brightness value. They are looking for "perfect constellations," which are sets of four `distinct` stars (i.e., using four different indices) whose brightness values sum up to a specific `target` value. Your task is to count how many `unique` combinations of brightness values form a perfect constellation. For example, if two different sets of four stars both have brightness `[-1, 0, 0, 1]`, this combination is only counted once.
+An astronomer is analyzing N stars, each with a specific brightness value. They are looking for "perfect constellations," which are sets of four `distinct` stars (i.e., using four different indices) whose brightness values sum up to a specific `target` value. Your task is to count how many `unique` combinations of brightness values form a perfect constellation. For example, if two different sets of four stars both have brightness `[-1, 0, 0, 1]`, this combination is only counted once.
 
 ## Examples
 
