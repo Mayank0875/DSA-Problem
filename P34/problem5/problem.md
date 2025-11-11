@@ -1,21 +1,23 @@
 ## Title
 
-Grid Median Search
+Table Multiplication
 
 ## Slug
 
-grid-median-search
+table-multiplication
+
+## Difficulty
+
+Medium
 
 ## Description
 
-Given an integer n, consider an n x n grid where each cell (i, j) contains the value (i+1) * (j+1). However, we are only interested in the values along the main diagonal and the anti-diagonal? Actually, no, we are considering the entire grid. But wait, actually we are to find the median of all the n*n numbers in the grid when sorted in increasing order. Since n is odd, the median is the ((n*n+1)/2)-th smallest number.
+Find the middle element when the numbers in an n * n multiplication table are sorted in increasing order. It is assumed that n is odd.
 
-For example, for n=3, the grid contains:
-Row 0: [1, 2, 3]
-Row 1: [2, 4, 6]
-Row 2: [3, 6, 9]
+For example, the 3 * 3 multiplication table is as follows:
+    [[1, 2, 3], [2, 4, 6], [3, 6, 9]]
 
-Sorted: [1,2,2,3,3,4,6,6,9]. The median (5th element) is 3.
+The numbers in increasing order are [1,2,2,3,3,4,6,6,9], so the answer is 3.
 
 ## Examples
 
@@ -31,8 +33,8 @@ Sorted: [1,2,2,3,3,4,6,6,9]. The median (5th element) is 3.
 
 #### Explanation
 
-The sorted list of all numbers is [1,2,2,3,3,4,6,6,9]. The median (5th number) is 3.
-
+The numbers in increasing order are [1,2,2,3,3,4,6,6,9], so the answer is 3. 
+    
 ### 2
 
 #### Input
@@ -44,24 +46,25 @@ The sorted list of all numbers is [1,2,2,3,3,4,6,6,9]. The median (5th number) i
 8
 
 #### Explanation
+The middle element is 8.
+  
 
-For n=5, the sorted list of 25 numbers has the 13th element as the median, which is 8.
-
-## Input Format
+## Input Format  
 
 - The only input line has an integer n.
 
-## Output Format
+## Output Format  
 
 - Return one integer: the answer to the task.
+  
 
-## Constraints
+## Constraints  
 
-- 1 ≤ n ≤ 1e6
+- 1 ≤ x ≤ 1e6
 
 ## Time Limit
 
-2 seconds
+2 second
 
 ## Memory Limit
 

@@ -1,10 +1,10 @@
 ## Title
 
-Matrix Median
+Table Multiplication
 
 ## Slug
 
-matrix-median
+table-multiplication
 
 ## Difficulty
 
@@ -12,11 +12,12 @@ Medium
 
 ## Description
 
-Given a positive odd integer n, consider the n x n multiplication table. The table contains n² entries. However, many values are duplicated. You need to find the median of all the values in the table.
+Find the middle element when the numbers in an n * n multiplication table are sorted in increasing order. It is assumed that n is odd.
 
-For instance, for n = 3, the table is:
-[[1, 2, 3], [2, 4, 6], [3, 6, 9]]
-When sorted, the sequence is [1,2,2,3,3,4,6,6,9]. The median (the 5th element) is 3.
+For example, the 3 * 3 multiplication table is as follows:
+    [[1, 2, 3], [2, 4, 6], [3, 6, 9]]
+
+The numbers in increasing order are [1,2,2,3,3,4,6,6,9], so the answer is 3.
 
 ## Examples
 
@@ -31,8 +32,9 @@ When sorted, the sequence is [1,2,2,3,3,4,6,6,9]. The median (the 5th element) i
 3
 
 #### Explanation
-The sorted values: [1,2,2,3,3,4,6,6,9]. The median is the 5th element, which is 3.
 
+The numbers in increasing order are [1,2,2,3,3,4,6,6,9], so the answer is 3. 
+    
 ### 2
 
 #### Input
@@ -44,23 +46,25 @@ The sorted values: [1,2,2,3,3,4,6,6,9]. The median is the 5th element, which is 
 8
 
 #### Explanation
-The sorted values: [1,2,2,3,4,4,5,6,6,8,8,9,10,12,12,15,15,16,18,20,25]. The median (the 13th element) is 8.
+The middle element is 8.
+  
 
-## Input Format
+## Input Format  
 
 - The only input line has an integer n.
 
-## Output Format
+## Output Format  
 
-- Return one integer: the median value.
+- Return one integer: the answer to the task.
+  
 
-## Constraints
+## Constraints  
 
-- 1 ≤ n ≤ 1e6
+- 1 ≤ x ≤ 1e6
 
 ## Time Limit
 
-2 seconds
+2 second
 
 ## Memory Limit
 

@@ -1,10 +1,10 @@
 ## Title
 
-Grid Median Finder
+Table Multiplication
 
 ## Slug
 
-grid-median-finder
+table-multiplication
 
 ## Difficulty
 
@@ -12,13 +12,12 @@ Medium
 
 ## Description
 
-Given an n x n multiplication table, find the median element when all elements are sorted in increasing order. Note that n is guaranteed to be odd.
+Find the middle element when the numbers in an n * n multiplication table are sorted in increasing order. It is assumed that n is odd.
 
-For example, for n = 3, the multiplication table is:
-1 2 3
-2 4 6
-3 6 9
-When sorted, the sequence is [1, 2, 2, 3, 3, 4, 6, 6, 9]. The median (the fifth element) is 3.
+For example, the 3 * 3 multiplication table is as follows:
+    [[1, 2, 3], [2, 4, 6], [3, 6, 9]]
+
+The numbers in increasing order are [1,2,2,3,3,4,6,6,9], so the answer is 3.
 
 ## Examples
 
@@ -34,8 +33,8 @@ When sorted, the sequence is [1, 2, 2, 3, 3, 4, 6, 6, 9]. The median (the fifth 
 
 #### Explanation
 
-The sorted list is [1,2,2,3,3,4,6,6,9]. The median (5th element) is 3.
-
+The numbers in increasing order are [1,2,2,3,3,4,6,6,9], so the answer is 3. 
+    
 ### 2
 
 #### Input
@@ -47,23 +46,25 @@ The sorted list is [1,2,2,3,3,4,6,6,9]. The median (5th element) is 3.
 8
 
 #### Explanation
-The sorted list for n=5 has 25 elements. The median (13th element) is 8.
+The middle element is 8.
+  
 
-## Input Format
+## Input Format  
 
-- A single integer n.
+- The only input line has an integer n.
 
-## Output Format
+## Output Format  
 
-- A single integer: the median.
+- Return one integer: the answer to the task.
+  
 
-## Constraints
+## Constraints  
 
-- 1 ≤ n ≤ 1e6
+- 1 ≤ x ≤ 1e6
 
 ## Time Limit
 
-2 seconds
+2 second
 
 ## Memory Limit
 

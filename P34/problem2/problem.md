@@ -1,21 +1,27 @@
 ## Title
 
-Median of Sorted Matrix
+The Phantom Cipher
 
 ## Slug
 
-median-sorted-matrix
+phantom-cipher
+
+## Difficulty
+
+Medium
 
 ## Description
 
-Given an odd integer n, consider an n x n matrix where each element at (i, j) is i * j (with rows and columns starting at 1). When all elements of this matrix are sorted into a single list in increasing order, find the value at the middle position (since the total number of elements is n², which is odd).
+A hacker must decode an encrypted sequence where one value hides without a pair. The sequence is generated from the first n^2 terms of the multiplication table, but one element is missing. Your task is to find the missing value.
 
-For example, for n = 3, the matrix is:
-[[1, 2, 3],
- [2, 4, 6],
- [3, 6, 9]]
+For example, the 3 * 3 multiplication table is as follows:
+    [[1, 2, 3], [2, 4, 6], [3, 6, 9]]
 
-The sorted list is [1, 2, 2, 3, 3, 4, 6, 6, 9], so the median (the 5th element) is 3.
+The numbers in increasing order are [1,2,2,3,3,4,6,6,9], but one element is missing. The hacker knows the sequence should have 9 elements, but only 8 are provided. The missing value is the one that would be the median when the sequence is sorted.
+
+For n=3, the full sorted sequence is [1,2,2,3,3,4,6,6,9], and the median (the middle value) is 3. But if one value is missing, the hacker must deduce which one is missing.
+
+In this problem, you are to find the median of the sorted list of n*n numbers from the multiplication table, assuming one value is missing. But note: the problem is actually to compute the median for the complete set, and the input is just n.
 
 ## Examples
 
@@ -31,8 +37,8 @@ The sorted list is [1, 2, 2, 3, 3, 4, 6, 6, 9], so the median (the 5th element) 
 
 #### Explanation
 
-The sorted list is [1,2,2,3,3,4,6,6,9]. The median (5th element) is 3.
-
+The numbers in increasing order are [1,2,2,3,3,4,6,6,9], so the median (the 5th element in 1-indexing) is 3.
+    
 ### 2
 
 #### Input
@@ -44,18 +50,19 @@ The sorted list is [1,2,2,3,3,4,6,6,9]. The median (5th element) is 3.
 8
 
 #### Explanation
+For n=5, the sorted list has 25 elements. The median is the 13th element (since (25+1)/2=13). The value is 8.
+  
 
-The sorted list for n=5 has 25 elements. The median (13th element) is 8.
-
-## Input Format
+## Input Format  
 
 - The only input line has an integer n.
 
-## Output Format
+## Output Format  
 
-- Return one integer: the answer to the task.
+- Return one integer: the answer to the problem.
+  
 
-## Constraints
+## Constraints  
 
 - 1 ≤ n ≤ 1e6
 
@@ -69,4 +76,4 @@ The sorted list for n=5 has 25 elements. The median (13th element) is 8.
 
 ## Tags
 
-binary-search, math, number-theory
+binary-search, math, number-theory<｜begin▁of▁sentence｜>

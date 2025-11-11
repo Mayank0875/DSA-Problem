@@ -1,18 +1,23 @@
 ## Title
 
-Median of Sorted Matrix
+Table Multiplication
 
 ## Slug
 
-sorted-matrix-median
+table-multiplication
+
+## Difficulty
+
+Medium
 
 ## Description
 
-Given an n x n multiplication table (with n odd), find the median value when all the elements are sorted in increasing order.
+Find the middle element when the numbers in an n * n multiplication table are sorted in increasing order. It is assumed that n is odd.
 
-For example, for n=3, the multiplication table is:
-[[1, 2, 3], [2, 4, 6], [3, 6, 9]]
-The sorted list is [1,2,2,3,3,4,6,6,9], so the median is 3.
+For example, the 3 * 3 multiplication table is as follows:
+    [[1, 2, 3], [2, 4, 6], [3, 6, 9]]
+
+The numbers in increasing order are [1,2,2,3,3,4,6,6,9], so the answer is 3.
 
 ## Examples
 
@@ -28,8 +33,8 @@ The sorted list is [1,2,2,3,3,4,6,6,9], so the median is 3.
 
 #### Explanation
 
-The sorted list is [1,2,2,3,3,4,6,6,9]. The median (the 5th element in a 1-indexed list of 9) is 3.
-
+The numbers in increasing order are [1,2,2,3,3,4,6,6,9], so the answer is 3. 
+    
 ### 2
 
 #### Input
@@ -41,24 +46,25 @@ The sorted list is [1,2,2,3,3,4,6,6,9]. The median (the 5th element in a 1-index
 8
 
 #### Explanation
+The middle element is 8.
+  
 
-The sorted list includes numbers from 1 to 25, but with many duplicates. The 13th element (the median) is 8.
+## Input Format  
 
-## Input Format
+- The only input line has an integer n.
 
-- A single integer n.
+## Output Format  
 
-## Output Format
+- Return one integer: the answer to the task.
+  
 
-- The median value.
+## Constraints  
 
-## Constraints
-
-- 1 ≤ n ≤ 1e6
+- 1 ≤ x ≤ 1e6
 
 ## Time Limit
 
-2 seconds
+2 second
 
 ## Memory Limit
 

@@ -1,10 +1,10 @@
 ## Title
 
-Median of Grid Products
+Table Multiplication
 
 ## Slug
 
-median-grid-products
+table-multiplication
 
 ## Difficulty
 
@@ -12,15 +12,12 @@ Medium
 
 ## Description
 
-Given an integer n, where n is odd, consider an n x n grid where each cell (i, j) (for 1 ≤ i, j ≤ n) contains the product i * j. 
-Find the median value when all the elements of this grid are sorted in increasing order.
+Find the middle element when the numbers in an n * n multiplication table are sorted in increasing order. It is assumed that n is odd.
 
-For example, the 3x3 grid has these products:
-    [1, 2, 3]
-    [2, 4, 6]
-    [3, 6, 9]
+For example, the 3 * 3 multiplication table is as follows:
+    [[1, 2, 3], [2, 4, 6], [3, 6, 9]]
 
-When sorted: [1, 2, 2, 3, 3, 4, 6, 6, 9]. The median (5th element) is 3.
+The numbers in increasing order are [1,2,2,3,3,4,6,6,9], so the answer is 3.
 
 ## Examples
 
@@ -36,7 +33,7 @@ When sorted: [1, 2, 2, 3, 3, 4, 6, 6, 9]. The median (5th element) is 3.
 
 #### Explanation
 
-The sorted list is [1,2,2,3,3,4,6,6,9]. The median (5th element) is 3.
+The numbers in increasing order are [1,2,2,3,3,4,6,6,9], so the answer is 3. 
     
 ### 2
 
@@ -49,23 +46,25 @@ The sorted list is [1,2,2,3,3,4,6,6,9]. The median (5th element) is 3.
 8
 
 #### Explanation
-The sorted list of 25 numbers has median 8.
+The middle element is 8.
+  
 
-## Input Format
+## Input Format  
 
 - The only input line has an integer n.
 
-## Output Format
+## Output Format  
 
-- Return one integer: the median value.
+- Return one integer: the answer to the task.
+  
 
-## Constraints
+## Constraints  
 
-- 1 ≤ n ≤ 1e6
+- 1 ≤ x ≤ 1e6
 
 ## Time Limit
 
-2 seconds
+2 second
 
 ## Memory Limit
 
@@ -73,4 +72,4 @@ The sorted list of 25 numbers has median 8.
 
 ## Tags
 
-binary-search, math, number-theory<｜begin▁of▁sentence｜>
+binary-search, math, number-theory

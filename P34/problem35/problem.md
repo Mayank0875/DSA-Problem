@@ -1,10 +1,10 @@
 ## Title
 
-Grid Diagonal Median
+Table Multiplication
 
 ## Slug
 
-grid-diagonal-median
+table-multiplication
 
 ## Difficulty
 
@@ -12,14 +12,12 @@ Medium
 
 ## Description
 
-Given an integer n (odd), consider the n x n grid where the value at cell (i, j) is i * j. Find the median value when all the values in the grid are sorted in increasing order.
+Find the middle element when the numbers in an n * n multiplication table are sorted in increasing order. It is assumed that n is odd.
 
-For example, for n = 3, the grid is:
-  1 2 3
-  2 4 6
-  3 6 9
+For example, the 3 * 3 multiplication table is as follows:
+    [[1, 2, 3], [2, 4, 6], [3, 6, 9]]
 
-The sorted list is [1, 2, 2, 3, 3, 4, 6, 6, 9]. The median (the 5th element) is 3.
+The numbers in increasing order are [1,2,2,3,3,4,6,6,9], so the answer is 3.
 
 ## Examples
 
@@ -35,8 +33,8 @@ The sorted list is [1, 2, 2, 3, 3, 4, 6, 6, 9]. The median (the 5th element) is 
 
 #### Explanation
 
-The sorted list has 9 elements. The 5th element (median) is 3.
-
+The numbers in increasing order are [1,2,2,3,3,4,6,6,9], so the answer is 3. 
+    
 ### 2
 
 #### Input
@@ -48,24 +46,25 @@ The sorted list has 9 elements. The 5th element (median) is 3.
 8
 
 #### Explanation
+The middle element is 8.
+  
 
-The sorted list has 25 elements. The 13th element (median) is 8.
-
-## Input Format
+## Input Format  
 
 - The only input line has an integer n.
 
-## Output Format
+## Output Format  
 
 - Return one integer: the answer to the task.
+  
 
-## Constraints
+## Constraints  
 
-- 1 ≤ n ≤ 1e6
+- 1 ≤ x ≤ 1e6
 
 ## Time Limit
 
-2 seconds
+2 second
 
 ## Memory Limit
 

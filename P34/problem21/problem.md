@@ -1,10 +1,10 @@
 ## Title
 
-Sorting the Grid
+Table Multiplication
 
 ## Slug
 
-sorting-the-grid
+table-multiplication
 
 ## Difficulty
 
@@ -12,14 +12,12 @@ Medium
 
 ## Description
 
-Given an odd integer n, consider an n x n grid where each cell (i, j) contains the value (i+1) * (j+1) (for 0-indexed indices). All these n^2 values are sorted into a single list in increasing order. Find the value at the middle position of this sorted list.
+Find the middle element when the numbers in an n * n multiplication table are sorted in increasing order. It is assumed that n is odd.
 
-For instance, for n=3, the grid values are:
-1 2 3
-2 4 6
-3 6 9
+For example, the 3 * 3 multiplication table is as follows:
+    [[1, 2, 3], [2, 4, 6], [3, 6, 9]]
 
-When sorted, the list becomes [1,2,2,3,3,4,6,6,9]. The middle element (the 5th element in a 9-element list) is 3.
+The numbers in increasing order are [1,2,2,3,3,4,6,6,9], so the answer is 3.
 
 ## Examples
 
@@ -35,8 +33,8 @@ When sorted, the list becomes [1,2,2,3,3,4,6,6,9]. The middle element (the 5th e
 
 #### Explanation
 
-The sorted list is [1,2,2,3,3,4,6,6,9]. The middle element (5th element) is 3.
-
+The numbers in increasing order are [1,2,2,3,3,4,6,6,9], so the answer is 3. 
+    
 ### 2
 
 #### Input
@@ -48,24 +46,25 @@ The sorted list is [1,2,2,3,3,4,6,6,9]. The middle element (5th element) is 3.
 8
 
 #### Explanation
+The middle element is 8.
+  
 
-For n=5, the sorted list has 25 elements. The middle element (13th element) is 8.
-
-## Input Format
+## Input Format  
 
 - The only input line has an integer n.
 
-## Output Format
+## Output Format  
 
 - Return one integer: the answer to the task.
+  
 
-## Constraints
+## Constraints  
 
-- 1 ≤ n ≤ 1e6
+- 1 ≤ x ≤ 1e6
 
 ## Time Limit
 
-2 seconds
+2 second
 
 ## Memory Limit
 

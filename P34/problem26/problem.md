@@ -1,18 +1,23 @@
 ## Title
 
-Matrix Median
+Table Multiplication
 
 ## Slug
 
-matrix-median
+table-multiplication
+
+## Difficulty
+
+Medium
 
 ## Description
 
-In an n * n multiplication table, each element at (i, j) is i * j (with both i and j starting from 1). When all these n² numbers are sorted in non-decreasing order, find the value at the middle position. Assume n is odd.
+Find the middle element when the numbers in an n * n multiplication table are sorted in increasing order. It is assumed that n is odd.
 
-For example, for n=3, the multiplication table is:
-[[1,2,3],[2,4,6],[3,6,9]]
-The sorted list is [1,2,2,3,3,4,6,6,9]. The median is the 5th element (since there are 9 elements), which is 3.
+For example, the 3 * 3 multiplication table is as follows:
+    [[1, 2, 3], [2, 4, 6], [3, 6, 9]]
+
+The numbers in increasing order are [1,2,2,3,3,4,6,6,9], so the answer is 3.
 
 ## Examples
 
@@ -28,8 +33,8 @@ The sorted list is [1,2,2,3,3,4,6,6,9]. The median is the 5th element (since the
 
 #### Explanation
 
-The sorted list has 9 elements: [1,2,2,3,3,4,6,6,9]. The median is the 5th element, which is 3.
-
+The numbers in increasing order are [1,2,2,3,3,4,6,6,9], so the answer is 3. 
+    
 ### 2
 
 #### Input
@@ -41,24 +46,25 @@ The sorted list has 9 elements: [1,2,2,3,3,4,6,6,9]. The median is the 5th eleme
 8
 
 #### Explanation
+The middle element is 8.
+  
 
-The sorted list has 25 elements. The median is the 13th element (since (25+1)/2=13), which is 8.
-
-## Input Format
+## Input Format  
 
 - The only input line has an integer n.
 
-## Output Format
+## Output Format  
 
-- Return one integer: the median of the sorted multiplication table.
+- Return one integer: the answer to the task.
+  
 
-## Constraints
+## Constraints  
 
-- 1 ≤ n ≤ 1e6
+- 1 ≤ x ≤ 1e6
 
 ## Time Limit
 
-2 seconds
+2 second
 
 ## Memory Limit
 

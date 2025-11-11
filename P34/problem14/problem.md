@@ -1,21 +1,23 @@
 ## Title
 
-Median of Grid Products
+Table Multiplication
 
 ## Slug
 
-median-grid-products
+table-multiplication
+
+## Difficulty
+
+Medium
 
 ## Description
 
-Given an integer n (which is odd), consider an n x n grid where each cell (i, j) contains the value (i+1) * (j+1). When all these n^2 numbers are sorted in increasing order, the median value is the one exactly in the middle.
+Find the middle element when the numbers in an n * n multiplication table are sorted in increasing order. It is assumed that n is odd.
 
-For example, for n=3, the grid values are:
-[1, 2, 3]
-[2, 4, 6]
-[3, 6, 9]
+For example, the 3 * 3 multiplication table is as follows:
+    [[1, 2, 3], [2, 4, 6], [3, 6, 9]]
 
-The sorted list is [1, 2, 2, 3, 3, 4, 6, 6, 9], so the median (the 5th element) is 3.
+The numbers in increasing order are [1,2,2,3,3,4,6,6,9], so the answer is 3.
 
 ## Examples
 
@@ -31,8 +33,8 @@ The sorted list is [1, 2, 2, 3, 3, 4, 6, 6, 9], so the median (the 5th element) 
 
 #### Explanation
 
-The sorted list is [1,2,2,3,3,4,6,6,9]. The median (5th element) is 3.
-
+The numbers in increasing order are [1,2,2,3,3,4,6,6,9], so the answer is 3. 
+    
 ### 2
 
 #### Input
@@ -44,24 +46,25 @@ The sorted list is [1,2,2,3,3,4,6,6,9]. The median (5th element) is 3.
 8
 
 #### Explanation
+The middle element is 8.
+  
 
-The sorted list for n=5 has 25 elements. The median (13th element) is 8.
-
-## Input Format
+## Input Format  
 
 - The only input line has an integer n.
 
-## Output Format
+## Output Format  
 
-- Return one integer: the median of the sorted grid products.
+- Return one integer: the answer to the task.
+  
 
-## Constraints
+## Constraints  
 
-- 1 ≤ n ≤ 1e6
+- 1 ≤ x ≤ 1e6
 
 ## Time Limit
 
-2 seconds
+2 second
 
 ## Memory Limit
 

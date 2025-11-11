@@ -1,10 +1,10 @@
 ## Title
 
-Grid Summation Median
+Table Multiplication
 
 ## Slug
 
-grid-summation-median
+table-multiplication
 
 ## Difficulty
 
@@ -12,12 +12,12 @@ Medium
 
 ## Description
 
-Find the median element when the numbers in an n * n addition table are sorted in increasing order. It is assumed that n is odd.
+Find the middle element when the numbers in an n * n multiplication table are sorted in increasing order. It is assumed that n is odd.
 
-The n * n addition table is defined such that the element at row i and column j is (i+1) + (j+1), for i, j from 0 to n-1. For example, for n=3, the table is:
-    [[2, 3, 4], [3, 4, 5], [4, 5, 6]]
+For example, the 3 * 3 multiplication table is as follows:
+    [[1, 2, 3], [2, 4, 6], [3, 6, 9]]
 
-The numbers in increasing order are [2,3,3,4,4,4,5,5,6], so the median is 4.
+The numbers in increasing order are [1,2,2,3,3,4,6,6,9], so the answer is 3.
 
 ## Examples
 
@@ -29,12 +29,12 @@ The numbers in increasing order are [2,3,3,4,4,4,5,5,6], so the median is 4.
 
 #### Output
 
-4
+3
 
 #### Explanation
 
-The numbers in increasing order are [2,3,3,4,4,4,5,5,6], so the median is 4.
-
+The numbers in increasing order are [1,2,2,3,3,4,6,6,9], so the answer is 3. 
+    
 ### 2
 
 #### Input
@@ -46,24 +46,25 @@ The numbers in increasing order are [2,3,3,4,4,4,5,5,6], so the median is 4.
 8
 
 #### Explanation
+The middle element is 8.
+  
 
-The sorted list of all 25 numbers has 8 as its 13th element (the median).
-
-## Input Format
+## Input Format  
 
 - The only input line has an integer n.
 
-## Output Format
+## Output Format  
 
 - Return one integer: the answer to the task.
+  
 
-## Constraints
+## Constraints  
 
-- 1 ≤ n ≤ 1e6
+- 1 ≤ x ≤ 1e6
 
 ## Time Limit
 
-2 seconds
+2 second
 
 ## Memory Limit
 
@@ -71,4 +72,4 @@ The sorted list of all 25 numbers has 8 as its 13th element (the median).
 
 ## Tags
 
-binary-search, math, number-theory<｜begin▁of▁sentence｜>
+binary-search, math, number-theory

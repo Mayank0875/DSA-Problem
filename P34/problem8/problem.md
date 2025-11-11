@@ -1,10 +1,10 @@
 ## Title
 
-Median of Matrix Products
+Table Multiplication
 
 ## Slug
 
-median-matrix-products
+table-multiplication
 
 ## Difficulty
 
@@ -12,14 +12,12 @@ Medium
 
 ## Description
 
-Given an odd integer n, consider the n x n multiplication table where the cell (i, j) has the value i * j (for i, j from 1 to n). Find the median of all the elements in this table.
+Find the middle element when the numbers in an n * n multiplication table are sorted in increasing order. It is assumed that n is odd.
 
-For n=3, the table is:
-    1 2 3
-    2 4 6
-    3 6 9
+For example, the 3 * 3 multiplication table is as follows:
+    [[1, 2, 3], [2, 4, 6], [3, 6, 9]]
 
-The sorted list is [1,2,2,3,3,4,6,6,9]. The median (the 5th element) is 3.
+The numbers in increasing order are [1,2,2,3,3,4,6,6,9], so the answer is 3.
 
 ## Examples
 
@@ -35,8 +33,8 @@ The sorted list is [1,2,2,3,3,4,6,6,9]. The median (the 5th element) is 3.
 
 #### Explanation
 
-The sorted list of all elements in the 3x3 multiplication table is [1,2,2,3,3,4,6,6,9]. The median (5th element) is 3.
-
+The numbers in increasing order are [1,2,2,3,3,4,6,6,9], so the answer is 3. 
+    
 ### 2
 
 #### Input
@@ -48,24 +46,25 @@ The sorted list of all elements in the 3x3 multiplication table is [1,2,2,3,3,4,
 8
 
 #### Explanation
+The middle element is 8.
+  
 
-The sorted list of the 5x5 multiplication table has 25 elements. The median (13th element) is 8.
-
-## Input Format
+## Input Format  
 
 - The only input line has an integer n.
 
-## Output Format
+## Output Format  
 
-- Return one integer: the median of the n x n multiplication table.
+- Return one integer: the answer to the task.
+  
 
-## Constraints
+## Constraints  
 
-- 1 ≤ n ≤ 1e6
+- 1 ≤ x ≤ 1e6
 
 ## Time Limit
 
-2 seconds
+2 second
 
 ## Memory Limit
 
