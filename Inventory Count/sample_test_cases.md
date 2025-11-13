@@ -1,37 +1,35 @@
 ## Sample Test Cases
 
 ### Test Case 1
+
 **Input**
+
 ```
-7
+6
+10 20 20 30 30 30
 ```
+
 **Expected Output**
+
 ```
-10
+3
 ```
 
 ---
 
 ### Test Case 2
+
 **Input**
+
 ```
-25        
-```
-**Expected Output**
-```
-30
+7
+50 50 40 40 40 50 60
 ```
 
----
-
-### Test Case 3
-**Input**
-```
-9
-```
 **Expected Output**
+
 ```
-12
+3
 ```
 
 ---
