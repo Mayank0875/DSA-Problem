@@ -84,4 +84,4 @@ Final XOR = 4 ^ 2 ^ 1 = 7
 
 ## Tags
 
-arrays, sliding window
+array, sliding-window
