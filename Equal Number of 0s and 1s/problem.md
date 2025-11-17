@@ -73,4 +73,4 @@ Given a binary array nums, return the length of the longest contiguous subarray 
 
 ## Tags
 
-arrays, sliding window, prefix sum, hashmap
+array, sliding-window, prefix-sum, hash-table
