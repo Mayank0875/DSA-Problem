@@ -14,7 +14,7 @@ Easy
 
 A network router has received `n` packets and stored their unique IDs in a `Packet Log`. A "replay attack" is suspected if `any packet ID appears at least twice` in the log `within a distance of 'k' positions` from each other. Your task is to scan the packet log for this specific sign of an attack.
 
-If a replay attack is detected, return `true`; otherwise, return `false`.
+If a replay attack is detected, return `true` otherwise, return `false`.
 
 ## Examples
 
@@ -82,4 +82,4 @@ Return `true` if there exist two identical numbers within distance `k`, otherwis
 
 ## Tags
 
-arrays, sliding-window
+array, sliding-window
