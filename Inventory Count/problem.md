@@ -56,4 +56,4 @@ Both 40 and 50 appear 3 times; the maximum frequency is 3.
 256 MB
 
 ## Tags 
-counting, array
+array
