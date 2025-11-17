@@ -71,4 +71,4 @@ The unique codes are 10, 5, and 2. There are 3 distinct artifact types.
 
 ## Tags
 
-sorting, set, counting, 
+sorting, hash-table 
