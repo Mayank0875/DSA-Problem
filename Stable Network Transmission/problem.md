@@ -78,4 +78,4 @@ The longest such subarray is [1, 1, 1], which has a length of 3.
 
 ## Tags
 
-arrays, sliding window, two pointers
+array, sliding-window, two-pointers
