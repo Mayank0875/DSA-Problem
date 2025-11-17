@@ -81,4 +81,4 @@ This requires 3 gondolas.
 
 ## Tags
 
-greedy, sorting, two pointers
+greedy, sorting, two-pointers
