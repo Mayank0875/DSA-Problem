@@ -69,4 +69,4 @@ The string "adam" does not read the same forwards and backward ("mada").
 
 ## Tags
 
-strings, implementation, two-pointers
+string, two-pointers
