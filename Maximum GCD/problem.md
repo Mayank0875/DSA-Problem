@@ -74,4 +74,4 @@ We can replace an integer with itself.
 
 ## Tags
 
-array, prefix-sum, maths
+array, prefix-sum, maths, suffix-sum
