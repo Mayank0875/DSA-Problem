@@ -78,4 +78,4 @@ The length of the removed segment is 0.
 
 ## Tags
 
-arrays, sliding window, prefix sum, hashmap
+array, sliding-window, prefix-sum, hash-table

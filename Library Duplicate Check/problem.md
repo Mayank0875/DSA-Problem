@@ -12,7 +12,7 @@ Easy
 
 ## Description
 
-A librarian is checking the catalog. A book (represented by its ISBN as an integer) is marked for review if there are 'exactly two copies' of it in the system. Given a list of all ISBNs in the library's main branch, identify all books to be reviewed. Return them in increasing order. If no ISBN appears exactly twice, return an empty list.
+A librarian is checking the catalog. A book (represented by its ISBN as an integer) is marked for review if there are `exactly two copies` of it in the system. Given a list of all ISBNs in the library's main branch, identify all books to be reviewed. Return them in increasing order. If no ISBN appears exactly twice, return an empty list.
 
 ## Examples
 
@@ -56,4 +56,4 @@ No number appears exactly twice.
 256 MB
 
 ## Tags 
-map, sorting
+hash-table, sorting

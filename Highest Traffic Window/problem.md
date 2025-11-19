@@ -80,4 +80,4 @@ Return a single integer — maximum sum of any contiguous subarray of size `k`.
 
 ## Tags
 
-arrays, sliding-window
+array, sliding-window

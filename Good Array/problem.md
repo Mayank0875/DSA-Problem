@@ -74,4 +74,4 @@ There are 3 good subarrays: A[1 .. 1], A[2 .. 3], A[1 .. 3]
 
 ## Tags
 
-arrays, prefix sum, hash map
+array, prefix-sum, hash-table

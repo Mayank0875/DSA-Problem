@@ -88,4 +88,4 @@ Frequency are 1, 1 so Xor of 1 and 1 is 0.
 
 ## Tags
 
-arrays, prefix sum
+array, prefix-sum

@@ -84,4 +84,4 @@ Final XOR = 5 ^ 3 ^ 3 = 5
 
 ## Tags
 
-arrays, sliding window, deque
+array, sliding-window, deque

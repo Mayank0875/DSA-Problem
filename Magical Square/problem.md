@@ -69,4 +69,4 @@ The input consists of a single line with two space-separated integers, L and R.
 
 ## Tags
 
-binary-search, math, number-theory
+binary-search, maths
