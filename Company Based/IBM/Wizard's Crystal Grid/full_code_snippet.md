@@ -15,7 +15,7 @@ int main() {
         vector<int> arr(n);
         for (int i = 0; i < n; ++i) cin >> arr[i];
 
-        vector<int> res = frequencySort(arr);
+        vector<int> res = moveZeroes(arr);
         for (int i = 0; i < n; ++i) {
             cout << res[i] << ' ';
         }
@@ -43,7 +43,7 @@ public class Main {
                 arr.add(sc.nextInt());
             }
 
-            List<Integer> res = frequencySort(arr);
+            List<Integer> res = moveZeroes(arr);
             for (int num : res) {
                 System.out.print(num + " ");
             }
@@ -73,7 +73,7 @@ int main() {
             scanf("%d", &arr[i]);
         }
 
-        int* sorted = frequencySort(arr, n);
+        int* sorted = moveZeroes(arr, n);
 
         for (int i = 0; i < n; i++) {
             printf("%d ", sorted[i]);
@@ -102,7 +102,7 @@ function main() {
             arr.push(parseInt(input[idx++]));
         }
 
-        const res = frequencySort(arr);
+        const res = moveZeroes(arr);
         console.log(res.join(" "));
 
         // evaluation completed
@@ -124,7 +124,7 @@ def main():
     for _ in range(t):
         n = int(input())
         arr = list(map(int, input().split()))
-        res = frequencySort(arr)
+        res = moveZeroes(arr)
         print(" ".join(map(str, res)))
 
         # evaluation completed
