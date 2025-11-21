@@ -61,4 +61,4 @@ Total power = 5 + 5 = 10.
 256 MB
 
 ## Tags
-string-manipulation, hash-table, counting
+string
