@@ -91,4 +91,4 @@ Word didn't Exist's in Grid.
 
 ## Tags
 
-backtracking, depth-first-search
+backtracking, breadth-first-search
