@@ -60,7 +60,7 @@ The belt only has one empty spot, which is already at the end.
 ## Constraints  
 
 - 1 ≤ n ≤ 1e4
-- -1e9 ≤ n ≤ 1e9
+- -1e9 ≤ value[i] ≤ 1e9
 
 ## Time Limit
 
