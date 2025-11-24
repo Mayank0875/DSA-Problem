@@ -1,0 +1,57 @@
+## Title
+Rare Card Sort
+
+## Slug
+rare-card-sort
+
+## Difficulty
+Easy
+
+## Description
+A collector is organizing a deck of trading cards. Each card has a power level. The collector values rarity above all else. You need to sort the cards so that the ones appearing least frequently in the deck come first. If two card types appear the same number of times, the one with the higher power level is placed first.
+
+## Examples
+
+### 1
+
+#### Input
+6
+[1, 1, 2, 2, 2, 3]
+
+#### Output
+[3, 1, 1, 2, 2, 2]
+
+#### Explanation
+'3' has a frequency of 1, '1' has a frequency of 2, and '2' has a frequency of 3. They are sorted by increasing frequency.
+
+### 2
+
+#### Input
+5
+[2, 3, 1, 3, 2]
+
+#### Output
+[1, 3, 3, 2, 2]
+
+#### Explanation
+'1' has a frequency of 1. Both '2' and '3' have a frequency of 2. Since they have the same frequency, '3' is placed before '2' because it has a larger value.
+
+## Input Format
+- The first line contains a single integer n, representing the number of items.
+- The second line contains n space-separated integers representing the item values.
+
+## Output Format
+- Return the sorted array of integers.
+
+## Constraints
+- 1 ≤ n ≤ 100
+- -100 ≤ nums[i] ≤ 100
+
+## Time Limit
+2 second
+
+## Memory Limit
+256 MB
+
+## Tags
+array, hash-table
