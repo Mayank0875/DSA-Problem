@@ -68,7 +68,7 @@ The total cost is 302 + 101 = 403. This is the minimum cost to make both strings
 
 ## Time Limit
 
-2 second
+1 second
 
 ## Memory Limit
 
@@ -76,4 +76,4 @@ The total cost is 302 + 101 = 403. This is the minimum cost to make both strings
 
 ## Tags
 
-dynamic-programming, strings
+dynamic-programming, string
