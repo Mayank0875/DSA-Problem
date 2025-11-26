@@ -39,15 +39,15 @@ The maximum frequency is 3 (for mark 30).
 Both 40 and 50 appear 3 times; the maximum frequency is 3.
 
 ## Input Format
-- First line: integer n — number of students.
+- First line: integer n — number of items.
 - Second line: n space-separated integers, each in [0, 100].
 
 ## Output Format
-- Return a single integer — the maximum frequency among marks.
+- Return a single integer — the maximum frequency among items.
 
 ## Constraints
 - 1 ≤ n ≤ 10^5
-- 0 ≤ mark ≤ 100
+- 0 ≤ items ≤ 100
 
 ## Time Limit
 1 second

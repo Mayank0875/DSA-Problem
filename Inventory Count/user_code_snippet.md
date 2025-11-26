@@ -26,4 +26,3 @@ function sameFreq(marks) {
 
 def sameFreq(marks: List[int]) -> int:
     # add your code here
-    ...
