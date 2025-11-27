@@ -1,18 +1,18 @@
 ## CPP
 
-bool findGrimoire(vector<int>& ids, int target) {
+int findGrimoire(vector<int>& ids, int target) {
     // add your code here
 }
 
 ## JAVA
 
-public static boolean findGrimoire(int[] ids, int target) {
+public static int findGrimoire(int[] ids, int target) {
     // add your code here
 }
 
 ## C
 
-bool findGrimoire(const int* ids, int n, int target) {
+int findGrimoire(const int* ids, int n, int target) {
     // add your code here
 }
 
@@ -24,5 +24,5 @@ function findGrimoire(ids, target) {
 
 ## PYTHON
 
-def findGrimoire(ids: List[int], target: int) -> bool:
+def findGrimoire(ids: List[int], target: int) -> int:
     # add your code here
