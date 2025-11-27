@@ -63,7 +63,7 @@ The subarray [5, 2, 3] has the minimal length of 3 and its sum is 10, which is g
 
 ## Time Limit
 
-2 second
+1 second
 
 ## Memory Limit
 
