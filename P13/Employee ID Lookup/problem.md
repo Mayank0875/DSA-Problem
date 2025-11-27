@@ -12,7 +12,7 @@ Easy
 
 ## Description
 
-A company's HR department maintains a sorted list of all employee identification numbers. For a payroll check, they need to verify if a `target` ID is present in their system. Your task is to write this high-speed lookup function. It will be given the sorted list of IDs and the `target` ID to find. You must write an algorithm with O(log n) runtime complexity.
+A company's HR department maintains a sorted list of all employee identification numbers. For a payroll check, they need to verify if a `target` ID is present in their system. Your task is to write this high-speed lookup function. You will be given the sorted list of IDs and the `target` ID to find. You must write an algorithm with O(log n) runtime complexity.
 
 ## Examples
 
@@ -49,8 +49,8 @@ The target ID 6 is not found in the list.
 
 ## Input Format
 
-- The first line contains an integers n and target , the number of grimoires and the ID of the grimoire to find. 
-- The second line contains n space-separated integers representing the sorted grimoire IDs.
+- The first line contains an integers n and target , the number of ID's and the ID to find. 
+- The second line contains n space-separated integers representing the sorted IDs.
 
 ## Output Format
 
@@ -72,4 +72,4 @@ The target ID 6 is not found in the list.
 
 ## Tags
 
-binary-search, array, searching
+binary-search, array
