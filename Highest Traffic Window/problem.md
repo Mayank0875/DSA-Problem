@@ -60,7 +60,7 @@ Maximum sum is `15`.
 
 ## Output Format  
 
-Return a single integer — maximum sum of any contiguous subarray of size `k`.
+Return a single integer — maximum total users that visited in any contiguous 'k'-minute window.
 
 
 
