@@ -12,7 +12,7 @@ Easy
 
 ## Description
 
-You are a cryptographer trying to break a code. You have a sorted list of possible decryption keys. You need to check if your `target` key is in this list. Your function must take the sorted list of keys and the `target` key, and return a simple confirmation of its presence. The check must be extremely fast. You must write an algorithm with O(log n) runtime complexity.
+You are a cryptographer trying to break a code. You have a sorted list of possible decryption keys. You need to check if your `target` key is in this list. Your function must take the sorted list of keys and the `target` key. Return 1 if the key is present otherwise 0. You must write an algorithm with O(log n) runtime complexity.
 
 ## Examples
 
@@ -72,4 +72,4 @@ The target ID 6 is not found in the list.
 
 ## Tags
 
-binary-search, array, searching
+binary-search, array
