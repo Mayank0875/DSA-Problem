@@ -54,8 +54,8 @@ Maximum sum is `15`.
 
 ## Input Format  
 
-- First line: integer `n` — size of the Cipher Sequence.  
-- Second line: `n` space-separated integers — elements of the Cipher Sequence.  
+- First line: integer `n` — size of the Traffic Logs Sequence.  
+- Second line: `n` space-separated integers — elements of the Traffic logs.  
 - Third line: integer `k` — size of subarray.
 
 ## Output Format  
