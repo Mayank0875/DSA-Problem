@@ -12,7 +12,10 @@ Easy
 
 ## Description
 
-A company's HR department maintains a sorted list of all employee identification numbers. For a payroll check, they need to verify if a `target` ID is present in their system. Your task is to write this high-speed lookup function. You will be given the sorted list of IDs and the `target` ID to find. You must write an algorithm with O(log n) runtime complexity.
+A company's HR department maintains a sorted list of all employee
+identification numbers. For a payroll check, they need to verify if a
+`target` ID is present in their system.
+You must write an algorithm with O(log n) runtime complexity.
 
 ## Examples
 
@@ -30,7 +33,7 @@ A company's HR department maintains a sorted list of all employee identification
 
 #### Explanation
 
-The target ID 8 is found in the list of grimoire IDs.
+The target ID 8 is found in the list of employee IDs.
 
 ### 2
 
@@ -49,8 +52,8 @@ The target ID 6 is not found in the list.
 
 ## Input Format
 
-- The first line contains an integers n and target , the number of ID's and the ID to find. 
-- The second line contains n space-separated integers representing the sorted IDs.
+- The first line contains an integers n and target , the number of employees ID's and the ID to find. 
+- The second line contains n space-separated integers representing the sorted employee IDs.
 
 ## Output Format
 
@@ -59,12 +62,12 @@ The target ID 6 is not found in the list.
 ## Constraints
 
 - 1 ≤ n ≤ 10^5
-- 1 ≤ grimoire_id, target ≤ 10^9
-- The grimoire IDs are sorted in non-decreasing order.
+- 1 ≤ employee_id, target ≤ 10^9
+- The employee IDs are sorted in non-decreasing order.
 
 ## Time Limit
 
-2 second
+1 second
 
 ## Memory Limit
 
