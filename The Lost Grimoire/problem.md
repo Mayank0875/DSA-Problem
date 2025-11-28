@@ -58,7 +58,7 @@ The target ID 6 is not found in the list.
 
 ## Output Format
 
-- Return True if the grimoire is found, and False otherwise.
+- Return 1 if the grimoire is found, and 0 otherwise.
 
 ## Constraints
 
@@ -68,7 +68,7 @@ The target ID 6 is not found in the list.
 
 ## Time Limit
 
-2 second
+1 second
 
 ## Memory Limit
 
