@@ -12,7 +12,11 @@ Easy
 
 ## Description
 
-You are a cryptographer trying to break a code. You have a sorted list of possible decryption keys. You need to check if your `target` key is in this list. Your function must take the sorted list of keys and the `target` key. Return 1 if the key is present otherwise 0. You must write an algorithm with O(log n) runtime complexity.
+You are a cryptographer trying to break a code. You have a sorted list
+of possible decryption keys. You need to check if your `target` key is
+in this list. Return 1 if the key is present otherwise 0. You must write
+an algorithm with O(log n) runtime complexity.
+
 
 ## Examples
 
@@ -30,7 +34,7 @@ You are a cryptographer trying to break a code. You have a sorted list of possib
 
 #### Explanation
 
-The target ID 8 is found in the list of grimoire IDs.
+The target ID 8 is found in the lists.
 
 ### 2
 
@@ -49,8 +53,8 @@ The target ID 6 is not found in the list.
 
 ## Input Format
 
-- The first line contains an integers n and target , the number of grimoires and the ID of the grimoire to find. 
-- The second line contains n space-separated integers representing the sorted grimoire IDs.
+- The first line contains an integers n and target , the number of keys and the key to find. 
+- The second line contains n space-separated integers representing the sorted description keys.
 
 ## Output Format
 
@@ -59,12 +63,12 @@ The target ID 6 is not found in the list.
 ## Constraints
 
 - 1 ≤ n ≤ 10^5
-- 1 ≤ grimoire_id, target ≤ 10^9
-- The grimoire IDs are sorted in non-decreasing order.
+- 1 ≤ keys, target ≤ 10^9
+- The description keys are sorted in non-decreasing order.
 
 ## Time Limit
 
-2 second
+1 second
 
 ## Memory Limit
 
