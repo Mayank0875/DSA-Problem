@@ -12,7 +12,12 @@ Easy
 
 ## Description
 
-An airline's flight manifest is a sorted list of all passenger reservation numbers. A passenger arrives at the gate with their `target` reservation number. You need to write the software that checks if this `target` number is on the manifest. The check must be as fast as possible. You must write an algorithm with O(log n) runtime complexity.
+
+An airline's flight manifest is a sorted list of all passenger
+reservation numbers. A passenger arrives at the gate with their `target`
+reservation number. You need to write the software that checks if this
+`target` number is on the manifest. The check must be as fast as
+possible. You must write an algorithm with O(log n) runtime complexity.
 
 ## Examples
 
@@ -30,7 +35,7 @@ An airline's flight manifest is a sorted list of all passenger reservation numbe
 
 #### Explanation
 
-The target ID 8 is found in the list of grimoire IDs.
+The target reservation number 8 is found in the manifest.
 
 ### 2
 
@@ -45,12 +50,16 @@ The target ID 8 is found in the list of grimoire IDs.
 
 #### Explanation
 
-The target ID 6 is not found in the list.
+
+The target reservation number 6 is not found in the manifest.
 
 ## Input Format
 
-- The first line contains an integers n and target , the number of grimoires and the ID of the grimoire to find. 
-- The second line contains n space-separated integers representing the sorted grimoire IDs.
+
+-   The first line contains two integers n and target, the number of
+    reservation numbers and the reservation number to find.
+-   The second line contains n space-separated integers representing the
+    sorted reservation numbers
 
 ## Output Format
 
@@ -59,12 +68,12 @@ The target ID 6 is not found in the list.
 ## Constraints
 
 - 1 ≤ n ≤ 10^5
-- 1 ≤ grimoire_id, target ≤ 10^9
-- The grimoire IDs are sorted in non-decreasing order.
+- 1 ≤ reservation_number, target ≤ 10^9
+- The reservation number are sorted in non-decreasing order.
 
 ## Time Limit
 
-2 second
+1 second
 
 ## Memory Limit
 
