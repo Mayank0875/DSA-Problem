@@ -72,4 +72,7 @@ The belt only has one empty spot, which is already at the end.
 
 ## Tags
 
-array, two-pointers
+array
+
+## Companies
+infosys

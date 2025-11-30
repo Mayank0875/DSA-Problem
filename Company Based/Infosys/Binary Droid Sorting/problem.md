@@ -75,4 +75,7 @@ All integers in the input have exactly one '1' bit in their binary representatio
 
 ## Tags
 
-sorting, bit
+sorting
+
+## Companies
+infosys

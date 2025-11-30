@@ -74,4 +74,8 @@ The subarray `[-2, -1]` is not contiguous and thus invalid. The subarray `[0]` y
 
 ## Tags
 
-array, dynamic-programming, subarray
+array, dynamic-programming
+
+
+## Companies
+infosys

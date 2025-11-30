@@ -71,4 +71,7 @@ It is impossible to split this string into three non-empty palindromic substring
 
 ## Tags
 
-dynamic-programming, string, palindrome
+dynamic-programming, string
+
+## Companies
+infosys

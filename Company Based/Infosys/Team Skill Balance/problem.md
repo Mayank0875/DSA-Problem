@@ -73,4 +73,7 @@ The only possible triplet (0, 1, 1) sums to 2, not 0.
 
 ## Tags
 
-sorting, two-pointers, arrays
+array
+
+## Companies
+infosys

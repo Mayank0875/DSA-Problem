@@ -70,3 +70,6 @@ This is `(A)` where `A = ()`. The score is `2 * Score(A)`, which is `2 * 1 = 2`.
 ## Tags
 
 stack, recursion, string
+
+## Companies
+infosys

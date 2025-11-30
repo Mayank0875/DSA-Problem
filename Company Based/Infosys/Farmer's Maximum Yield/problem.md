@@ -74,4 +74,7 @@ The subarray `[1]` is the only option and has a sum of 1.
 
 ## Tags
 
-array, dynamic-programming, greedy
+array, dynamic-programming
+
+## Companies
+infosys

@@ -74,4 +74,7 @@ There is only one unique combination that sums to 8: `[2, 2, 2, 2]`.
 
 ## Tags
 
-array, sorting, two-pointers
+array, sorting
+
+## Companies
+infosys

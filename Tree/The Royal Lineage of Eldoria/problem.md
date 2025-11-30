@@ -88,3 +88,6 @@ The LCA of heirs 5 and 4 is 5, because a node can be a descendant of itself acco
 ## Tags
 
 binary-search-tree
+
+## Companies
+infosys
