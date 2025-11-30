@@ -54,13 +54,13 @@ Maximum sum is `15`.
 
 ## Input Format  
 
-- First line: integer `n` — size of the Cipher Sequence.  
-- Second line: `n` space-separated integers — elements of the Cipher Sequence.  
+- First line: integer `n` — size of the Traffic Logs Sequence.  
+- Second line: `n` space-separated integers — elements of the Traffic logs.  
 - Third line: integer `k` — size of subarray.
 
 ## Output Format  
 
-Return a single integer — maximum sum of any contiguous subarray of size `k`.
+Return a single integer — maximum total users that visited in any contiguous 'k'-minute window.
 
 
 

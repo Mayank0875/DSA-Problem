@@ -23,7 +23,7 @@ int minSubArrayLen(int target, vector<int>& nums) {
 ### METADATA
 
 **TimeLimit**
-2000
+1000
 
 **MemoryLimit**
 256
@@ -54,7 +54,7 @@ public static int minSubArrayLen(int target, int[] nums) {
 ### METADATA
 
 **TimeLimit**
-2000
+1000
 
 **MemoryLimit**
 256
@@ -87,7 +87,7 @@ int minSubArrayLen(int target, int* nums, int n) {
 ### METADATA
 
 **TimeLimit**
-2000
+1000
 
 **MemoryLimit**
 256
@@ -118,7 +118,7 @@ function minSubArrayLen(target, nums) {
 ### METADATA
 
 **TimeLimit**
-2000
+1000
 
 **MemoryLimit**
 256
@@ -150,7 +150,7 @@ def minSubArrayLen(target, nums):
 ### METADATA
 
 **TimeLimit**
-2000
+1000
 
 **MemoryLimit**
 256

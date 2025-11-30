@@ -16,12 +16,8 @@ int main() {
             cin >> arr[i];
         }
 
-        bool result = findGrimoire(arr, target);
-        if(result){
-            cout << 1 << endl;
-        }else{
-            cout << 0 << endl;
-        }
+        int result = findGrimoire(arr, target);
+        cout << result << endl;
 
         // evaluation completed
     }
@@ -47,12 +43,8 @@ public class Main {
                 arr[i] = sc.nextInt();
             }
 
-            boolean result = findGrimoire(arr, target);
-            if(result){
-                System.out.println(1);
-            } else {
-                System.out.println(0);
-            }
+            int result = findGrimoire(arr, target);
+            System.out.println(result);
 
             // evaluation completed
         }
@@ -79,13 +71,8 @@ int main() {
             scanf("%d", &arr[i]);
         }
 
-        bool result = findGrimoire(arr, n, target);
-        if(result){
-            printf("1\n");
-        } else {
-            printf("0\n");
-        }
-
+        int result = findGrimoire(arr, n, target);
+        printf("%d\n", result);
         // evaluation completed
     }
     return 0;
@@ -109,11 +96,7 @@ function main() {
         idx += n;
 
         const result = findGrimoire(arr, target);
-        if(result){
-            console.log(1);
-        } else {
-            console.log(0);
-        }
+        console.log(result);
 
         // evaluation completed
     }
@@ -134,10 +117,7 @@ def main():
         n, target = map(int, input().split())
         arr = list(map(int, input().split()))
         result = findGrimoire(arr, target)
-        if result:
-            print(1)
-        else:
-            print(0)
+        print(result)
         
         # evaluation completed
 

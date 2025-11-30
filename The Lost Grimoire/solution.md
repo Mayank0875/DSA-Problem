@@ -2,27 +2,27 @@
 
 ### SOLUTION
 
-bool findGrimoire(vector<int>& ids, int target) {
+int findGrimoire(vector<int>& ids, int target) {
     int left = 0, right = ids.size() - 1;
     while (left <= right) {
         int mid = left + (right - left) / 2;
 
         if (ids[mid] == target) {
-            return true;
+            return 1;
         } else if (ids[mid] < target) {
             left = mid + 1;
         } else {
             right = mid - 1;
         }
     }
-    return false;
+    return 0;
 }
 
 
 ### METADATA
 
 **TimeLimit**
-2000
+1000
 
 **MemoryLimit**
 256
@@ -31,19 +31,19 @@ bool findGrimoire(vector<int>& ids, int target) {
 
 ### SOLUTION
 
-public static boolean findGrimoire(int[] ids, int target) {
+public static int findGrimoire(int[] ids, int target) {
     int left = 0, right = ids.length - 1;
     while (left <= right) {
         int mid = left + (right - left) / 2;
         if (ids[mid] == target) {
-            return true;
+            return 1;
         } else if (ids[mid] < target) {
             left = mid + 1;
         } else {
             right = mid - 1;
         }
     }
-    return false;
+    return 0;
 }
 
 
@@ -51,7 +51,7 @@ public static boolean findGrimoire(int[] ids, int target) {
 ### METADATA
 
 **TimeLimit**
-2000
+1000
 
 **MemoryLimit**
 256
@@ -60,25 +60,25 @@ public static boolean findGrimoire(int[] ids, int target) {
 
 ### SOLUTION
 
-bool findGrimoire(const int* ids, int n, int target) {
+int findGrimoire(const int* ids, int n, int target) {
     int left = 0, right = n - 1;
     while (left <= right) {
         int mid = left + (right - left) / 2;
         if (ids[mid] == target) {
-            return true;
+            return 1;
         } else if (ids[mid] < target) {
             left = mid + 1;
         } else {
             right = mid - 1;
         }
     }
-    return false;
+    return 0;
 }
 
 ### METADATA
 
 **TimeLimit**
-2000
+1000
 
 **MemoryLimit**
 256
@@ -92,21 +92,21 @@ function findGrimoire(ids, target) {
     while (left <= right) {
         let mid = Math.floor(left + (right - left) / 2);
         if (ids[mid] === target) {
-            return true;
+            return 1;
         } else if (ids[mid] < target) {
             left = mid + 1;
         } else {
             right = mid - 1;
         }
     }
-    return false;
+    return 0;
 }
 
 
 ### METADATA
 
 **TimeLimit**
-2000
+1000
 
 **MemoryLimit**
 256
@@ -121,17 +121,17 @@ def findGrimoire(ids: List[int], target: int) -> bool:
     while left <= right:
         mid = left + (right - left) // 2
         if ids[mid] == target:
-            return True
+            return 1
         elif ids[mid] < target:
             left = mid + 1
         else:
             right = mid - 1
-    return False
+    return 0
 
 ### METADATA
 
 **TimeLimit**
-2000
+1000
 
 **MemoryLimit**
 256
