@@ -88,5 +88,7 @@ We need to connect (0,0) to either (0,10) or (10,0). Both points are at a square
 256 MB
 
 ## Tags
-
 graph, binary-search
+
+## Companies
+infosys
