@@ -95,3 +95,6 @@ It's optimal to connect 1 from the first row with 1 from the second row, and 4 f
 ## Tags
 
 graph, greedy
+
+## Companies
+infosys
