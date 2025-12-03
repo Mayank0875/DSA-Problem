@@ -3,32 +3,22 @@
 ### Test Case 1
 **Input**
 ```
-4 3
-E A D 
-A C A 
-B C A 
-C E D 
-EAD
+77
 ```
 **Expected Output**
 ```
-Yes
+86
 ```
 ---
 
 ### Test Case 2
 **Input**
 ```
-4 3
-E B C 
-B B C 
-B C A 
-A A E 
-ABCC
+1
 ```
 **Expected Output**
 ```
-No
+2
 ```
 
 ---
@@ -36,17 +26,11 @@ No
 ### Test Case 3
 **Input**
 ```
-5 5
-C D C E C 
-A B A C E 
-D E A D D 
-A C C C B 
-E B E C C 
-BBDC
+121
 ```
 **Expected Output**
 ```
-No
+132
 ```
 
 ---
@@ -54,17 +38,11 @@ No
 ### Test Case 4
 **Input**
 ```
-5 3
-E B A 
-E D C 
-B D B 
-A B C 
-A B E 
-BAAA
+11
 ```
 **Expected Output**
 ```
-No
+14
 ```
 
 ---
@@ -72,17 +50,11 @@ No
 ### Test Case 5
 **Input**
 ```
-5 4
-E E B B 
-E C B B 
-A B E A 
-D E A C 
-C D B E 
-EBDB
+111111
 ```
 **Expected Output**
 ```
-No
+111444
 ```
 
 ---
@@ -90,17 +62,11 @@ No
 ### Test Case 6
 **Input**
 ```
-5 5
-B A B C A 
-C D B D B 
-C C A C E 
-B D C C A 
-B E A B C 
-BA
+999997
 ```
 **Expected Output**
 ```
-Yes
+1000997
 ```
 
 ---
@@ -108,16 +74,11 @@ Yes
 ### Test Case 7
 **Input**
 ```
-4 4
-A D D E 
-A C D A 
-E C D B 
-A B B E 
-DAAB
+41
 ```
 **Expected Output**
 ```
-No
+47
 ```
 
 ---
@@ -125,32 +86,21 @@ No
 ### Test Case 8
 **Input**
 ```
-3 4
-E A B C 
-C B C B 
-D D B C 
-EABC
-
+999999
 ```
 **Expected Output**
 ```
-Yes
+1000999
 ```
 
 ### Test Case 9
 **Input**
 ```
-5 5
-E C E B C 
-E A A B C 
-E D D A A 
-A B C E B 
-E B A A C 
-ECEBCCABCAABEAE
+9876545678
 ```
 **Expected Output**
 ```
-Yes
+9876645059
 ```
 
 ---
@@ -159,17 +109,9 @@ Yes
 **Input**
 
 ```
-5 5
-E C E B C 
-E A A B C 
-E D D A A 
-A B C E B 
-E B A A C 
-ECEBCCABCAABEAA
+99999999999999984
 ```
 **Expected Output**
 ```
-No
+100000000316227750
 ```
-
----
