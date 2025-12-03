@@ -12,11 +12,22 @@ Medium
 
 ## Description
 
-Two parallel space stations, Alpha and Beta, are drifting in orbit. Each station consists of a row of $n$ modules. The modules in station Alpha have energy levels represented by an array $a$, and station Beta's modules have energy levels represented by an array $b$. Within each station, adjacent modules are already connected by internal corridors.
+Two parallel space stations, Alpha and Beta, each contain n modules arranged in a line.
+Station Alpha has an array a representing the energy level of each module.
+Station Beta has an array b representing the energy level of each module.
 
-To ensure the survival of the crew, you must build inter-station power cables connecting modules from Alpha to modules from Beta. The cost to build a cable between the $i$-th module of Alpha and the $j$-th module of Beta is the absolute difference of their energy levels: $|a_i - b_j|$.
+Inside each station, adjacent modules are already connected by internal corridors.
 
-The final network must be **fault-tolerant**. This means that if any single module in either station malfunctions and is removed (along with its internal and external connections), the remaining modules must still be connected as a single network. Your task is to calculate the minimum total cost required to build such a set of cables.
+You must build inter-station power cables connecting some modules of Alpha to some modules of Beta.
+
+The cost to build a cable between module i of Alpha and module j of Beta is:
+absolute value of (a[i] - b[j]).
+
+Fault-tolerance requirement:
+The final network must remain fully connected even if any single module is removed (from either Alpha or Beta).
+If one module fails and disappears along with all its internal and external cables, the remaining modules must still form a single connected network.
+
+Your task is to calculate the minimum total cost required to build such a set of inter-station cables.
 
 ## Examples
 
