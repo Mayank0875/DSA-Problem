@@ -72,4 +72,4 @@ One can go from 1 to 2, but not back. They form separate Closed Loops.
 256 MB
 
 ## Tags
-graph, depth-first-search, strongly-connected-components
+graph, depth-first-search
