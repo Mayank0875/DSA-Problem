@@ -80,4 +80,4 @@ Since every element is 1, any non-empty subsequence has a GCD of 1. There are $2
 
 ## Tags
 
-combinatrics, dynamic-programming, maths
+combinatrics, dynamic-programming,  maths
