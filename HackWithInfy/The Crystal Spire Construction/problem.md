@@ -70,4 +70,7 @@ There are 4 distinct sequences of blocks.
 
 ## Tags
 
-dynamic-programming, maths
+dynamic-programming, maths, hackwithinfy
+
+## Companies
+infosys

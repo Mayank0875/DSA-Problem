@@ -89,4 +89,7 @@ Yes — assuming the graph has edges 1→2 and 2→3 and there is no direct edge
 
 ## Tags
 
-graph, dynamic-programming
+graph, dynamic-programming, hackwithinfy
+
+## Companies
+infosys

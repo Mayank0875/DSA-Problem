@@ -78,4 +78,7 @@ Since the intensities are strictly decreasing, we can pick at most 1 burst.
 
 ## Tags
 
-binary-search, dynamic-programming, greedy
+binary-search, dynamic-programming, greedy, hackwithinfy
+
+## Companies
+infosys

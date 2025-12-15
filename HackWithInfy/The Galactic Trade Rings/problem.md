@@ -85,4 +85,7 @@ Minimum: 2
 
 ## Tags
 
-graph, depth-first-search
+graph, depth-first-search, hackwithinfy
+
+## Companies
+infosys

@@ -75,4 +75,7 @@ Only 1 segment is allowed, containing all pulses. Sum = 15. Stress = $15^2 = 225
 
 ## Tags
 
-dynamic-programming, array
+dynamic-programming, array, hackwithinfy
+
+## Companies
+infosys

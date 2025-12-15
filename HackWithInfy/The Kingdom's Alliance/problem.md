@@ -81,4 +81,7 @@ We can form alliances (1, 2) and (3, 4), giving a total of 2.
 
 ## Tags
 
-tree, dynamic-programming, depth-first-search
+tree, dynamic-programming, depth-first-search, hackwithinfy
+
+## Companies
+infosys

@@ -76,4 +76,7 @@ Possible sums are 0 (empty set), 5, 6, and 11. None equal 10.
 
 ## Tags
 
-binary-search, breadth-first-search, divide-and-conquer
+binary-search, breadth-first-search, divide-and-conquer, hackwithinfy
+
+## Companies
+infosys

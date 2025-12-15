@@ -90,4 +90,7 @@ There is only one edge 1 → 2. It is impossible to make 100 jumps because once 
 
 ## Tags
 
-graph, dynamic-programming
+graph, dynamic-programming, hackwithinfy
+
+## Companies
+infosys

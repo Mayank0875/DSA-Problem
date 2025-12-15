@@ -83,4 +83,7 @@ We can block edges $(1,3)$ and $(2,3)$ to isolate node 3.
 
 ## Tags
 
-graph
+graph, hackwithinfy
+
+## Companies
+infosys

@@ -82,4 +82,7 @@ Only Pilot 1 and Droid 1 are compatible. The maximum number of operational Starf
 
 ## Tags
 
-graph
+graph, hackwithinfy
+
+## Companies
+infosys

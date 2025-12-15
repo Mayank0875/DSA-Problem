@@ -84,4 +84,7 @@ The only valid path is 1 → 2.
 
 ## Tags
 
-graph, dynamic-programming
+graph, dynamic-programming, hackwithinfy
+
+## Companies
+infosys

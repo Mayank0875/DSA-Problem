@@ -85,4 +85,7 @@ A single path 1 → 2 → 3 exists with a bottleneck capacity of 5.
 
 ## Tags
 
-graph
+graph, hackwithinfy
+
+## Companies
+infosys
