@@ -72,4 +72,7 @@ The characters are distinct. The permutations are: "abc", "acb", "bac", "bca", "
 
 ## Tags
 
-dynamic-programming, maths, hash-table
+dynamic-programming, maths, hash-table, hackwithinfy
+
+## Companies
+infosys

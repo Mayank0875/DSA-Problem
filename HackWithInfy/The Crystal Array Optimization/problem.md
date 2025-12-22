@@ -83,4 +83,7 @@ We can choose array $[4, 1]$. Sum is 5. Cost is $4 \ \& \ 1 = 0$.
 
 ## Tags
 
-maths, greedy
+maths, greedy, hackwithinfy
+
+## Companies
+infosys

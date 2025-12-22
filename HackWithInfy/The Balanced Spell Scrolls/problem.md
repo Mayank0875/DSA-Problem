@@ -89,4 +89,7 @@ No subarray satisfies the condition. For `[1]`, Sum=1, MEX=0. For `[1, 1]`, Sum=
 
 ## Tags
 
-binary-search, maths, dynamic-programming, two-pointers
+binary-search, maths, dynamic-programming, two-pointers, hackwithinfy
+
+## Companies
+infosys

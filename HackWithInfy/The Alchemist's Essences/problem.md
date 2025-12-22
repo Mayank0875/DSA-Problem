@@ -80,4 +80,7 @@ Partition the elements into sets {1},{2},{2}, resulting in multiset {1,2,2}.
 
 ## Tags
 
-dynamic-programming, maths
+dynamic-programming, maths, hackwithinfy
+
+## Companies
+infosys

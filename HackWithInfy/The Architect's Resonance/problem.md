@@ -80,4 +80,7 @@ Total XOR sum: 0
 
 ## Tags
 
-binary-search, maths, array
+binary-search, maths, array, hackwithinfy
+
+## Companies
+infosys

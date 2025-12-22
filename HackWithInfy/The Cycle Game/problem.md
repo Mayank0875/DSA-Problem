@@ -93,4 +93,7 @@ Final score is 1
 
 ## Tags
 
-greedy, graph, combinatrics 
+greedy, graph, combinatrics , hackwithinfy
+
+## Companies
+infosys
