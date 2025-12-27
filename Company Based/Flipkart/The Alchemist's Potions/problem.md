@@ -8,7 +8,7 @@ the-alchemists-potions
 
 ## Difficulty
 
-Easy
+Medium
 
 ## Description
 
