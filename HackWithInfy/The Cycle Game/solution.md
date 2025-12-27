@@ -188,7 +188,7 @@ public static long calculateFinalScore(int n, int[] p) {
 ### METADATA
 
 **TimeLimit**  
-1000  
+3000  
 
 **MemoryLimit**  
 512  
