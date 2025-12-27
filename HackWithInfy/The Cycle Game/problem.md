@@ -75,7 +75,7 @@ Final score is 1
 
 ## Output Format  
 
-- Return one integer: final score on a new line.
+- Return one integer: final score.
   
 
 ## Constraints  
@@ -85,7 +85,7 @@ Final score is 1
 
 ## Time Limit
 
-2 second
+1 second
 
 ## Memory Limit
 
