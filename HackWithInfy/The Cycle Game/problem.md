@@ -49,7 +49,8 @@ Your task is to compute the final score assuming both players play optimally.
 
 #### Explanation
 
-Final score is 4.
+Obada chooses numbers to add, Harraaak chooses numbers to subtract.
+By choosing the best possible starting number and playing optimally, Obada can achieve a maximum final score of 4.
 
     
 ### 2
@@ -65,7 +66,9 @@ Final score is 4.
 
 #### Explanation
 
-Final score is 1
+Obada chooses 2 and adds it to the score.
+Harraaak then subtracts 1, the only remaining number.
+Final score is 1.
   
 
 ## Input Format  

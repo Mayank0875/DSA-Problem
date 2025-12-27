@@ -32,7 +32,9 @@ aabac
 
 #### Explanation
 
-The number of distinct permutations is 20.
+The string has repeated characters (a appears 3 times).
+The number of distinct permutations is calculated by dividing the total permutations by repetitions.
+Final number of unique rearrangements is 20.
     
 ### 2
 
