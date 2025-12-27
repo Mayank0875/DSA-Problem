@@ -12,11 +12,11 @@ Medium
 
 ## Description
 
-In the dusty archives of the Great Library, an ancient scribe has discovered a peculiar stone tablet containing a sequence of runic characters. This sequence, represented as a string $S$, is believed to be a password to a hidden vault.
+In the dusty archives of the Great Library, an ancient scribe has discovered a peculiar stone tablet containing a sequence of runic characters. This sequence, represented as a string `S`, is believed to be a password to a hidden vault.
 
 However, legends say that the true password is not necessarily the sequence found on the tablet, but rather one of the many possible distinct rearrangements of its runes. The scribe knows the specific set of characters, but the order has been lost to time.
 
-Your task is to help the scribe calculate the total number of distinct strings that can be formed using the characters from the found string $S$. Since the number of permutations can be very large, print the result modulo $10^9 + 7$.
+Your task is to help the scribe calculate the total number of distinct strings that can be formed using the characters from the found string `S`. Since the number of permutations can be very large, print the result modulo `10^9 + 7`.
 
 ## Examples
 
@@ -51,11 +51,11 @@ The characters are distinct. The permutations are: "abc", "acb", "bac", "bca", "
 
 ## Input Format  
 
-- The first and only line of input contains a string $S$ consisting of lowercase English letters (a–z).
+- The first and only line of input contains a string `S` consisting of lowercase English letters (a–z).
 
 ## Output Format  
 
-- Return one integer: the number of different strings that can be created modulo $10^9+7$.
+- Return one integer: the number of different strings that can be created modulo `10^9+7`.
   
 
 ## Constraints  
