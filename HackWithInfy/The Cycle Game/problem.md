@@ -70,7 +70,7 @@ Final score is 1
 
 ## Input Format  
 
-- The only input line has an integer n (length of permutation).
+- First line contains an integer n (length of permutation).
 - n space-separated integers p_1, ....., p_n.
 
 ## Output Format  
