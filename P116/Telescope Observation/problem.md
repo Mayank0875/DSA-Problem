@@ -1,0 +1,67 @@
+## Title
+Telescope Observation
+
+## Slug
+telescope-observation
+
+## Difficulty
+Medium
+
+## Description
+Astronomers book telescope time. Each observation has a start hour and end hour.
+
+The log contains list of observations, each defined by a start and an end, represented as a pair `[s, e]`.
+
+The telescope must recalibrate. An observation must end strictly before the next begins. Specifically, to transition from observation `[a, b]` to a subsequent observation `[c, d]`, the e of the first observation must be **strictly less than** the s of the second observation (i.e., `b < c`).
+
+You can select observations in any order you like to form a valid night schedule. Your goal is to determine the maximum number of observations that can be included in a single night schedule.
+
+## Examples
+
+### 1
+
+#### Input
+3
+1 2
+2 3
+3 4
+
+#### Output
+2
+
+#### Explanation
+The longest night schedule is `[1, 2] -> [3, 4]`. You cannot include `[2, 3]` because `2` (end of first) is not strictly less than `2` (start of second).
+
+### 2
+
+#### Input
+3
+1 2
+7 8
+4 5
+
+#### Output
+3
+
+#### Explanation
+The observations can be reordered to form the night schedule `[1, 2] -> [4, 5] -> [7, 8]`. All transitions satisfy `end < start`.
+
+## Input Format
+- The first line contains an integer `n`, the number of available observations.
+- The next `n` lines each contain two integers, representing the `s` and `e` of an observation.
+
+## Output Format
+- Return a single integer representing the maximum length of the night schedule.
+
+## Constraints
+- 1 ≤ n ≤ 1000
+- -1000 ≤ s < e ≤ 1000
+
+## Time Limit
+2 second
+
+## Memory Limit
+256 MB
+
+## Tags
+array, dynamic-programming, greedy, sorting

@@ -1,0 +1,63 @@
+## Title
+Elevator Floors
+
+## Slug
+elevator-floors
+
+## Difficulty
+Easy
+
+## Description
+An elevator goes up. A 'Non-Stop Ascent' is a sequence of stops where the floor number strictly increases.
+
+The Passenger is analyzing a sequence of stops represented by an array of integers `nums`, where `nums[i]` represents the floor number at index `i`.
+
+The Passenger wants to find the maximum total floor number obtained during a single "**Non-Stop Ascent**". A "Non-Stop Ascent" is defined as a contiguous subarray of stops where the floor number of each stop is `strictly greater` than the previous one.
+
+Your task is to find the **maximum sum** of floor numbers possible from one such Non-Stop Ascent. The Non-Stop Ascent must include at least one stop.
+
+## Examples
+
+### 1
+
+#### Input
+6
+10 20 30 5 10 50
+
+#### Output
+65
+
+#### Explanation
+The The Passenger identifies the sequence `[10, 20, 30]` with a sum of 60. However, a better Non-Stop Ascent starts later: `[5, 10, 50]`. This is a strictly increasing contiguous subarray, and its sum is 65.
+
+### 2
+
+#### Input
+5
+10 20 30 40 50
+
+#### Output
+150
+
+#### Explanation
+The entire sequence is strictly increasing. The sum is 150.
+
+## Input Format
+- The first line contains a single integer `n`, the number of stops.
+- The second line contains `n` space-separated integers, representing the floor numbers.
+
+## Output Format
+- Return a single integer representing the maximum sum of any strictly increasing contiguous subarray.
+
+## Constraints
+- 1 ≤ n ≤ 100
+- 1 ≤ nums[i] ≤ 100
+
+## Time Limit
+2 second
+
+## Memory Limit
+256 MB
+
+## Tags
+array, sliding-window, easy
