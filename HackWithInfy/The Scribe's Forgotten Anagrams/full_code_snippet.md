@@ -29,14 +29,14 @@ public class Main {
     
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int t = sc.nextInt();
+        Scanner scanner = new Scanner(System.in);
+        int t = scanner.nextInt();
         while (t-- > 0) {
             String str = scanner.next();
             System.out.println(countDistinctStrings(str));
             // evaluation completed
         }
-        sc.close();
+        scanner.close();
     }
 }
 
