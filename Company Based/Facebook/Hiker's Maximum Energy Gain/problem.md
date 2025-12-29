@@ -74,4 +74,7 @@ The entire trail is a continuous climb. The sum of all checkpoints is 150.
 
 ## Tags
 
-array, sliding-window, easy
+array, sliding-window
+
+## Company
+facebook

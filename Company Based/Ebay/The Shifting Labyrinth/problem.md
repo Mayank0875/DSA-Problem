@@ -90,3 +90,6 @@ The fixed pillars `'*'` hold their position relative to the grid rotation, and b
 ## Tags
 
 two-pointers, array, matrix
+
+## Company
+ebay

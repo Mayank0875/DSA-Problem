@@ -82,3 +82,6 @@ Your goal is to calculate the **maximum profit** you can achieve over the given 
 ## Tags
 
 dynamic-programming, greedy
+
+## Company
+ebay

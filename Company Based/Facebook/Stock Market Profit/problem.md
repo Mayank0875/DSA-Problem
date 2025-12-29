@@ -74,3 +74,6 @@ The stock price never increases, so it is impossible to make a profit. The maxim
 ## Tags
 
 greedy, dynamic-programming
+
+## Company
+facebook

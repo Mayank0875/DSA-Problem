@@ -87,3 +87,6 @@ There is only one triplet `(2, 4, 5)`. Hegemony takes `5`, you take `4`, Scaveng
 ## Tags
 
 array, sorting, greedy
+
+## Company
+flipkart
