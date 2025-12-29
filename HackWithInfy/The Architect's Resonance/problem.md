@@ -12,15 +12,15 @@ Medium
 
 ## Description
 
-Arin is a visionary architect designing a modular skyscraper. The building consists of $n$ vertical sections, where the $i$-th section has a structural weight of $a_i$.
+Arin is a visionary architect designing a modular skyscraper. The building consists of $n$ vertical sections, where the `i`-th section has a structural weight of `a_i`.
 
-Arin needs to finalize the blueprint by creating a **partition** of the building. A partition involves dividing the sequence of $n$ sections into one or more contiguous groups (subarrays) such that every section belongs to exactly one group.
+Arin needs to finalize the blueprint by creating a **partition** of the building. A partition involves dividing the sequence of `n` sections into one or more contiguous groups (subarrays) such that every section belongs to exactly one group.
 
-For a specific blueprint (partition), the **resonance** is calculated as follows:
+For a specific blueprint (partition), the `resonance` is calculated as follows:
 1. Calculate the sum of weights for each group in the partition.
 2. The resonance is the bitwise XOR sum of these group weights.
 
-Arin wants to analyze the structural integrity of all possibilities. Your task is to calculate the bitwise XOR sum of the resonance values of **all possible partitions** of the array.
+Arin wants to analyze the structural integrity of all possibilities. Your task is to calculate the bitwise XOR sum of the resonance values of `all possible partitions` of the array.
 
 ## Examples
 
@@ -72,7 +72,7 @@ Total XOR sum: 0
 
 ## Time Limit
 
-2 second
+1 second
 
 ## Memory Limit
 
