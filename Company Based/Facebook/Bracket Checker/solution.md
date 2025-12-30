@@ -3,20 +3,21 @@
 ### SOLUTION
 
 string isValid(string& s) {
-    stack<char> st;
-    unordered_map<char, char> mapping = {{')', '('}, {']', '['}, {'}', '{'}};
-
+    int balance = 0;
+    int returnsToZero = 0;
+    
     for (char c : s) {
-        if (mapping.count(c)) {
-            if (st.empty() || st.top() != mapping[c]) {
-                return "No";
-            }
-            st.pop();
+        if (c == '(') {
+            balance++;
         } else {
-            st.push(c);
+            balance--;
+        }
+        
+        if (balance == 0) {
+            returnsToZero++;
         }
     }
-    return (st.empty() ? "Yes" : "No");
+    return ((returnsToZero > 1) ? "Yes" : "No");
 }
 
 ### METADATA
@@ -33,23 +34,24 @@ string isValid(string& s) {
 ### SOLUTION
 
 public static String isValid(String s) {
-    Stack<Character> st = new Stack<>();
-    Map<Character, Character> mapping = new HashMap<>();
-    mapping.put(')', '(');
-    mapping.put(']', '[');
-    mapping.put('}', '{');
+    int balance = 0;
+    int returnsToZero = 0;
 
-    for (char c : s.toCharArray()) {
-        if (mapping.containsKey(c)) {
-            if (st.isEmpty() || st.peek() != mapping.get(c)) {
-                return "No";
-            }
-            st.pop();
+    for (int i = 0; i < s.length(); i++) {
+        char c = s.charAt(i);
+
+        if (c == '(') {
+            balance++;
         } else {
-            st.push(c);
+            balance--;
+        }
+
+        if (balance == 0) {
+            returnsToZero++;
         }
     }
-    return st.isEmpty() ? "Yes" : "No";
+
+    return (returnsToZero > 1) ? "Yes" : "No";
 }
 
 
@@ -68,27 +70,24 @@ public static String isValid(String s) {
 ### SOLUTION
 
 const char* isValid(char* s) {
-    int MAX = 1000000;
-    char stack[MAX];
-    int top = -1;
+    int balance = 0;
+    int returnsToZero = 0;
 
     for (int i = 0; s[i] != '\0'; i++) {
-        char c = s[i];
-        if (c == '(' || c == '[' || c == '{') {
-            stack[++top] = c;
-        } else if (c == ')' || c == ']' || c == '}') {
-            if (top == -1)
-                return "No";
-            char open = stack[top--];
-            if ((c == ')' && open != '(') ||
-                (c == ']' && open != '[') ||
-                (c == '}' && open != '{')) {
-                return "No";
-            }
+        if (s[i] == '(') {
+            balance++;
+        } else {
+            balance--;
+        }
+
+        if (balance == 0) {
+            returnsToZero++;
         }
     }
-    return (top == -1) ? "Yes" : "No";
+
+    return (returnsToZero > 1) ? "Yes" : "No";
 }
+
 
 ### METADATA
 
@@ -105,20 +104,22 @@ const char* isValid(char* s) {
 ### SOLUTION
 
 function isValid(s) {
-    const st = [];
-    const mapping = { ')': '(', ']': '[', '}': '{' };
+    let balance = 0;
+    let returnsToZero = 0;
 
     for (const c of s) {
-        if (mapping[c]) {
-            if (st.length === 0 || st[st.length - 1] !== mapping[c]) {
-                return "No";
-            }
-            st.pop();
+        if (c === '(') {
+            balance++;
         } else {
-            st.push(c);
+            balance--;
+        }
+
+        if (balance === 0) {
+            returnsToZero++;
         }
     }
-    return st.length === 0 ? "Yes" : "No";
+
+    return (returnsToZero > 1) ? "Yes" : "No";
 }
 
 
@@ -137,18 +138,20 @@ function isValid(s) {
 ### SOLUTION
 
 def isValid(s):
-    st = []
-    mapping = {')': '(', ']': '[', '}': '{'}
+    balance = 0
+    returnsToZero = 0
 
     for c in s:
-        if c in mapping:
-            if not st or st[-1] != mapping[c]:
-                return "No"
-            st.pop()
+        if c == '(':
+            balance += 1
         else:
-            st.append(c)
+            balance -= 1
 
-    return "Yes" if not st else "No"
+        if balance == 0:
+            returnsToZero += 1
+
+    return "Yes" if returnsToZero > 1 else "No"
+
 
 
 ### METADATA

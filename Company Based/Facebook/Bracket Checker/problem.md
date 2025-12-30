@@ -8,14 +8,15 @@ bracket-checker
 
 ## Difficulty
 
-Easy
+Medium
 
 ## Description
 
-You are developing a tool to check the syntax of code snippets. A crucial part is ensuring that brackets like parentheses (), square brackets [], and curly braces {} are correctly balanced and nested. A sequence of brackets is considered valid if:
-    1. Every opening bracket has a corresponding closing bracket of the same type.
-    2. Brackets are closed in the correct order (no crossing pairs like ([)]). An empty string is also considered valid. 
-Given a string consisting only of these bracket characters, determine if it is valid.
+A computer science student has typed a long string of brackets into a text editor. The string `s` is guaranteed to be a "balanced bracket sequence" (a valid mathematical expression of brackets).
+
+However, the student's keyboard is malfunctioning. When they try to edit the text, the backspace key deletes exactly two characters: one opening bracket `(` and one closing bracket `)`. These two characters can be located anywhere in the string.
+
+Your task is to determine if it is possible to choose one `(` and one `)` to delete such that the remaining string is **no longer** a balanced bracket sequence.
 
 ## Examples
 
@@ -23,7 +24,24 @@ Given a string consisting only of these bracket characters, determine if it is v
 
 #### Input
 
-()[]{}
+(())
+
+#### Output
+
+No
+
+#### Explanation
+
+The string is `(())`.
+- Removing the outer pair leaves `()`, which is balanced.
+- Removing the first `(` and last `)` leaves `()`, balanced.
+It is impossible to make it unbalanced.
+    
+### 2
+
+#### Input
+
+()()
 
 #### Output
 
@@ -31,35 +49,21 @@ Yes
 
 #### Explanation
 
-All brackets are matched correctly.
-    
-### 2
-
-#### Input
-
-([)]
-
-#### Output
-
-No
-
-#### Explanation
-The square bracket [ is closed by a parenthesis ) before the parenthesis ( is closed. This violates the nesting order.
-  
+The string is `()()`. If we remove the first `(` and the last `)`, the result is `)(`, which is not a balanced bracket sequence.  
 
 ## Input Format  
 
-- A single line containing a string s consisting only of the characters '(', ')', '{', '}', '[' and ']'
+- A single line containing a string s consisting only of the characters '(', ')'.
 
 ## Output Format  
 
-- Return true if the string is valid, and false otherwise.
+- Return Yes if it is possible to make the string unbalanced and No otherwise.
   
-
 ## Constraints  
 
 - 1 ≤ length(s) ≤ 1e5
-- s contains only parentheses '()', square brackets '[]', and curly braces '{}'.
+- s contains only parentheses '()'.
+- The input string `s` is guaranteed to be a balanced bracket sequence.
 
 ## Time Limit
 

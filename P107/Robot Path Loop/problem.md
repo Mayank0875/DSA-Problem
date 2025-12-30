@@ -8,47 +8,51 @@ robot-path-loop
 Easy
 
 ## Description
-A rover explores Mars using command loops. Instructions use brackets to define start and end points of exploration zones. Loops must not overlap incorrectly.
+A robot follows a path of loops. Entering a loop `(` must eventually lead to exiting it `)`.
 
-A sequence is considered valid if:
-    1. Every opening command loop has a corresponding closing command loop of the same type.
-    2. command loops are closed in the correct order (no crossing pairs like `([)]`). An empty string is also considered valid.
+The engineer has a path log represented by a string `s`. The string `s` is guaranteed to be a **closed loop system** (a valid nested configuration).
 
-Given a string consisting only of these characters, determine if it is valid.
+However, data corruption deletes two commands. This causes exactly **two** characters to be removed from the string: one `(` and one `)`. These two characters can be chosen from anywhere in the string.
+
+Your task is to determine if it is possible to choose one `(` and one `)` to remove such that the remaining string is **no longer** a closed loop system.
 
 ## Examples
 
 ### 1
 
 #### Input
-()[]{}
-
-#### Output
-Yes
-
-#### Explanation
-All command loops are matched correctly.
-
-### 2
-
-#### Input
-([)]
+(())
 
 #### Output
 No
 
 #### Explanation
-The square command loop `[` is closed by a parenthesis `)` before the parenthesis `(` is closed. This violates the nesting order.
+The string is `(())`.
+- Removing the outer pair leaves `()`, which is closed loop system.
+- Removing the first `(` and last `)` leaves `()`, closed loop system.
+It is impossible to make it open-ended.
+
+### 2
+
+#### Input
+()()
+
+#### Output
+Yes
+
+#### Explanation
+The string is `()()`. If we remove the first `(` and the last `)`, the result is `)(`, which is not a closed loop system.
 
 ## Input Format
-- A single line containing a string s consisting only of the characters '(', ')', '{', '}', '[' and ']'
+- A single line containing a string `s` consisting only of the characters '(' and ')'.
 
 ## Output Format
-- Return true if the string is valid, and false otherwise.
+- Return `Yes` if it is possible to make the string open-ended, and `No` otherwise.
 
 ## Constraints
-- 1 ≤ length(s) ≤ 1e5
-- s contains only characters '()', '[]', and '{}'.
+- 1 ≤ length(s) ≤ 10^5
+- `s` contains only characters '(' and ')'.
+- The input string `s` is guaranteed to be a closed loop system.
 
 ## Time Limit
 2 second
@@ -58,3 +62,4 @@ The square command loop `[` is closed by a parenthesis `)` before the parenthesi
 
 ## Tags
 stack, string
+

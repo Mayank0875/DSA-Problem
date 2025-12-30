@@ -8,47 +8,51 @@ russian-nesting-dolls
 Easy
 
 ## Description
-A toy manufacturer makes intricate nesting dolls. Each doll type corresponds to a bracket pair. To package them correctly, every upper half must eventually meet its matching lower half in the right order.
+A collector displays a set of Russian dolls. Initially, every top half has a matching bottom half in the correct order.
 
-A sequence is considered valid if:
-    1. Every opening doll shell has a corresponding closing doll shell of the same type.
-    2. doll shells are closed in the correct order (no crossing pairs like `([)]`). An empty string is also considered valid.
+The collector has a doll arrangement represented by a string `s`. The string `s` is guaranteed to be a **perfectly nested set** (a valid nested configuration).
 
-Given a string consisting only of these characters, determine if it is valid.
+However, a clumsy guest knocks over two pieces. This causes exactly **two** characters to be removed from the string: one `(` and one `)`. These two characters can be chosen from anywhere in the string.
+
+Your task is to determine if it is possible to choose one `(` and one `)` to remove such that the remaining string is **no longer** a perfectly nested set.
 
 ## Examples
 
 ### 1
 
 #### Input
-()[]{}
-
-#### Output
-Yes
-
-#### Explanation
-All doll shells are matched correctly.
-
-### 2
-
-#### Input
-([)]
+(())
 
 #### Output
 No
 
 #### Explanation
-The square doll shell `[` is closed by a parenthesis `)` before the parenthesis `(` is closed. This violates the nesting order.
+The string is `(())`.
+- Removing the outer pair leaves `()`, which is perfectly nested set.
+- Removing the first `(` and last `)` leaves `()`, perfectly nested set.
+It is impossible to make it improperly nested.
+
+### 2
+
+#### Input
+()()
+
+#### Output
+Yes
+
+#### Explanation
+The string is `()()`. If we remove the first `(` and the last `)`, the result is `)(`, which is not a perfectly nested set.
 
 ## Input Format
-- A single line containing a string s consisting only of the characters '(', ')', '{', '}', '[' and ']'
+- A single line containing a string `s` consisting only of the characters '(' and ')'.
 
 ## Output Format
-- Return true if the string is valid, and false otherwise.
+- Return `Yes` if it is possible to make the string improperly nested, and `No` otherwise.
 
 ## Constraints
-- 1 ≤ length(s) ≤ 1e5
-- s contains only characters '()', '[]', and '{}'.
+- 1 ≤ length(s) ≤ 10^5
+- `s` contains only characters '(' and ')'.
+- The input string `s` is guaranteed to be a perfectly nested set.
 
 ## Time Limit
 2 second
@@ -58,3 +62,4 @@ The square doll shell `[` is closed by a parenthesis `)` before the parenthesis 
 
 ## Tags
 stack, string
+
