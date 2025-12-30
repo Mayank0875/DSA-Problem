@@ -8,7 +8,7 @@ bracket-checker
 
 ## Difficulty
 
-Medium
+Easy
 
 ## Description
 
