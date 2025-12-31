@@ -12,7 +12,7 @@ Medium
 
 ## Description
 
-An explorer is navigating a treacherous canyon filled with floating stone platforms arranged in a straight line. You start at the **first platform** (index 0).
+An explorer is navigating a canyon filled with floating stone platforms arranged in a straight line. You start at the **first platform** (index 0).
 
 Each platform has a specific stability rating, given by an integer array `platforms`. The value at `platforms[i]` represents the **maximum length** you can jump forward from that position. For example, if you are at index `i` and `platforms[i] = 3`, you can jump to any platform at index `i+1`, `i+2`, or `i+3`.
 

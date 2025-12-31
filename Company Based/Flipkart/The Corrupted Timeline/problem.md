@@ -12,7 +12,7 @@ Medium
 
 ## Description
 
-A historian has discovered an ancient scroll containing a list of historical events, represented by their years. A valid timeline must be chronological, meaning the years should appear in non-decreasing order.
+A historian has discovered an scroll containing a list of historical events, represented by their years. A valid timeline must be chronological, meaning the years should appear in non-decreasing order.
 
 However, a clumsy scribe seems to have inserted a chunk of incorrect years into the middle of the scroll, corrupting the timeline. To fix this, you must remove a single contiguous sequence of years (a subarray) so that the remaining years form a sorted, non-decreasing sequence.
 

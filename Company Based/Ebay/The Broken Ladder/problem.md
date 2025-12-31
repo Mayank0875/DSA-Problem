@@ -12,7 +12,7 @@ Medium
 
 ## Description
 
-An adventurer is attempting to scale a high tower, but the ancient ladder has fallen apart. He finds a pile of scattered rungs on the ground, each marked with a unique height integer. To safely climb a section of the tower, he needs to construct a sequence of rungs that correspond to consecutive integers (e.g., `4, 5, 6, 7`).
+An adventurer is attempting to scale a high tower, but the ladder has fallen apart. He finds a pile of scattered rungs on the ground, each marked with a unique height integer. To safely climb a section of the tower, he needs to construct a sequence of rungs that correspond to consecutive integers (e.g., `4, 5, 6, 7`).
 
 The adventurer can start building his ladder from any rung number, but he wants to build the longest possible continuous section to maximize his climb.
 

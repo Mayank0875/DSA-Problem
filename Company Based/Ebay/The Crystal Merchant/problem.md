@@ -12,7 +12,7 @@ Medium
 
 ## Description
 
-You are a merchant trading rare magical crystals in a bustling kingdom. You have an array `prices` where `prices[i]` represents the market price of a crystal on the $i$-th day.
+You are a merchant trading rare crystals in a kingdom. You have an array `prices` where `prices[i]` represents the market price of a crystal on the $i$-th day.
 
 To maximize your earnings, you can perform multiple transactions. A transaction consists of buying one crystal and selling it on a different day. You must observe the following rules:
 1. You can hold **at most one** crystal at a time.

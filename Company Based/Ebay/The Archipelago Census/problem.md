@@ -12,7 +12,7 @@ Medium
 
 ## Description
 
-The Royal Navy has dispatched you to uncharted waters to map out a newly discovered archipelago. You are given a satellite map represented by an $m \times n$ 2D binary grid called `grid`.
+The Navy has dispatched you to uncharted waters to map out a newly discovered archipelago. You are given a satellite map represented by an $m \times n$ 2D binary grid called `grid`.
 
 In this map:
 * `'1'` represents land.

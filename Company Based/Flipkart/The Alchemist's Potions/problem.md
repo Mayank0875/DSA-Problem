@@ -12,7 +12,7 @@ Medium
 
 ## Description
 
-In a prestigious magic academy, young apprentices are waiting in a queue to collect their daily mana potions. There are two types of potions available: **Fire Potions** (represented by `0`) and **Ice Potions** (represented by `1`). Each apprentice has a specific affinity and will only accept one type of potion.
+In a prestigious academy, young apprentices are waiting in a queue to collect their daily mana potions. There are two types of potions available: **Fire Potions** (represented by `0`) and **Ice Potions** (represented by `1`). Each apprentice has a specific affinity and will only accept one type of potion.
 
 The potions are prepared in a **stack**, meaning only the top potion is accessible at any time. The distribution process works as follows:
 1. If the apprentice at the front of the queue prefers the potion currently on top of the stack, they take it and leave the queue.
