@@ -82,3 +82,6 @@ Invalid path: $0 \to 2 \to 4$ (+2, +2) is not allowed.
 ## Tags
 
 dynamic-programming, math
+
+## Company
+tiktok

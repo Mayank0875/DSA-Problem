@@ -78,3 +78,6 @@ There are three ways:
 ## Tags
 
 dynamic-programming, math
+
+## Company
+tiktok

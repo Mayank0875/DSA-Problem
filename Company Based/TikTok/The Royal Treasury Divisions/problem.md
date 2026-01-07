@@ -85,3 +85,6 @@ No continuous subarray of length at least 2 has a sum divisible by 13.
 ## Tags
 
 hash-table, prefix-sum, math, array
+
+## Company
+tiktok
