@@ -8,20 +8,21 @@ candy-dispenser
 Medium
 
 ## Description
-A candy machine mixes its contents by rotating the display case.
+A vending machine rotates its display. Loose candies tumble down, navigating around fixed pegs.
 
-The system is represented by an $m \times n$ matrix `box`. Each cell contains one of the following:
-* `'#'` represents candy piece
-* `'*'` represents plastic peg
-* `'.'` represents air
+The system is represented by an $m \times n$ matrix `grid`. Each cell contains one of the following:
+* `'O'`: candy
+* `'+'`: peg
+* `'.'`: space
 
-Turning the handle causes the grid to **rotate 90 degrees clockwise**. Due to this rotation, gravity shifts, causing the candy pieces to fall downwards. Each candy piece falls until it lands on a plastic peg, another candy piece, or the bottom of the grid.
+Turning the knob causes the entire grid to **rotate 90 degrees clockwise**. Following this rotation, gravity takes effect, causing the candies to fall downwards. Each candy falls until it lands on a peg, another candy, or the bottom boundary of the grid.
 
-Note that:
-1.  Gravity does not affect the plastic pegs; they remain in their rotated positions.
-2.  The candy pieces simply fall vertically in the new orientation.
+**Crucial Rules:**
+1.  Gravity does not affect pegs; they are anchored in place relative to the grid structure.
+2.  candies fall vertically in the new orientation.
+3.  The rotation happens first, then the falling occurs.
 
-Your task is to return an $n \times m$ matrix representing the state of the grid after the rotation and the subsequent settling of the candy pieces.
+Your task is to return an $n \times m$ matrix representing the final state of the grid.
 
 ## Examples
 
@@ -29,44 +30,44 @@ Your task is to return an $n \times m$ matrix representing the state of the grid
 
 #### Input
 1 3
-# . #
+O . O
 
 #### Output
 .
-#
-#
+O
+O
 
 #### Explanation
-The grid rotates 90 degrees. The candy piece at `[0,0]` moves to `[0,0]` in the new grid, and the candy piece at `[0,2]` moves to `[2,0]`. Gravity pulls them down.
+The grid rotates 90 degrees clockwise. The candys fall to the bottom.
 
 ### 2
 
 #### Input
 2 4
-# . * .
-# # * .
+O . + .
+O O + .
 
 #### Output
-# .
-# #
-* *
+O .
+O O
++ +
 . .
 
 #### Explanation
-The plastic pegs (`*`) hold their position relative to the grid rotation, and candy pieces pile up on top of them or the floor.
+The pegs hold their relative positions. candies pile up on top of obstacles or the floor.
 
 ## Input Format
 - The first line contains two integers `m` and `n`, the dimensions of the grid.
-- The next `m` lines each contain `n` space-separated characters representing the rows of the `box`.
+- The next `m` lines each contain `n` space-separated characters representing the rows of the `grid`.
 
 ## Output Format
-- Return the resulting n * m grid. Each row should be on a new line, with characters separated by spaces.
+- Return the resulting $n \times m$ grid. Each row should be on a new line, with characters separated by spaces.
 
 ## Constraints
-- m == box.length
-- n == box[i].length
+- m == grid.length
+- n == grid[i].length
 - 1 ≤ n, m ≤ 500
-- `box[i][j]` is either `'#'`, `'*'`, or `'.'`.
+- `grid[i][j]` is either `'O'`, `'+'`, or `'.'`.
 
 ## Time Limit
 2 second
@@ -75,4 +76,5 @@ The plastic pegs (`*`) hold their position relative to the grid rotation, and ca
 256 MB
 
 ## Tags
-two-pointers, array, matrix
+two-pointers, array, matrix, simulation
+

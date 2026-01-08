@@ -2,27 +2,27 @@
 
 ### SOLUTION
 
-vector<vector<char>> rotateTheBox(vector<vector<char>>& box) {
+vector<vector<char>> applyGravity(vector<vector<char>>& box) {
     int m = box.size();
     int n = box[0].size();
-    vector<vector<char>> result(n, vector<char>(m, '.'));
 
-    for (int i = 0; i < m; i++) {
-        int lowestRowWithEmptyCell = n - 1;
-        for (int j = n - 1; j >= 0; j--) {
-            if (box[i][j] == '#') {
-                // Place it in the correct position in the rotated grid
-                result[lowestRowWithEmptyCell][m - i - 1] = '#';
-                lowestRowWithEmptyCell--;
+    for (int col = 0; col < n; col++) {
+        int write = m - 1;
+
+        for (int row = m - 1; row >= 0; row--) {
+            if (box[row][col] == '*') {
+                write = row - 1;
             }
-            if (box[i][j] == '*') {
-                result[j][m - i - 1] = '*';
-                lowestRowWithEmptyCell = j - 1;
+            else if (box[row][col] == '#') {
+                swap(box[row][col], box[write][col]);
+                write--;
             }
         }
     }
-    return result;
+    return box;
 }
+
+
 
 ### METADATA
 
@@ -37,33 +37,29 @@ vector<vector<char>> rotateTheBox(vector<vector<char>>& box) {
 
 ### SOLUTION
 
-public char[][] rotateTheBox(char[][] box) {
+public char[][] applyGravity(char[][] box) {
     int m = box.length;
     int n = box[0].length;
-    char[][] result = new char[n][m];
 
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < m; j++) {
-            result[i][j] = '.';
-        }
-    }
+    for (int col = 0; col < n; col++) {
+        int write = m - 1;
 
-    for (int i = 0; i < m; i++) {
-        int lowestRowWithEmptyCell = n - 1;
-        for (int j = n - 1; j >= 0; j--) {
-            if (box[i][j] == '#') {
-                // Place it in the correct position in the rotated grid
-                result[lowestRowWithEmptyCell][m - i - 1] = '#';
-                lowestRowWithEmptyCell--;
+        for (int row = m - 1; row >= 0; row--) {
+            if (box[row][col] == '*') {
+                write = row - 1;
             }
-            if (box[i][j] == '*') {
-                result[j][m - i - 1] = '*';
-                lowestRowWithEmptyCell = j - 1;
+            else if (box[row][col] == '#') {
+                char temp = box[row][col];
+                box[row][col] = box[write][col];
+                box[write][col] = temp;
+                write--;
             }
         }
     }
-    return result;
+    return box;
 }
+
+
 
 ### METADATA
 
@@ -80,38 +76,46 @@ public char[][] rotateTheBox(char[][] box) {
 ### SOLUTION
 
 
-char** rotateTheBox(char** box, int boxSize, int* boxColSize, int* returnSize, int** returnColumnSizes) {
+char** applyGravity(char** box, int boxSize, int* boxColSize,
+                    int* returnSize, int** returnColumnSizes) {
+
     int m = boxSize;
     int n = boxColSize[0];
-    
-    *returnSize = n;
-    *returnColumnSizes = (int*)malloc(n * sizeof(int));
-    char** result = (char**)malloc(n * sizeof(char*));
-    
-    for(int i = 0; i < n; i++) {
-        (*returnColumnSizes)[i] = m;
-        result[i] = (char*)malloc(m * sizeof(char));
-        for(int j = 0; j < m; j++) {
-            result[i][j] = '.';
+
+    // Return dimensions
+    *returnSize = m;
+    *returnColumnSizes = (int*)malloc(m * sizeof(int));
+
+    char** result = (char**)malloc(m * sizeof(char*));
+    for (int i = 0; i < m; i++) {
+        (*returnColumnSizes)[i] = n;
+        result[i] = (char*)malloc(n * sizeof(char));
+        for (int j = 0; j < n; j++) {
+            result[i][j] = box[i][j];
         }
     }
 
-    for(int i = 0; i < m; i++) {
-        int lowestRowWithEmptyCell = n - 1;
-        for(int j = n - 1; j >= 0; j--) {
-            if(box[i][j] == '#') {
-                result[lowestRowWithEmptyCell][m - i - 1] = '#';
-                lowestRowWithEmptyCell--;
+    // Apply gravity column-wise
+    for (int col = 0; col < n; col++) {
+        int write = m - 1;
+
+        for (int row = m - 1; row >= 0; row--) {
+            if (result[row][col] == '*') {
+                write = row - 1;
             }
-            if(box[i][j] == '*') {
-                result[j][m - i - 1] = '*';
-                lowestRowWithEmptyCell = j - 1;
+            else if (result[row][col] == '#') {
+                char temp = result[row][col];
+                result[row][col] = result[write][col];
+                result[write][col] = temp;
+                write--;
             }
         }
     }
-    
+
     return result;
 }
+
+
 
 ### METADATA
 
@@ -127,26 +131,28 @@ char** rotateTheBox(char** box, int boxSize, int* boxColSize, int* returnSize, i
 
 ### SOLUTION
 
-var rotateTheBox = function(box) {
-    let m = box.length;
-    let n = box[0].length;
-    let result = Array.from({length: n}, () => Array(m).fill('.'));
+function applyGravity(box) {
+    const m = box.length;
+    const n = box[0].length;
 
-    for (let i = 0; i < m; i++) {
-        let lowestRowWithEmptyCell = n - 1;
-        for (let j = n - 1; j >= 0; j--) {
-            if (box[i][j] === '#') {
-                result[lowestRowWithEmptyCell][m - i - 1] = '#';
-                lowestRowWithEmptyCell--;
+    for (let col = 0; col < n; col++) {
+        let write = m - 1;
+
+        for (let row = m - 1; row >= 0; row--) {
+            if (box[row][col] === '*') {
+                write = row - 1;
             }
-            if (box[i][j] === '*') {
-                result[j][m - i - 1] = '*';
-                lowestRowWithEmptyCell = j - 1;
+            else if (box[row][col] === '#') {
+                [box[row][col], box[write][col]] =
+                [box[write][col], box[row][col]];
+                write--;
             }
         }
     }
-    return result;
-};
+    return box;
+}
+
+
 
 ### METADATA
 
@@ -162,23 +168,20 @@ var rotateTheBox = function(box) {
 
 ### SOLUTION
 
-def rotateTheBox(box: list) -> list:
-    m = len(box)
-    n = len(box[0])
-    result = [["." for _ in range(m)] for _ in range(n)]
+def applyGravity(box):
+    m, n = len(box), len(box[0])
 
-    for i in range(m):
-        lowest_row_with_empty_cell = n - 1
-        for j in range(n - 1, -1, -1):
-            if box[i][j] == "#":
-                result[lowest_row_with_empty_cell][m - i - 1] = "#"
-                lowest_row_with_empty_cell -= 1
-            if box[i][j] == "*":
-                # Place the obstacle in the correct position in the rotated grid
-                result[j][m - i - 1] = "*"
-                lowest_row_with_empty_cell = j - 1
+    for col in range(n):
+        write = m - 1
+        for row in range(m - 1, -1, -1):
+            if box[row][col] == '*':
+                write = row - 1
+            elif box[row][col] == '#':
+                box[row][col], box[write][col] = box[write][col], box[row][col]
+                write -= 1
+    return box
 
-    return result
+
 
 ### METADATA
 

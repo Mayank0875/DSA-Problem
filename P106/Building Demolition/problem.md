@@ -8,20 +8,21 @@ building-demolition
 Medium
 
 ## Description
-A building collapses sideways. Debris falls into available gaps.
+A tower topples sideways. Debris falls through the structure, hitting steel girders.
 
-The system is represented by an $m \times n$ matrix `box`. Each cell contains one of the following:
-* `'#'` represents debris chunk
-* `'*'` represents steel beam
-* `'.'` represents gap
+The system is represented by an $m \times n$ matrix `grid`. Each cell contains one of the following:
+* `'#'`: debris
+* `'I'`: girder
+* `'.'`: sky
 
-The structural failure causes the grid to **rotate 90 degrees clockwise**. Due to this rotation, gravity shifts, causing the debris chunks to fall downwards. Each debris chunk falls until it lands on a steel beam, another debris chunk, or the bottom of the grid.
+The toppling causes the entire grid to **rotate 90 degrees clockwise**. Following this rotation, gravity takes effect, causing the debris chunks to fall downwards. Each debris falls until it lands on a girder, another debris, or the bottom boundary of the grid.
 
-Note that:
-1.  Gravity does not affect the steel beams; they remain in their rotated positions.
-2.  The debris chunks simply fall vertically in the new orientation.
+**Crucial Rules:**
+1.  Gravity does not affect girders; they are anchored in place relative to the grid structure.
+2.  debris chunks fall vertically in the new orientation.
+3.  The rotation happens first, then the falling occurs.
 
-Your task is to return an $n \times m$ matrix representing the state of the grid after the rotation and the subsequent settling of the debris chunks.
+Your task is to return an $n \times m$ matrix representing the final state of the grid.
 
 ## Examples
 
@@ -37,36 +38,36 @@ Your task is to return an $n \times m$ matrix representing the state of the grid
 #
 
 #### Explanation
-The grid rotates 90 degrees. The debris chunk at `[0,0]` moves to `[0,0]` in the new grid, and the debris chunk at `[0,2]` moves to `[2,0]`. Gravity pulls them down.
+The grid rotates 90 degrees clockwise. The debriss fall to the bottom.
 
 ### 2
 
 #### Input
 2 4
-# . * .
-# # * .
+# . I .
+# # I .
 
 #### Output
 # .
 # #
-* *
+I I
 . .
 
 #### Explanation
-The steel beams (`*`) hold their position relative to the grid rotation, and debris chunks pile up on top of them or the floor.
+The girders hold their relative positions. debris chunks pile up on top of obstacles or the floor.
 
 ## Input Format
 - The first line contains two integers `m` and `n`, the dimensions of the grid.
-- The next `m` lines each contain `n` space-separated characters representing the rows of the `box`.
+- The next `m` lines each contain `n` space-separated characters representing the rows of the `grid`.
 
 ## Output Format
-- Return the resulting n * m grid. Each row should be on a new line, with characters separated by spaces.
+- Return the resulting $n \times m$ grid. Each row should be on a new line, with characters separated by spaces.
 
 ## Constraints
-- m == box.length
-- n == box[i].length
+- m == grid.length
+- n == grid[i].length
 - 1 ≤ n, m ≤ 500
-- `box[i][j]` is either `'#'`, `'*'`, or `'.'`.
+- `grid[i][j]` is either `'#'`, `'I'`, or `'.'`.
 
 ## Time Limit
 2 second
@@ -75,4 +76,5 @@ The steel beams (`*`) hold their position relative to the grid rotation, and deb
 256 MB
 
 ## Tags
-two-pointers, array, matrix
+two-pointers, array, matrix, simulation
+

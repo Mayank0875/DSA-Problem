@@ -8,20 +8,21 @@ suitcase-packing
 Medium
 
 ## Description
-A suitcase is stood upright. Contents settle to the bottom.
+A suitcase is stood upright. Clothes settle to the bottom, but strapped items stay put.
 
-The system is represented by an $m \times n$ matrix `box`. Each cell contains one of the following:
-* `'#'` represents shirt
-* `'*'` represents divider
-* `'.'` represents space
+The system is represented by an $m \times n$ matrix `grid`. Each cell contains one of the following:
+* `'#'`: shirt
+* `'*'`: strapped item
+* `'.'`: gap
 
-Standing the suitcase up causes the grid to **rotate 90 degrees clockwise**. Due to this rotation, gravity shifts, causing the shirts to fall downwards. Each shirt falls until it lands on a divider, another shirt, or the bottom of the grid.
+Standing the suitcase causes the entire grid to **rotate 90 degrees clockwise**. Following this rotation, gravity takes effect, causing the shirts to fall downwards. Each shirt falls until it lands on a strapped item, another shirt, or the bottom boundary of the grid.
 
-Note that:
-1.  Gravity does not affect the dividers; they remain in their rotated positions.
-2.  The shirts simply fall vertically in the new orientation.
+**Crucial Rules:**
+1.  Gravity does not affect strapped items; they are anchored in place relative to the grid structure.
+2.  shirts fall vertically in the new orientation.
+3.  The rotation happens first, then the falling occurs.
 
-Your task is to return an $n \times m$ matrix representing the state of the grid after the rotation and the subsequent settling of the shirts.
+Your task is to return an $n \times m$ matrix representing the final state of the grid.
 
 ## Examples
 
@@ -37,7 +38,7 @@ Your task is to return an $n \times m$ matrix representing the state of the grid
 #
 
 #### Explanation
-The grid rotates 90 degrees. The shirt at `[0,0]` moves to `[0,0]` in the new grid, and the shirt at `[0,2]` moves to `[2,0]`. Gravity pulls them down.
+The grid rotates 90 degrees clockwise. The shirts fall to the bottom.
 
 ### 2
 
@@ -53,20 +54,20 @@ The grid rotates 90 degrees. The shirt at `[0,0]` moves to `[0,0]` in the new gr
 . .
 
 #### Explanation
-The dividers (`*`) hold their position relative to the grid rotation, and shirts pile up on top of them or the floor.
+The strapped items hold their relative positions. shirts pile up on top of obstacles or the floor.
 
 ## Input Format
 - The first line contains two integers `m` and `n`, the dimensions of the grid.
-- The next `m` lines each contain `n` space-separated characters representing the rows of the `box`.
+- The next `m` lines each contain `n` space-separated characters representing the rows of the `grid`.
 
 ## Output Format
-- Return the resulting n * m grid. Each row should be on a new line, with characters separated by spaces.
+- Return the resulting $n \times m$ grid. Each row should be on a new line, with characters separated by spaces.
 
 ## Constraints
-- m == box.length
-- n == box[i].length
+- m == grid.length
+- n == grid[i].length
 - 1 ≤ n, m ≤ 500
-- `box[i][j]` is either `'#'`, `'*'`, or `'.'`.
+- `grid[i][j]` is either `'#'`, `'*'`, or `'.'`.
 
 ## Time Limit
 2 second
@@ -75,4 +76,5 @@ The dividers (`*`) hold their position relative to the grid rotation, and shirts
 256 MB
 
 ## Tags
-two-pointers, array, matrix
+two-pointers, array, matrix, simulation
+

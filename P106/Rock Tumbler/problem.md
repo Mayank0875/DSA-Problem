@@ -8,20 +8,21 @@ rock-tumbler
 Medium
 
 ## Description
-A machine tumbles rocks for polishing.
+A barrel rotates rocks. They tumble down, hitting internal fins.
 
-The system is represented by an $m \times n$ matrix `box`. Each cell contains one of the following:
-* `'#'` represents rock
-* `'*'` represents fin
-* `'.'` represents barrel
+The system is represented by an $m \times n$ matrix `grid`. Each cell contains one of the following:
+* `'@'`: rock
+* `'/'`: fin
+* `'.'`: space
 
-The tumbling causes the grid to **rotate 90 degrees clockwise**. Due to this rotation, gravity shifts, causing the rocks to fall downwards. Each rock falls until it lands on a fin, another rock, or the bottom of the grid.
+The barrel turn causes the entire grid to **rotate 90 degrees clockwise**. Following this rotation, gravity takes effect, causing the rocks to fall downwards. Each rock falls until it lands on a fin, another rock, or the bottom boundary of the grid.
 
-Note that:
-1.  Gravity does not affect the fins; they remain in their rotated positions.
-2.  The rocks simply fall vertically in the new orientation.
+**Crucial Rules:**
+1.  Gravity does not affect fins; they are anchored in place relative to the grid structure.
+2.  rocks fall vertically in the new orientation.
+3.  The rotation happens first, then the falling occurs.
 
-Your task is to return an $n \times m$ matrix representing the state of the grid after the rotation and the subsequent settling of the rocks.
+Your task is to return an $n \times m$ matrix representing the final state of the grid.
 
 ## Examples
 
@@ -29,44 +30,44 @@ Your task is to return an $n \times m$ matrix representing the state of the grid
 
 #### Input
 1 3
-# . #
+@ . @
 
 #### Output
 .
-#
-#
+@
+@
 
 #### Explanation
-The grid rotates 90 degrees. The rock at `[0,0]` moves to `[0,0]` in the new grid, and the rock at `[0,2]` moves to `[2,0]`. Gravity pulls them down.
+The grid rotates 90 degrees clockwise. The rocks fall to the bottom.
 
 ### 2
 
 #### Input
 2 4
-# . * .
-# # * .
+@ . / .
+@ @ / .
 
 #### Output
-# .
-# #
-* *
+@ .
+@ @
+/ /
 . .
 
 #### Explanation
-The fins (`*`) hold their position relative to the grid rotation, and rocks pile up on top of them or the floor.
+The fins hold their relative positions. rocks pile up on top of obstacles or the floor.
 
 ## Input Format
 - The first line contains two integers `m` and `n`, the dimensions of the grid.
-- The next `m` lines each contain `n` space-separated characters representing the rows of the `box`.
+- The next `m` lines each contain `n` space-separated characters representing the rows of the `grid`.
 
 ## Output Format
-- Return the resulting n * m grid. Each row should be on a new line, with characters separated by spaces.
+- Return the resulting $n \times m$ grid. Each row should be on a new line, with characters separated by spaces.
 
 ## Constraints
-- m == box.length
-- n == box[i].length
+- m == grid.length
+- n == grid[i].length
 - 1 ≤ n, m ≤ 500
-- `box[i][j]` is either `'#'`, `'*'`, or `'.'`.
+- `grid[i][j]` is either `'@'`, `'/'`, or `'.'`.
 
 ## Time Limit
 2 second
@@ -75,4 +76,5 @@ The fins (`*`) hold their position relative to the grid rotation, and rocks pile
 256 MB
 
 ## Tags
-two-pointers, array, matrix
+two-pointers, array, matrix, simulation
+

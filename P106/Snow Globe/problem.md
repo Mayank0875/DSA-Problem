@@ -8,20 +8,21 @@ snow-globe
 Medium
 
 ## Description
-Someone shakes a square snow globe and turns it on its side.
+A snow globe is shaken and turned. Flakes fall, hitting the scenery.
 
-The system is represented by an $m \times n$ matrix `box`. Each cell contains one of the following:
-* `'#'` represents snowflake
-* `'*'` represents figurine
-* `'.'` represents water
+The system is represented by an $m \times n$ matrix `grid`. Each cell contains one of the following:
+* `'*'`: flake
+* `'#'`: castle
+* `'.'`: water
 
-Turning the globe causes the grid to **rotate 90 degrees clockwise**. Due to this rotation, gravity shifts, causing the snowflakes to fall downwards. Each snowflake falls until it lands on a figurine, another snowflake, or the bottom of the grid.
+Turning the globe causes the entire grid to **rotate 90 degrees clockwise**. Following this rotation, gravity takes effect, causing the flakes to fall downwards. Each flake falls until it lands on a castle, another flake, or the bottom boundary of the grid.
 
-Note that:
-1.  Gravity does not affect the figurines; they remain in their rotated positions.
-2.  The snowflakes simply fall vertically in the new orientation.
+**Crucial Rules:**
+1.  Gravity does not affect castles; they are anchored in place relative to the grid structure.
+2.  flakes fall vertically in the new orientation.
+3.  The rotation happens first, then the falling occurs.
 
-Your task is to return an $n \times m$ matrix representing the state of the grid after the rotation and the subsequent settling of the snowflakes.
+Your task is to return an $n \times m$ matrix representing the final state of the grid.
 
 ## Examples
 
@@ -29,44 +30,44 @@ Your task is to return an $n \times m$ matrix representing the state of the grid
 
 #### Input
 1 3
-# . #
+* . *
 
 #### Output
 .
-#
-#
+*
+*
 
 #### Explanation
-The grid rotates 90 degrees. The snowflake at `[0,0]` moves to `[0,0]` in the new grid, and the snowflake at `[0,2]` moves to `[2,0]`. Gravity pulls them down.
+The grid rotates 90 degrees clockwise. The flakes fall to the bottom.
 
 ### 2
 
 #### Input
 2 4
-# . * .
-# # * .
+* . # .
+* * # .
 
 #### Output
-# .
-# #
+* .
 * *
+# #
 . .
 
 #### Explanation
-The figurines (`*`) hold their position relative to the grid rotation, and snowflakes pile up on top of them or the floor.
+The castles hold their relative positions. flakes pile up on top of obstacles or the floor.
 
 ## Input Format
 - The first line contains two integers `m` and `n`, the dimensions of the grid.
-- The next `m` lines each contain `n` space-separated characters representing the rows of the `box`.
+- The next `m` lines each contain `n` space-separated characters representing the rows of the `grid`.
 
 ## Output Format
-- Return the resulting n * m grid. Each row should be on a new line, with characters separated by spaces.
+- Return the resulting $n \times m$ grid. Each row should be on a new line, with characters separated by spaces.
 
 ## Constraints
-- m == box.length
-- n == box[i].length
+- m == grid.length
+- n == grid[i].length
 - 1 ≤ n, m ≤ 500
-- `box[i][j]` is either `'#'`, `'*'`, or `'.'`.
+- `grid[i][j]` is either `'*'`, `'#'`, or `'.'`.
 
 ## Time Limit
 2 second
@@ -75,4 +76,5 @@ The figurines (`*`) hold their position relative to the grid rotation, and snowf
 256 MB
 
 ## Tags
-two-pointers, array, matrix
+two-pointers, array, matrix, simulation
+

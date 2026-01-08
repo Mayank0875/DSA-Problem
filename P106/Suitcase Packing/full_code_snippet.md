@@ -21,7 +21,7 @@ int main() {
             }
         }
 
-        vector<vector<char>> result = rotateTheBox(box);
+        vector<vector<char>> result = applyGravity(box);
         
         for (const auto& row : result) {
             for (size_t j = 0; j < row.size(); j++) {
@@ -58,7 +58,7 @@ public class Main {
                 }
             }
 
-            char[][] result = rotateTheBox(box);
+            char[][] result = applyGravity(box);
 
             for (int i = 0; i < result.length; i++) {
                 for (int j = 0; j < result[i].length; j++) {
@@ -99,7 +99,7 @@ int main() {
             }
         }
 
-        char** result = rotateTheBox(box, m, n);
+        char** result = applyGravity(box, m, n);
 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
@@ -141,7 +141,7 @@ function main() {
             }
         }
 
-        const result = rotateTheBox(box);
+        const result = applyGravity(box);
 
         for (const row of result) {
             console.log(row.join(" "));
@@ -172,7 +172,7 @@ def main():
         for _ in range(m):
             box.append(input().split())
 
-        result = rotateTheBox(box)
+        result = applyGravity(box)
 
         for row in result:
             print(" ".join(row))
