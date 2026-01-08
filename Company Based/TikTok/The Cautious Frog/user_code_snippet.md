@@ -1,18 +1,18 @@
 ## CPP
 
-int countWays(long long n) {
+int countWays(int n) {
     // add your code here
 }
 
 ## JAVA
 
-public static int countWays(long n) {
+public static int countWays(int n) {
     // add your code here
 }
 
 ## C
 
-int countWays(long long n) {
+int countWays(int n) {
     // add your code here
 }
 

@@ -13,7 +13,7 @@ int main() {
     while (t--) {
         long long x;
         cin >> x;
-        cout << findMinimumBulbs(x) << "\n";
+        cout << countWays(x) << "\n";
         
         // evaluation completed
     }
@@ -33,7 +33,7 @@ public class Main {
         int t = sc.nextInt();
         while (t-- > 0) {
             long x = sc.nextLong();
-            System.out.println(findMinimumBulbs(x));
+            System.out.println(countWays(x));
             // evaluation completed
         }
         sc.close();
@@ -57,7 +57,7 @@ int main() {
     while (t--) {
         long long x;
         scanf("%lld", &x);
-        printf("%lld\n", findMinimumBulbs(x));
+        printf("%lld\n", countWays(x));
         // evaluation completed
     }
     return 0;
@@ -76,7 +76,7 @@ function main() {
     const t = parseInt(input[idx++]);
     for (let tc = 0; tc < t; tc++) {
         const x = BigInt(input[idx++]);
-        console.log(findMinimumBulbs(x).toString());
+        console.log(countWays(x).toString());
         // evaluation completed
     }
 }
@@ -95,7 +95,7 @@ def main():
     t = int(input())
     for _ in range(t):
         x = int(input())
-        print(findMinimumBulbs(x))
+        print(countWays(x))
         # evaluation completed
 
 if __name__ == "__main__":

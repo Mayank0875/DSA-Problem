@@ -33,10 +33,11 @@ Your task is to calculate the number of distinct valid ways the frog can reach p
 #### Explanation
 
 The valid paths to reach pad 3 are:
-1. $0 \to 1 \to 2 \to 3$ (+1, +1, +1)
-2. $0 \to 1 \to 3$ (+1, +2)
-3. $0 \to 2 \to 3$ (+2, +1)
-Note: The path $0 \to 2 \to \dots$ (starting with +2) is valid as long as the next jump is not +2.
+
+0 -> 1 -> 2 -> 3 (+1, +1, +1)
+0 -> 1 -> 3 (+1, +2)
+0 -> 2 -> 3 (+2, +1)
+Note: The path 0 -> 2 -> ... (starting with +2) is valid as long as the next jump is not +2.
     
 ### 2
 
@@ -51,11 +52,14 @@ Note: The path $0 \to 2 \to \dots$ (starting with +2) is valid as long as the ne
 #### Explanation
 
 Valid paths:
-1. $0 \to 1 \to 2 \to 3 \to 4$ (+1, +1, +1, +1)
-2. $0 \to 1 \to 2 \to 4$ (+1, +1, +2)
-3. $0 \to 1 \to 3 \to 4$ (+1, +2, +1)
-4. $0 \to 2 \to 3 \to 4$ (+2, +1, +1)
-Invalid path: $0 \to 2 \to 4$ (+2, +2) is not allowed.
+
+0 -> 1 -> 2 -> 3 -> 4 (+1, +1, +1, +1)
+0 -> 1 -> 2 -> 4 (+1, +1, +2)
+0 -> 1 -> 3 -> 4 (+1, +2, +1)
+0 -> 2 -> 3 -> 4 (+2, +1, +1)
+
+Invalid path:
+0 -> 2 -> 4 (+2, +2) is not allowed.
   
 
 ## Input Format  

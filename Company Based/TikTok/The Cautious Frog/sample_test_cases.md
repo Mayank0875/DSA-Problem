@@ -3,11 +3,11 @@
 ### Test Case 1
 **Input**
 ```
-7
+1
 ```
 **Expected Output**
 ```
-10
+1
 ```
 
 ---
@@ -15,11 +15,11 @@
 ### Test Case 2
 **Input**
 ```
-25        
+3     
 ```
 **Expected Output**
 ```
-30
+3
 ```
 
 ---
@@ -27,11 +27,11 @@
 ### Test Case 3
 **Input**
 ```
-9
+5
 ```
 **Expected Output**
 ```
-12
+6
 ```
 
 ---
