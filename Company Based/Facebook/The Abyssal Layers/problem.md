@@ -29,7 +29,7 @@ Your task is to determine if it is possible to select a subsequence of $s$ such 
 
 #### Output
 
-true
+Yes
 
 #### Explanation
 
@@ -44,7 +44,7 @@ The original depth is 3. We can choose the subsequence corresponding to indices 
 
 #### Output
 
-false
+No
 
 #### Explanation
 
@@ -57,7 +57,7 @@ The maximum nesting depth of the string `()()` is 1. It is impossible to form a 
 
 ## Output Format  
 
-- Return `true` if a subsequence of depth $k$ exists, otherwise output `false`.
+- Return `Yes` if a subsequence of depth $k$ exists, otherwise output `No`.
   
 
 ## Constraints  
