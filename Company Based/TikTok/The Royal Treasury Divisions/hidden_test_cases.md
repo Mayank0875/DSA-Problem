@@ -28,12 +28,12 @@ false
 ### Test Case 3
 **Input**
 ```
-4 5
+4 11
 1 2 3 4
 ```
 **Expected Output**
 ```
-true
+false
 ```
 
 ---

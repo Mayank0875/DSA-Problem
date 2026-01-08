@@ -56,7 +56,6 @@ false
 
 No continuous subarray of length at least 2 has a sum divisible by 13.
   
-
 ## Input Format  
 
 - The first line contains two integers $n$ and $k$ — the number of sacks and the divisor.
