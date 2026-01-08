@@ -33,8 +33,9 @@ Your task is to calculate the total number of distinct ways the frog can reach e
 #### Explanation
 
 There are two ways to reach platform 2:
-1. $0 \to 1 \to 2$ (1 jump + 1 jump)
-2. $0 \to 2$ (2 jumps)
+
+0 -> 1 -> 2 (1 jump + 1 jump)
+0 -> 2 (2 jumps)
     
 ### 2
 
@@ -47,11 +48,11 @@ There are two ways to reach platform 2:
 3
 
 #### Explanation
-
 There are three ways:
-    1. $0 \to 1 \to 2 \to 3$
-    2. $0 \to 1 \to 3$
-    3. $0 \to 2 \to 3$
+
+0 -> 1 -> 2 -> 3
+0 -> 1 -> 3
+0 -> 2 -> 3
   
 
 ## Input Format  
