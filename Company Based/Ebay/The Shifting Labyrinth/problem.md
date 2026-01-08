@@ -12,18 +12,26 @@ Medium
 
 ## Description
 
-You are exploring an labyrinth. The room you are currently in is represented by an $m \times n$ matrix `box`, representing a side-view of the chamber. Each cell in the room contains one of the following:
-* A loose boulder `'#'`
-* A fixed pillar `'*'`
-* Empty space `'.'`
+You are inside a labyrinth represented as a 2D grid of size m × n. Each cell of the grid contains one of the following:
 
-To proceed, you pull a lever that rotates the entire room **90 degrees clockwise**. Due to this rotation, gravity shifts, causing the loose boulders to fall downwards. Each boulder falls until it lands on a fixed pillar, another boulder, or the bottom of the room.
+# : a loose boulder
+* : a fixed pillar
+. : empty space
 
-Note that:
-1.  Gravity does not affect the fixed pillars; they remain in their rotated positions.
-2.  The inertia from the rotation does not affect the boulders' horizontal positions (relative to the new "down").
+When gravity is applied, all loose boulders (#) fall downward. A boulder continues to fall until one of the following happens:
 
-Your task is to return an $n \times m$ matrix representing the state of the labyrinth after the rotation and the subsequent settling of the boulders.
+1. It reaches the bottom of the grid
+2. It lands on top of another boulder
+3. It lands on top of a fixed pillar (*)
+
+Important rules:
+
+1. Fixed pillars (*) do not move.
+2. Gravity only affects vertical movement.
+
+Boulders do not pass through pillars or other boulders.
+
+Your task is to simulate only the effect of gravity on the grid and return the final state of the grid after all boulders have settled.
 
 ## Examples
 
