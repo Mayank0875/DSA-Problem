@@ -82,3 +82,7 @@ The first character (2, 2) is weak because the second character (3, 3) has stric
 ## Tags
 
 array, greedy
+
+
+## Company
+tiktok

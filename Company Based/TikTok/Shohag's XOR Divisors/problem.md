@@ -87,3 +87,6 @@ Return a single integer — the number of suitable $y$.
 ## Tags
 
 math, number-theory
+
+## Company
+tiktok

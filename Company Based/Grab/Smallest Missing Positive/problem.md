@@ -78,3 +78,6 @@ The integers 1 and 2 are present. The smallest missing positive is 3.
 ## Tags
 
 array, two-pointers
+
+## Company
+grab

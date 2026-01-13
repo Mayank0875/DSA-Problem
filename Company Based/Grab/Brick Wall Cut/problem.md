@@ -94,3 +94,6 @@ There are no internal edges. Any line drawn must cross all 3 bricks.
 ## Tags
 
 array, hash-table
+
+## Company
+grab

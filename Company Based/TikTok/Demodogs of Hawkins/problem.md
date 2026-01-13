@@ -87,3 +87,6 @@ $22 \times 2022 = 44484$.
 ## Tags
 
 greedy, math, matrix
+
+## Company
+tiktok

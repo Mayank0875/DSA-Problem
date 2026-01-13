@@ -86,3 +86,6 @@ All boxes are equal. Regardless of $k$, all trucks will have equal weight.
 ## Tags
 
 array, math, number-theory
+
+## Company
+tiktok
