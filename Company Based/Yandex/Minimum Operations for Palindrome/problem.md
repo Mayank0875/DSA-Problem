@@ -79,3 +79,6 @@ The minimum is 2.
 ## Tags
 
 string, dynamic-programming
+
+## Company
+yandex

@@ -89,3 +89,6 @@ With radius 3:
 ## Tags
 
 binary-search, two-pointers, array
+
+## Company
+yandex

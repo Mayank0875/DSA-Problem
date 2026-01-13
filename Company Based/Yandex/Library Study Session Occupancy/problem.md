@@ -88,3 +88,6 @@ The student was present at time `[4, 4]`. The query interval is `[1, 3]`. There 
 ## Tags
 
 array, two-pointers
+
+## Company
+yandex

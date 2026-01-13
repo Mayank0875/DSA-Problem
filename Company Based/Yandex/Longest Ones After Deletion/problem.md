@@ -79,3 +79,6 @@ We can delete the 0 at index 4 and the 0 at index 7. The resulting segments of 1
 ## Tags
 
 sliding-window, two-pointers, array
+
+## Company
+yandex
