@@ -12,7 +12,7 @@ Medium
 
 ## Description
 
-You are exploring an labyrinth. The room you are currently in is represented by an `m \times n` matrix `box`, representing a side-view of the chamber. Each cell in the room contains one of the following:
+You are exploring an labyrinth. The room you are currently in is represented by an `m * n` matrix `box`, representing a side-view of the chamber. Each cell in the room contains one of the following:
 - A loose boulder `'#'`
 - A fixed pillar `'*'`
 - Empty space `'.'`
