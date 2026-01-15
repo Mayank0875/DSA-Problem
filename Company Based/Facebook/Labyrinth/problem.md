@@ -81,7 +81,7 @@ The fixed pillars `'*'` hold their position relative to the grid rotation, and b
 
 ## Time Limit
 
-2 second
+1 second
 
 ## Memory Limit
 
