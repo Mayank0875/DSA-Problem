@@ -6,7 +6,7 @@ vector<vector<char>> rotateTheBox(vector<vector<char>>& box) {
 
 ## JAVA
 
-public char[][] rotateTheBox(char[][] box) {
+public static char[][] rotateTheBox(char[][] box) {
     // add your code here
 }
 
