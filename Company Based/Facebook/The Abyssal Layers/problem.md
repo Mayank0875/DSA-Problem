@@ -18,6 +18,9 @@ The diver wants to plan a route that reaches a specific nesting depth, `k`. They
 
 Your task is to determine if it is possible to select a subsequence of `s` such that its nesting depth is exactly `k`.
 
+Return `Yes` if a subsequence of depth `k` exists, otherwise output `No`.
+- Note: This check is case-sensitive (uppercase and lowercase characters are treated as different).
+
 ## Examples
 
 ### 1
@@ -53,12 +56,14 @@ The maximum nesting depth of the string `()()` is 1. It is impossible to form a 
 ## Input Format  
 
 - Integers `k` — the target depth.
-- A string `s` of length $n$ consisting of `'('` and `')'`.
+- A string `s` of length `n` consisting of `'('` and `')'`.
 
 ## Output Format  
 
-- Return `Yes` if a subsequence of depth $k$ exists, otherwise output `No`.
-  
+- Return `Yes` if a subsequence of depth `k` exists, otherwise output `No`.
+- Note: This check is case-sensitive (uppercase and lowercase characters are treated as different).
+
+
 
 ## Constraints  
 
