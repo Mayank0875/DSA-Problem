@@ -12,18 +12,18 @@ Medium
 
 ## Description
 
-You are exploring an labyrinth. The room you are currently in is represented by an $m \times n$ matrix `box`, representing a side-view of the chamber. Each cell in the room contains one of the following:
-* A loose boulder `'#'`
-* A fixed pillar `'*'`
-* Empty space `'.'`
+You are exploring an labyrinth. The room you are currently in is represented by an `m * n` matrix `box`, representing a side-view of the chamber. Each cell in the room contains one of the following:
+- A loose boulder `'#'`
+- A fixed pillar `'*'`
+- Empty space `'.'`
 
-To proceed, you pull a lever that rotates the entire room **90 degrees clockwise**. Due to this rotation, gravity shifts, causing the loose boulders to fall downwards. Each boulder falls until it lands on a fixed pillar, another boulder, or the bottom of the room.
+To proceed, you pull a lever that rotates the entire room `90 degrees clockwise`. Due to this rotation, gravity shifts, causing the loose boulders to fall downwards. Each boulder falls until it lands on a fixed pillar, another boulder, or the bottom of the room.
 
 Note that:
 1.  Gravity does not affect the fixed pillars; they remain in their rotated positions.
 2.  The inertia from the rotation does not affect the boulders' horizontal positions (relative to the new "down").
 
-Your task is to return an $n \times m$ matrix representing the state of the labyrinth after the rotation and the subsequent settling of the boulders.
+Your task is to return an `n * m` matrix representing the state of the labyrinth after the rotation and the subsequent settling of the boulders.
 
 ## Examples
 
@@ -81,7 +81,7 @@ The fixed pillars `'*'` hold their position relative to the grid rotation, and b
 
 ## Time Limit
 
-2 second
+1 second
 
 ## Memory Limit
 

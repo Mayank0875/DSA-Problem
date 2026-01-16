@@ -68,7 +68,7 @@ public char[][] rotateTheBox(char[][] box) {
 ### METADATA
 
 **TimeLimit**  
-1000  
+3200  
 
 **MemoryLimit**  
 512  
