@@ -12,11 +12,11 @@ Hard
 
 ## Description
 
-A legendary Frog is preparing to travel across the galaxy. The path is a straight line consisting of $n$ star-platforms.
+A legendary Frog is preparing to travel across the galaxy. The path is a straight line consisting of `n` star-platforms.
 
-The frog starts at platform 0 and wishes to reach platform $n$. On each move, the frog can jump forward either **1 platform** or **2 platforms**.
+The frog starts at platform 0 and wishes to reach platform $n$. On each move, the frog can jump forward either `1 platform` or `2 platforms`.
 
-Your task is to calculate the total number of distinct ways the frog can reach exactly platform $n$. Since the distance $n$ can be extremely large, return the answer modulo $10^9 + 7$.
+Your task is to calculate the total number of distinct ways the frog can reach exactly platform `n`. Since the distance `n` can be extremely large, return the answer modulo `10^9 + 7`.
 
 ## Examples
 
@@ -61,7 +61,7 @@ There are three ways:
 
 ## Output Format  
 
-- Return a single integer: the number of ways modulo $10^9 + 7$.
+- Return a single integer: the number of ways modulo `10^9 + 7`.
   
 
 ## Constraints  
@@ -78,7 +78,7 @@ There are three ways:
 
 ## Tags
 
-dynamic-programming, math
+dynamic-programming, maths
 
 ## Company
 tiktok
