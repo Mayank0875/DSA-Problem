@@ -2,21 +2,27 @@
 
 ### SOLUTION
 
-long long findMinimumBulbs(long long k) {
-    long long left = 0;
-    long long right = k + sqrtl(k) + 100; 
-
-    while (right - left > 1) {
-        long long mid = (left + right) / 2;
-        long long bulbsOn = mid - (long long)sqrtl(mid); 
-
-        if (bulbsOn < k)
-            left = mid;  
-        else
-            right = mid; 
+long long countDistinctSubarrays(std::vector<int>& nums) {
+    long long n = nums.size();
+    std::map<int, int> fre;
+    int l = 0;
+    long long res = 0;
+    
+    for (int r = 0; r < n; ++r) {
+        fre[nums[r]]++;
+        
+        while (fre.size() < (r - l + 1)) {
+            fre[nums[l]]--;
+            if (fre[nums[l]] == 0) {
+                fre.erase(nums[l]);
+            }
+            l++;
+        }
+        
+        res += (r - l + 1);
     }
-
-    return right;
+    
+    return res;
 }
 
 ### METADATA
@@ -32,21 +38,27 @@ long long findMinimumBulbs(long long k) {
 
 ### SOLUTION
 
-public static long findMinimumBulbs(long k) {
-    long left = 0;
-    long right = k + (long)Math.sqrt(k) + 100;
-
-    while (right - left > 1) {
-        long mid = (left + right) / 2;
-        long bulbsOn = mid - (long)Math.sqrt(mid);
-
-        if (bulbsOn < k)
-            left = mid;
-        else
-            right = mid;
+public long countDistinctSubarrays(int[] nums) {
+    int n = nums.length;
+    Map<Integer, Integer> fre = new HashMap<>();
+    int l = 0;
+    long res = 0;
+    
+    for (int r = 0; r < n; r++) {
+        fre.put(nums[r], fre.getOrDefault(nums[r], 0) + 1);
+        
+        while (fre.size() < (r - l + 1)) {
+            fre.put(nums[l], fre.get(nums[l]) - 1);
+            if (fre.get(nums[l]) == 0) {
+                fre.remove(nums[l]);
+            }
+            l++;
+        }
+        
+        res += (r - l + 1);
     }
-
-    return right;
+    
+    return res;
 }
 
 ### METADATA
@@ -63,21 +75,65 @@ public static long findMinimumBulbs(long k) {
 
 ### SOLUTION
 
-long long findMinimumBulbs(long long k) {
-    long long left = 0;
-    long long right = k + sqrtl(k) + 100;
+// Helper structure for coordinate compression
+typedef struct {
+    int val;
+    int originalIdx;
+} Pair;
 
-    while (right - left > 1) {
-        long long mid = (left + right) / 2;
-        long long bulbsOn = mid - (long long)sqrtl(mid);
+int cmp(const void* a, const void* b) {
+    return ((Pair*)a)->val - ((Pair*)b)->val;
+}
 
-        if (bulbsOn < k)
-            left = mid;
-        else
-            right = mid;
+long long countDistinctSubarrays(int* nums, int numsSize) {
+    if (numsSize == 0) return 0;
+
+    // Coordinate Compression
+    Pair* p = (Pair*)malloc(numsSize * sizeof(Pair));
+    for(int i = 0; i < numsSize; i++) {
+        p[i].val = nums[i];
+        p[i].originalIdx = i;
     }
-
-    return right;
+    
+    qsort(p, numsSize, sizeof(Pair), cmp);
+    
+    // Map large values to 0..numsSize-1 in a new array
+    int* compressed = (int*)malloc(numsSize * sizeof(int));
+    int rank = 0;
+    compressed[p[0].originalIdx] = rank;
+    
+    for(int i = 1; i < numsSize; i++) {
+        if (p[i].val != p[i-1].val) {
+            rank++;
+        }
+        compressed[p[i].originalIdx] = rank;
+    }
+    free(p);
+    
+    // Sliding window using array frequency
+    int* fre = (int*)calloc(numsSize + 1, sizeof(int));
+    int l = 0;
+    long long res = 0;
+    int uniqueCount = 0;
+    
+    for (int r = 0; r < numsSize; r++) {
+        int val = compressed[r];
+        if (fre[val] == 0) uniqueCount++;
+        fre[val]++;
+        
+        while (uniqueCount < (r - l + 1)) {
+            int leftVal = compressed[l];
+            fre[leftVal]--;
+            if (fre[leftVal] == 0) uniqueCount--;
+            l++;
+        }
+        
+        res += (long long)(r - l + 1);
+    }
+    
+    free(compressed);
+    free(fre);
+    return res;
 }
 
 ### METADATA
@@ -94,21 +150,29 @@ long long findMinimumBulbs(long long k) {
 
 ### SOLUTION
 
-function findMinimumBulbs(k) {
-    let left = 0n;
-    let right = BigInt(k) + BigInt(Math.floor(Math.sqrt(Number(k)))) + 100n;
-
-    while (right - left > 1n) {
-        let mid = (left + right) / 2n;
-        let bulbsOn = mid - BigInt(Math.floor(Math.sqrt(Number(mid))));
-
-        if (bulbsOn < BigInt(k))
-            left = mid;
-        else
-            right = mid;
+function countDistinctSubarrays(nums) {
+    let n = nums.length;
+    let fre = new Map();
+    let l = 0;
+    let res = 0;
+    
+    for (let r = 0; r < n; r++) {
+        fre.set(nums[r], (fre.get(nums[r]) || 0) + 1);
+        
+        while (fre.size < (r - l + 1)) {
+            let count = fre.get(nums[l]);
+            if (count === 1) {
+                fre.delete(nums[l]);
+            } else {
+                fre.set(nums[l], count - 1);
+            }
+            l++;
+        }
+        
+        res += (r - l + 1);
     }
-
-    return right;
+    
+    return res;
 }
 
 ### METADATA
@@ -125,20 +189,24 @@ function findMinimumBulbs(k) {
 
 ### SOLUTION
 
-def findMinimumBulbs(k):
-    left = 0
-    right = k + int(math.sqrt(k)) + 100
-
-    while right - left > 1:
-        mid = (left + right) // 2
-        bulbs_on = mid - int(math.sqrt(mid))
-
-        if bulbs_on < k:
-            left = mid
-        else:
-            right = mid
-
-    return right
+def countDistinctSubarrays(nums):
+    n = len(nums)
+    fre = {}
+    l = 0
+    res = 0
+    
+    for r in range(n):
+        fre[nums[r]] = fre.get(nums[r], 0) + 1
+        
+        while len(fre) < (r - l + 1):
+            fre[nums[l]] -= 1
+            if fre[nums[l]] == 0:
+                del fre[nums[l]]
+            l += 1
+            
+        res += (r - l + 1)
+        
+    return res
 
 ### METADATA
 

@@ -1,28 +1,28 @@
 ## CPP
 
-long long findMinimumBulbs(long long k) {
+long long countDistinctSubarrays(std::vector<int>& nums) {
     // add your code here
 }
 
 ## JAVA
 
-public static long findMinimumBulbs(long k) {
+public long countDistinctSubarrays(int[] nums) {
     // add your code here
 }
 
 ## C
 
-long long findMinimumBulbs(long long k) {
+long long countDistinctSubarrays(int* nums, int numsSize) {
     // add your code here
 }
 
 ## JAVASCRIPT
 
-function findMinimumBulbs(k) {
+function countDistinctSubarrays(nums) {
     // add your code here
 }
 
 ## PYTHON
 
-def findMinimumBulbs(k):
+def countDistinctSubarrays(nums):
     # add your code here

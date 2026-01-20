@@ -11,10 +11,16 @@ int main() {
     cin >> t;
 
     while (t--) {
-        long long x;
-        cin >> x;
-        cout << findMinimumBulbs(x) << "\n";
+        int n;
+        if (!(std::cin >> n)) return 0;
         
+        std::vector<int> nums(n);
+        for (int i = 0; i < n; ++i) {
+            std::cin >> nums[i];
+        }
+
+        std::cout << countDistinctSubarrays(nums) << std::endl;
+            
         // evaluation completed
     }
     return 0;
@@ -25,39 +31,49 @@ int main() {
 import java.util.*;
 
 public class Main {
+
     // user code comes here
-    
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
+
         while (t-- > 0) {
-            long x = sc.nextLong();
-            System.out.println(findMinimumBulbs(x));
+            int n = sc.nextInt();
+            int[] nums = new int[n];
+
+            for (int i = 0; i < n; i++) {
+                nums[i] = sc.nextInt();
+            }
+
+            System.out.println(countDistinctSubarrays(nums));
             // evaluation completed
         }
         sc.close();
     }
 }
 
+
 ## C
 
 #include <stdio.h>
-#include <stdbool.h>
-#include <stdlib.h>
-#include <math.h>
-
 
 // user code comes here
-
 
 int main() {
     int t;
     scanf("%d", &t);
+
     while (t--) {
-        long long x;
-        scanf("%lld", &x);
-        printf("%lld\n", findMinimumBulbs(x));
+        int n;
+        scanf("%d", &n);
+
+        int nums[n];
+        for (int i = 0; i < n; i++) {
+            scanf("%d", &nums[i]);
+        }
+
+        printf("%lld\n", countDistinctSubarrays(nums, n));
         // evaluation completed
     }
     return 0;
@@ -67,35 +83,42 @@ int main() {
 
 // user code comes here
 
-
 function main() {
     const fs = require("fs");
     const input = fs.readFileSync(0, "utf-8").trim().split(/\s+/);
     let idx = 0;
 
-    const t = parseInt(input[idx++]);
+    const t = Number(input[idx++]);
     for (let tc = 0; tc < t; tc++) {
-        const x = BigInt(input[idx++]);
-        console.log(findMinimumBulbs(x).toString());
+        const n = Number(input[idx++]);
+        const nums = [];
+
+        for (let i = 0; i < n; i++) {
+            nums.push(Number(input[idx++]));
+        }
+
+        console.log(countDistinctSubarrays(nums));
         // evaluation completed
     }
 }
 
 main();
 
+
 ## PYTHON
 
 import math
 from typing import List
-import collections
 
 # user code comes here
 
 def main():
     t = int(input())
     for _ in range(t):
-        x = int(input())
-        print(findMinimumBulbs(x))
+        n = int(input())
+        nums = list(map(int, input().split()))
+
+        print(countDistinctSubarrays(nums))
         # evaluation completed
 
 if __name__ == "__main__":
