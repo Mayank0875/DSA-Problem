@@ -82,3 +82,6 @@ The items are already sorted. Bob collects 1, 2, 3, 4, and 5 in a single pass.
 ## Tags
 
 greedy, array
+
+## Company
+google

@@ -77,3 +77,6 @@ All elements are distinct. Every possible contiguous subarray is valid. The coun
 ## Tags
 
 array, two-pointers, sliding-window
+
+## Company
+google

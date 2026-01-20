@@ -86,3 +86,6 @@ Remove "bba" at index 1: "aabba" $\to$ "aa".No more occurrences of "bba". Result
 ## Tags
 
 string, stack
+
+## Company
+google

@@ -85,3 +85,6 @@ With optimal play, neither player can force a win.
 ## Tags
 
 array, greedy, math
+
+## Company
+google

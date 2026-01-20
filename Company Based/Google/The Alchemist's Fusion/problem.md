@@ -84,3 +84,6 @@ $4 \cdot 4 = 16 = 4^2$. All pairs work. The number of pairs is $\frac{4 \times 3
 ## Tags
 
 array, math, number-theory, dynamic-programming
+
+## Company
+google

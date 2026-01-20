@@ -93,3 +93,6 @@ The Dual-Essence Stones up to 12 are:
 ## Tags
 
 binary-search, math, number-theory
+
+## Company
+google

@@ -85,3 +85,6 @@ Optimal Score is 12.
 ## Tags
 
 dynamic-programming, array, greedy
+
+## Company
+google

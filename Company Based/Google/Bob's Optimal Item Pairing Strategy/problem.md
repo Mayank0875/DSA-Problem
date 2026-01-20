@@ -79,3 +79,6 @@ The sums are 8, 8, and 8. The maximum is 8.
 ## Tags
 
 array, greedy, two-pointers, sorting
+
+## Company
+google

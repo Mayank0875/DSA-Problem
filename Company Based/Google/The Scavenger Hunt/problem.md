@@ -84,3 +84,6 @@ The ship starts with mass 3. The smallest debris has mass 4. Since $3 < 4$, the 
 ## Tags
 
 greedy, array
+
+## Company
+google
