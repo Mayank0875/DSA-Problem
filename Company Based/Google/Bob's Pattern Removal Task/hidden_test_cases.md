@@ -1,0 +1,129 @@
+## Hidden Test Cases
+
+### Test Case 1
+**Input**
+```
+codeleet
+e
+```
+**Expected Output**
+```
+codlt
+```
+---
+
+### Test Case 2
+**Input**
+```
+baababccbc
+abc
+```
+**Expected Output**
+```
+b
+```
+
+---
+
+### Test Case 3
+**Input**
+```
+axxxxyyyyb
+xy
+```
+**Expected Output**
+```
+ab
+```
+
+---
+
+### Test Case 4
+**Input**
+```
+daabcbaabcbc
+abc
+```
+**Expected Output**
+```
+dab
+```
+
+---
+
+### Test Case 5
+**Input**
+```
+aaaaa
+aa
+```
+**Expected Output**
+```
+a
+```
+
+---
+
+### Test Case 6
+**Input**
+```
+abc
+abcd
+```
+**Expected Output**
+```
+abc
+```
+
+---
+
+### Test Case 7
+**Input**
+```
+kttktkitkit
+kit
+```
+**Expected Output**
+```
+kttkt
+```
+
+---
+
+### Test Case 8
+**Input**
+```
+ababccz
+abc
+```
+**Expected Output**
+```
+z
+```
+
+### Test Case 9
+**Input**
+```
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+```
+**Expected Output**
+```
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+```
+
+---
+
+### Test Case 10
+**Input**
+
+```
+bcbbaacbbbaacaaaccaaaccaaccbccabbcbaabbbbccaccbbcbbcbababbababccabbccbbabbaaccbababcbbaabccacaabbcaacabccccbccabbbbbcbccbbacbcaabbcbccccccabaabcbbaacbbaaabcbaacaacbacbcbacacacabbbabaabaacccaaccaacaccaaaccbbbaacbccbbcbaaacaabccacacabaabbccacbcacabbbacbbcbabaaabbacbbaacbccacababccabaaabccaaaabcaabbbcabbabbcbcbaaabbbbccacbbaaaabaabcbbccacabcbccbcaabacacabbabcabbcccccaaaacbcaabaccccacccabbcccaacaccaabcbabbabcbaccaaccbaaccabcacbbccbaabccbbbacacbccaaabaaaacacbacacaccbcbaabaabcaaccbbaabbcbaabacabccbccbacababcbbbbbcaaababcacaacccbaaccbbbaabbcccacbbaccccacabbcabcbbaababaaaaaabcaabaaacaabbccacacacccccaacabbbbbbbcbccccbcbabbaacbaccbbabbabacbabcaabcbbbbbabcaaccccababbcaacacaabbbcccaabcabaccaacbbabbbcabbbbbbbccaaabbccbcabbaaaacbbbaacaababacbccccccacacbbaaaaacccbbaabaacaababbbbacabbbcaccaaccaaaaabbbcabaccababcacccbaabaababbcccbbbaaabbcaaacacbcbaaaccacbacabaabbaabcbabbcbcbbacaaaacababcbabbaccaabaaaabbabaacbbabcaccaaaacbcccacaaababcacabaacaabbbcbcaacccbacbccbaabcbbcbcbaabcaccbccacbbabababcbbcababcaca
+abaccabccabbcbbabcbb
+```
+**Expected Output**
+```
+bcbbaacbbbaacaaaccaaaccaaccbccabbcbaabbbbccaccbbcbbcbababbababccabbccbbabbaaccbababcbbaabccacaabbcaacabccccbccabbbbbcbccbbacbcaabbcbccccccabaabcbbaacbbaaabcbaacaacbacbcbacacacabbbabaabaacccaaccaacaccaaaccbbbaacbccbbcbaaacaabccacacabaabbccacbcacabbbacbbcbabaaabbacbbaacbccacababccabaaabccaaaabcaabbbcabbabbcbcbaaabbbbccacbbaaaabaabcbbccacabcbccbcaabacacabbabcabbcccccaaaacbcaabaccccacccabbcccaacaccaabcbabbabcbaccaaccbaaccabcacbbccbaabccbbbacacbccaaabaaaacacbacacaccbcbaabaabcaaccbbaabbcbaabacabccbccbacababcbbbbbcaaababcacaacccbaaccbbbaabbcccacbbaccccacabbcabcbbaababaaaaaabcaabaaacaabbccacacacccccaacabbbbbbbcbccccbcbabbaacbaccbbabbabacbabcaabcbbbbbabcaaccccababbcaacacaabbbcccaabcabaccaacbbabbbcabbbbbbbccaaabbccbcabbaaaacbbbaacaababacbccccccacacbbaaaaacccbbaabaacaababbbbacabbbcaccaaccaaaaabbbcabaccababcacccbaabaababbcccbbbaaabbcaaacacbcbaaaccacbacabaabbaabcbabbcbcbbacaaaacababcbabbaccaabaaaabbabaacbbabcaccaaaacbcccacaaababcacabaacaabbbcbcaacccbacbccbaabcbbcbcbaabcaccbccacbbabababcbbcababcaca
+```
+
+---
