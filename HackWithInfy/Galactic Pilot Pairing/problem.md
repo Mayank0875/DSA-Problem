@@ -12,9 +12,9 @@ Medium
 
 ## Description
 
-The United Space Force is preparing for a major expedition. The fleet consists of $n$ elite pilots and $m$ advanced navigation droids. To operate a Starfighter effectively, a pairing must consist of exactly one pilot and one droid.
+The United Space Force is preparing for a major expedition. The fleet consists of n elite pilots and m advanced navigation droids. To operate a Starfighter effectively, a pairing must consist of exactly one pilot and one droid.
 
-However, not every pilot is compatible with every droid due to differences in neural interface protocols. You are given a list of $k$ compatible pairs, where a specific pilot can work with a specific droid.
+However, not every pilot is compatible with every droid due to differences in neural interface protocols. You are given a list of k compatible pairs, where a specific pilot can work with a specific droid.
 
 Your task is to determine the maximum number of Starfighters that can be deployed simultaneously. Each pilot and each droid can be assigned to at most one Starfighter.
 
@@ -56,9 +56,9 @@ Only Pilot 1 and Droid 1 are compatible. The maximum number of operational Starf
 
 ## Input Format  
 
-- The first line contains three integers $n$, $m$, and $k$: the number of pilots, droids, and compatible pairs.
-- The pilots are numbered $1, 2, \dots, n$ and the droids are numbered $1, 2, \dots, m$.
-- The next $k$ lines describe the compatible pairs. Each line contains two integers $a$ and $b$, indicating that Pilot $a$ and Droid $b$ are compatible.
+- The first line contains three integers n, m, and k: the number of pilots, droids, and compatible pairs.
+- The pilots are numbered 1, 2...., n and the droids are numbered 1, 2 ... m.
+- The next k lines describe the compatible pairs. Each line contains two integers a and b, indicating that Pilot a and Droid b are compatible.
 
 ## Output Format  
 

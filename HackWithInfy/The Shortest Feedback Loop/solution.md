@@ -14,6 +14,7 @@ int findGirth(int n, int m, const vector<vector<int>>& edges) {
 
     for (int start_node = 1; start_node <= n; ++start_node) {
         vector<int> dist(n + 1, -1);
+        vector<int> parent(n + 1, -1);
         queue<int> q;
 
         dist[start_node] = 0;
@@ -25,21 +26,20 @@ int findGirth(int n, int m, const vector<vector<int>>& edges) {
 
             for (int v : adj[u]) {
                 if (dist[v] == -1) {
-                    // Not visited yet
                     dist[v] = dist[u] + 1;
+                    parent[v] = u;
                     q.push(v);
-                } else if (dist[v] >= dist[u]) {
-                    // Visited and not the parent (since dist[v] >= dist[u], v cannot be the parent of u in BFS tree)
-                    // We found a cycle. The length is dist[u] + dist[v] + 1
+                } 
+                else if (parent[u] != v) {
                     min_cycle = min(min_cycle, dist[u] + dist[v] + 1);
                 }
             }
         }
     }
 
-    if (min_cycle == INF) return -1;
-    return min_cycle;
+    return (min_cycle == INF ? -1 : min_cycle);
 }
+
 
 ### METADATA
 
@@ -54,38 +54,44 @@ int findGirth(int n, int m, const vector<vector<int>>& edges) {
 
 ### SOLUTION
 
+
 public static int findGirth(int n, int m, int[][] edges) {
-    int INF = 1000000000;
+    final int INF = 1_000_000_000;
+
+    // Adjacency list
     List<List<Integer>> adj = new ArrayList<>();
     for (int i = 0; i <= n; i++) {
         adj.add(new ArrayList<>());
     }
 
-    for (int[] edge : edges) {
-        adj.get(edge[0]).add(edge[1]);
-        adj.get(edge[1]).add(edge[0]);
+    for (int[] e : edges) {
+        adj.get(e[0]).add(e[1]);
+        adj.get(e[1]).add(e[0]);
     }
 
     int minCycle = INF;
 
-    // BFS from each node
-    for (int startNode = 1; startNode <= n; startNode++) {
+    for (int start = 1; start <= n; start++) {
         int[] dist = new int[n + 1];
+        int[] parent = new int[n + 1];
         Arrays.fill(dist, -1);
-        Queue<Integer> queue = new LinkedList<>();
+        Arrays.fill(parent, -1);
 
-        dist[startNode] = 0;
-        queue.add(startNode);
+        Queue<Integer> q = new ArrayDeque<>();
+        dist[start] = 0;
+        q.add(start);
 
-        while (!queue.isEmpty()) {
-            int u = queue.poll();
+        while (!q.isEmpty()) {
+            int u = q.poll();
 
             for (int v : adj.get(u)) {
                 if (dist[v] == -1) {
                     dist[v] = dist[u] + 1;
-                    queue.add(v);
-                } else if (dist[v] >= dist[u]) {
-                    // Found a cycle
+                    parent[v] = u;
+                    q.add(v);
+                } 
+                else if (parent[u] != v) {
+                    // Found a valid cycle
                     minCycle = Math.min(minCycle, dist[u] + dist[v] + 1);
                 }
             }
@@ -94,6 +100,8 @@ public static int findGirth(int n, int m, int[][] edges) {
 
     return (minCycle == INF) ? -1 : minCycle;
 }
+
+
 
 
 ### METADATA

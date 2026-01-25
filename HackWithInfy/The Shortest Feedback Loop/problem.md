@@ -68,7 +68,7 @@ The connections form a straight line (1-2-3-4). There are no cycles in this netw
 
 - The first line contains two integers n and m: the number of components and the number of wires.
 - The components are numbered 1, 2, ..., n.
-- The next $m$ lines describe the wires. Each line contains two integers u and v, indicating a connection between component u and component v.
+- The next m lines describe the wires. Each line contains two integers u and v, indicating a connection between component u and component v.
 - The graph is undirected. There is at most one wire between any two components.
 
 ## Output Format  
