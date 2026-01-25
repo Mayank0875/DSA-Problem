@@ -57,6 +57,7 @@ int findGirth(int n, int m, const vector<vector<int>>& edges) {
 public static int findGirth(int n, int m, int[][] edges) {
     final int INF = 1_000_000_000;
 
+    // Adjacency list
     List<List<Integer>> adj = new ArrayList<>();
     for (int i = 0; i <= n; i++) {
         adj.add(new ArrayList<>());
@@ -87,8 +88,8 @@ public static int findGirth(int n, int m, int[][] edges) {
                     dist[v] = dist[u] + 1;
                     parent[v] = u;
                     q.add(v);
-                } 
-                else if (parent[u] != v && parent[v] != u && dist[v] < dist[u]) {
+                }
+                else if (parent[u] != v) {
                     minCycle = Math.min(minCycle, dist[u] + dist[v] + 1);
                 }
             }
@@ -97,8 +98,6 @@ public static int findGirth(int n, int m, int[][] edges) {
 
     return (minCycle == INF) ? -1 : minCycle;
 }
-
-
 
 
 ### METADATA
