@@ -54,11 +54,9 @@ int findGirth(int n, int m, const vector<vector<int>>& edges) {
 
 ### SOLUTION
 
-
 public static int findGirth(int n, int m, int[][] edges) {
     final int INF = 1_000_000_000;
 
-    // Adjacency list
     List<List<Integer>> adj = new ArrayList<>();
     for (int i = 0; i <= n; i++) {
         adj.add(new ArrayList<>());
@@ -90,8 +88,7 @@ public static int findGirth(int n, int m, int[][] edges) {
                     parent[v] = u;
                     q.add(v);
                 } 
-                else if (parent[u] != v) {
-                    // Found a valid cycle
+                else if (parent[u] != v && parent[v] != u && dist[v] < dist[u]) {
                     minCycle = Math.min(minCycle, dist[u] + dist[v] + 1);
                 }
             }
