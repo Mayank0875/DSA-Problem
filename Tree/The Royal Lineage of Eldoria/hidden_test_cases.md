@@ -6,8 +6,6 @@
 10
 2 4 5 7 null 1 10 9 null 6 null 3 8 
 5 1
-
-
 ```
 **Expected Output**
 ```
