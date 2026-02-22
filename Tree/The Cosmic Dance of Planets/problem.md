@@ -8,7 +8,7 @@ cosmic-dance-of-planets
 
 ## Difficulty
 
-Medium
+Easy
 
 ## Description
 
