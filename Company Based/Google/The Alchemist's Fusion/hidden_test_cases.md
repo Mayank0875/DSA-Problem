@@ -67,7 +67,7 @@
 ### Test Case 6
 **Input**
 ```
-11 3
+6 3
 2 4 8 16 32 64 
 ```
 **Expected Output**
