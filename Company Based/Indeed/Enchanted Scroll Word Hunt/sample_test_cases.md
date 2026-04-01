@@ -12,7 +12,7 @@ CCEA
 ```
 **Expected Output**
 ```
-No
+False
 ```
 
 ---
@@ -29,7 +29,7 @@ BEC
 ```
 **Expected Output**
 ```
-Yes
+True
 ```
 
 ---
@@ -45,7 +45,7 @@ ADAB
 ```
 **Expected Output**
 ```
-No
+False
 ```
 
 ---
