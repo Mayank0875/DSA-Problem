@@ -35,14 +35,12 @@ img(https://d3gmywgj71m21w.cloudfront.net/coding-questions/f38bb29e6cb34c8047e1d
 
 #### Output
 
-Yes
+True
 
 #### Explanation
 
 img(https://d3gmywgj71m21w.cloudfront.net/coding-questions/39c703039d6f54dd1fd9c6d7641b2b5e)
 
-
-Word Exist's in Grid.
     
 ### 2
 
@@ -58,7 +56,7 @@ img(https://d3gmywgj71m21w.cloudfront.net/coding-questions/f38bb29e6cb34c8047e1d
 
 #### Output
 
-No
+False
 
 #### Explanation
 
