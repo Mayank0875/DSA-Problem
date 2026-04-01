@@ -12,7 +12,7 @@ EAD
 ```
 **Expected Output**
 ```
-Yes
+True
 ```
 ---
 
@@ -28,7 +28,7 @@ ABCC
 ```
 **Expected Output**
 ```
-No
+False
 ```
 
 ---
@@ -46,7 +46,7 @@ BBDC
 ```
 **Expected Output**
 ```
-No
+False
 ```
 
 ---
@@ -64,7 +64,7 @@ BAAA
 ```
 **Expected Output**
 ```
-No
+False
 ```
 
 ---
@@ -82,7 +82,7 @@ EBDB
 ```
 **Expected Output**
 ```
-No
+False
 ```
 
 ---
@@ -100,7 +100,7 @@ BA
 ```
 **Expected Output**
 ```
-Yes
+True
 ```
 
 ---
@@ -117,7 +117,7 @@ DAAB
 ```
 **Expected Output**
 ```
-No
+False
 ```
 
 ---
@@ -134,7 +134,7 @@ EABC
 ```
 **Expected Output**
 ```
-Yes
+True
 ```
 
 ### Test Case 9
@@ -150,7 +150,7 @@ ECEBCCABCAABEAE
 ```
 **Expected Output**
 ```
-Yes
+True
 ```
 
 ---
@@ -169,5 +169,5 @@ ECEBCCABCAABEAA
 ```
 **Expected Output**
 ```
-No
+False
 ```
